@@ -24,12 +24,12 @@
         "src": "src"
     },
     "scripts": {
-        "build": "rimraf lib es && rollup -c",
+        "build": "rimraf lib es && rollup --configPlugin typescript -c",
         "build:types": "run-s build-temp-types roll-types",
         "build-temp-types": "tsc --emitDeclarationOnly --outDir temp/ -p src/",
         "patch-types": "node script/patchTypes",
         "roll-types": "api-extractor run && rimraf temp",
-        "dev": "rollup -c -w",
+        "dev": "rollup--config ./rollup.config.ts --configPlugin typescript -c -w ",
         "pub": "tscjs scripts/publish",
         "unpub": "tscjs scripts/unpublish",
         "sync": "tscjs scripts/sync",
@@ -82,12 +82,18 @@
     },
     "peerDependencies": {
         "core-js": ">= 3",
-        "js-cool": ">= 2"
+        "js-cool": ">= 2",
+        "xml2js": ">= 0.4"
     },
     "keywords": [
-        "installer",
+        "wx-decrypt",
+        "msg-decrypt",
+        "xml-decrypt",
+        "decryptXML",
+        "wx-crypto",
         "extension",
         "node-wxcrypto",
+        "wxcrypto",
         "saqqdy"
     ],
     "license": "MIT",

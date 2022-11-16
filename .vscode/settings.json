@@ -4,14 +4,15 @@
         "esbuild",
         "instanceof",
         "lcov",
-        "pnpm",
         "node-wxcrypto",
+        "pnpm",
         "Retryable",
         "saqqdy",
         "tscjs",
         "tsnd",
         "typedoc",
         "unpub",
-        "unpublish"
+        "unpublish",
+        "wxcrypto"
     ]
 }
