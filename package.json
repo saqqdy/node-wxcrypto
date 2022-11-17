@@ -43,8 +43,13 @@
         "prettier:docs": "prettier --write \"**/*.md\""
     },
     "dependencies": {
+        "chalk": "^5.1.2",
+        "consola": "^2.15.3",
         "core-js": "^3.26.0",
+        "fs-extra": "^10.1.0",
         "js-cool": "^2.5.0",
+        "ora": "^6.1.2",
+        "picocolors": "^1.0.0",
         "xml2js": "^0.4.23"
     },
     "devDependencies": {
@@ -59,8 +64,10 @@
         "@rollup/plugin-babel": "^6.0.2",
         "@rollup/plugin-commonjs": "^23.0.2",
         "@rollup/plugin-node-resolve": "^15.0.1",
+        "@types/fs-extra": "^9.0.13",
         "@types/jest": "^29.2.2",
         "@types/node": "^18.11.9",
+        "@types/xml2js": "^0.4.11",
         "babel-loader": "^9.1.0",
         "coveralls": "^3.1.1",
         "cross-env": "^7.0.3",

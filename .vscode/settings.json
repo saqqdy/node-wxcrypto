@@ -1,10 +1,13 @@
 {
     "cSpell.words": [
         "Codacy",
+        "consola",
+        "convertable",
         "esbuild",
         "instanceof",
         "lcov",
         "node-wxcrypto",
+        "picocolors",
         "pnpm",
         "Retryable",
         "saqqdy",
@@ -13,6 +16,7 @@
         "typedoc",
         "unpub",
         "unpublish",
+        "weixin",
         "wxcrypto"
     ]
 }
