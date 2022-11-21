@@ -1,4 +1,4 @@
-import { decryptSync, encryptSync } from './xmlParser'
+import { decrypt } from './xmlParser'
 import { aes256Decrypt } from './aes256'
 import sha1 from './sha1'
 
@@ -55,64 +55,64 @@ export type WeixinVerifyMessageXMLData = withXMLProp<
  */
 
 // 加密消息
-export const encrypt = (text, timestamp, nonce) => {
-    const prp = new prpcrypt(this.key)
-    const re = prp.encrypt(text, this.appID)
-    if (re[0]) return re
-    const encrypted = re[1]
-    const hash = this.sha1(this.token, timestamp, nonce, encrypted)
+// export const encrypt = (text, timestamp, nonce) => {
+//     const prp = new prpcrypt(this.key)
+//     const re = prp.encrypt(text, this.appID)
+//     if (re[0]) return re
+//     const encrypted = re[1]
+//     const hash = this.sha1(this.token, timestamp, nonce, encrypted)
 
-    const xml = `<xml>
-<Encrypt><![CDATA[${encrypted}]]></Encrypt>
-<MsgSignature><![CDATA[${hash}]]></MsgSignature>
-<TimeStamp>${timestamp}</TimeStamp>
-<Nonce><![CDATA[${nonce}]]></Nonce>
-</xml>`
+//     const xml = `<xml>
+// <Encrypt><![CDATA[${encrypted}]]></Encrypt>
+// <MsgSignature><![CDATA[${hash}]]></MsgSignature>
+// <TimeStamp>${timestamp}</TimeStamp>
+// <Nonce><![CDATA[${nonce}]]></Nonce>
+// </xml>`
 
-    return [false, xml]
-}
+//     return [false, xml]
+// }
 
 // 解密消息
-export const decrypt = (hash, timestamp, nonce, xml) => {
-    debug(
-        'begin decrypt',
-        'hash=',
-        hash,
-        'timestamp=',
-        timestamp,
-        'nonce=',
-        nonce,
-        'xml=',
-        xml
-    )
-    const obj = this.parseWechatXML(xml)
-    debug('parsed xml=', obj)
-    if (!obj || !obj.Encrypt)
-        return [true, 'wrong xml format, no Encrypt child']
-    const _hash = this.sha1(this.token, timestamp, nonce, obj.Encrypt)
-    debug('calculated hash=', _hash)
-    if (hash != _hash) return [true, 'signature not match']
-    const prp = new prpcrypt(this.key)
-    return prp.decrypt(obj.Encrypt, this.appID)
-}
+// export const decrypt = (hash, timestamp, nonce, xml) => {
+//     debug(
+//         'begin decrypt',
+//         'hash=',
+//         hash,
+//         'timestamp=',
+//         timestamp,
+//         'nonce=',
+//         nonce,
+//         'xml=',
+//         xml
+//     )
+//     const obj = this.parseWechatXML(xml)
+//     debug('parsed xml=', obj)
+//     if (!obj || !obj.Encrypt)
+//         return [true, 'wrong xml format, no Encrypt child']
+//     const _hash = this.sha1(this.token, timestamp, nonce, obj.Encrypt)
+//     debug('calculated hash=', _hash)
+//     if (hash != _hash) return [true, 'signature not match']
+//     const prp = new prpcrypt(this.key)
+//     return prp.decrypt(obj.Encrypt, this.appID)
+// }
 
 // 解析微信xml
-export const parseWechatXML = xml => {
-    if (!xml || typeof xml != 'string') return {}
-    const re = {}
-    xml = xml.replace(/^<xml>|<\/xml>$/g, '')
-    const ms = xml.match(/<([a-z0-9]+)>([\s\S]*?)<\/\1>/gi)
-    if (ms && ms.length > 0) {
-        ms.forEach(t => {
-            const ms = t.match(/<([a-z0-9]+)>([\s\S]*?)<\/\1>/i)
-            const tagName = ms[1]
-            let cdata = ms[2] || ''
-            cdata = cdata.replace(/^\s*<\!\[CDATA\[\s*|\s*\]\]>\s*$/g, '')
-            re[tagName] = cdata
-        })
-    }
-    return re
-}
+// export const parseWechatXML = xml => {
+//     if (!xml || typeof xml != 'string') return {}
+//     const re = {}
+//     xml = xml.replace(/^<xml>|<\/xml>$/g, '')
+//     const ms = xml.match(/<([a-z0-9]+)>([\s\S]*?)<\/\1>/gi)
+//     if (ms && ms.length > 0) {
+//         ms.forEach(t => {
+//             const ms = t.match(/<([a-z0-9]+)>([\s\S]*?)<\/\1>/i)
+//             const tagName = ms[1]
+//             let cdata = ms[2] || ''
+//             cdata = cdata.replace(/^\s*<\!\[CDATA\[\s*|\s*\]\]>\s*$/g, '')
+//             re[tagName] = cdata
+//         })
+//     }
+//     return re
+// }
 
 class WxCrypto {
     token: string
@@ -171,9 +171,9 @@ class WxCrypto {
      * @param timestamp
      * @param nonce
      */
-    encryptXML(replyMsg, timestamp, nonce) {
-        //
-    }
+    // encryptXML(replyMsg, timestamp, nonce) {
+    //     //
+    // }
 
     /**
      * decrypt XML data
@@ -204,7 +204,7 @@ class WxCrypto {
         debug('signature', signature)
 
         const message = aes256Decrypt(algorithm, this.aesKey)
-        const data = decryptSync(
+        const data = await decrypt(
             message.substring(20, message.lastIndexOf('>') + 1) as string
         )
 
@@ -221,16 +221,12 @@ class WxCrypto {
             'corpID: ',
             corpID
         )
-        return {
-            nonceStr,
-            len,
-            data,
-            corpID
-        }
+        return data
     }
 }
 
-export { WxCrypto, WxCrypto as default }
+// export { WxCrypto, WxCrypto as default }
+export default WxCrypto
 
 // 2022-11-16 14:14 +08:00: 100 {
 // 	signature: '4ee44e543f2689914139e58d2d239dddecf20f6e',

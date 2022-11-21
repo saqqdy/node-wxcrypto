@@ -6,7 +6,8 @@ module.exports = {
                 loose: true,
                 modules: 'auto',
                 useBuiltIns: 'usage',
-                corejs: 3
+                corejs: 3,
+                targets: 'node 12.18'
                 // exclude: ['es.promise', 'es.promise.finally']
             }
         ],

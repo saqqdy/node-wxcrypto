@@ -10,7 +10,7 @@ export const decrypt = (
     options: ParserOptions = {}
 ) => {
     return parseStringPromise(data, { explicitArray: false, ...options }).then(
-        result => result
+        ({ xml = {} }) => xml
     )
 }
 

@@ -1,7 +1,7 @@
 {
     "name": "node-wxcrypto",
     "description": "微信消息加解密nodejs版本",
-    "version": "1.0.0-alpha.2",
+    "version": "1.0.0-alpha.5",
     "packageManager": "pnpm@7.14.2",
     "main": "lib/index.cjs",
     "module": "lib/index.mjs",
@@ -24,7 +24,7 @@
         "src": "src"
     },
     "scripts": {
-        "build": "rimraf lib es && rollup --configPlugin typescript -c",
+        "build": "rimraf lib es && rollup -c",
         "build:types": "run-s build-temp-types roll-types",
         "build-temp-types": "tsc --emitDeclarationOnly --outDir temp/ -p src/",
         "patch-types": "node script/patchTypes",

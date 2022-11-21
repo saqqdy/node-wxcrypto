@@ -1,4 +1,4 @@
-import WxCrypto from '../index'
+// import WxCrypto from '../index'
 
 test('defines init() & create()', () => {
     // expect(typeof WxCrypto.init).toBe('function')

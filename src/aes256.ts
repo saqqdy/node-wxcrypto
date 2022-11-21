@@ -1,5 +1,5 @@
 import { type CipherCCMOptions, type Encoding, createDecipheriv } from 'crypto'
-import convert from './convert'
+// import convert from './convert'
 
 /**
  * aes256 encrypt function
@@ -28,7 +28,8 @@ export const aes256Decrypt = (
     outputEncoding: Encoding = 'utf8',
     options?: CipherCCMOptions
 ): string => {
-    const encodingAESKey = convert(aesKey, 'base64') // Buffer.from(`${aesKey}=`, 'base64')
+    // const encodingAESKey = convert(`${aesKey}=`, 'base64', 'binary')
+    const encodingAESKey = Buffer.from(`${aesKey}=`, 'base64')
     const cipher = createDecipheriv(
         'aes-256-cbc',
         encodingAESKey,

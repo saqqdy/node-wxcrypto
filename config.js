@@ -36,19 +36,21 @@ exports.version = pkg.version
 
 exports.extensions = [
     '.js',
+    '.mjs',
+    '.cjs',
     '.jsx',
     '.ts',
+    '.mts',
+    '.cts',
     '.tsx',
     '.es6',
     '.es',
-    '.mjs',
-    '.ts',
     '.json'
 ]
 
 exports.alias = {
     '@': path.resolve(__dirname, '../src'),
-    postmessager: path.resolve(__dirname, './')
+    'node-wxcrypto': path.resolve(__dirname, './')
 }
 
 exports.jsexclude = /node_modules/
