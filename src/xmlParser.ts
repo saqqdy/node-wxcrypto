@@ -5,7 +5,7 @@ import {
     parseStringPromise
 } from 'xml2js'
 
-export const decrypt = (
+export const xmlDecrypt = (
     data: convertableToString,
     options: ParserOptions = {}
 ) => {
@@ -14,7 +14,7 @@ export const decrypt = (
     )
 }
 
-export const decryptSync = (
+export const xmlDecryptSync = (
     data: convertableToString,
     options: ParserOptions = {}
 ) => {
@@ -29,7 +29,7 @@ export const decryptSync = (
     )
 }
 
-export const encrypt = (
+export const xmlEncrypt = (
     encrypt: string,
     signature: string,
     timestamp: string | number,
@@ -51,7 +51,7 @@ export const encrypt = (
  * @param nonce
  * @returns {string}
  */
-export const encryptSync = (
+export const xmlEncryptSync = (
     encrypt: string,
     signature: string,
     timestamp: string | number,
@@ -64,8 +64,8 @@ export const encryptSync = (
 </xml>`
 
 export default {
-    decrypt,
-    decryptSync,
-    encrypt,
-    encryptSync
+    xmlDecrypt,
+    xmlDecryptSync,
+    xmlEncrypt,
+    xmlEncryptSync
 }
