@@ -1,5 +1,7 @@
+import { randomBytes } from 'crypto'
 import { decrypt } from './xmlParser'
-import { aes256Decrypt } from './aes256'
+import { aes256Decrypt, aes256Encrypt } from './aes256'
+import { PKCS7Decode, PKCS7Encode } from './pkcs7'
 import sha1 from './sha1'
 
 const debug = require('debug')('wxcrypto')
@@ -46,7 +48,7 @@ export type WeixinVerifyMessageXMLData = withXMLProp<
  * @example
  * ```
  * const WxCrypto = require('node-wxcrypto');
- * const wxCrypto = new WxCrypto(token, aesKey, appID);
+ * const wxCrypto = new WxCrypto(token, encodingAESKey, appID);
  *
  * var [err, encryptedXML] = wx.encrypt(xml, timestamp, nonce);
  *
@@ -116,52 +118,31 @@ export type WeixinVerifyMessageXMLData = withXMLProp<
 
 class WxCrypto {
     token: string
-    aesKey: string
+    key: Buffer
+    iv: Buffer
     appID: string
-    constructor(token: string, aesKey: string, appID: string) {
+    constructor(token: string, encodingAESKey: string, appID: string) {
+        if (!token || !encodingAESKey || !appID) {
+            throw new Error('please check arguments')
+        }
+        const AESKey = Buffer.from(encodingAESKey + '=', 'base64')
+        if (AESKey.length !== 32) {
+            throw new Error('encodingAESKey invalid')
+        }
         this.token = token
-        this.aesKey = aesKey
         this.appID = appID
+        this.key = AESKey
+        this.iv = AESKey.slice(0, 16)
         debug(
             'weixin crypto class initialize with token=',
             token,
-            'aesKey=',
-            aesKey,
+            'key=',
+            AESKey,
             'appID=',
-            appID
+            appID,
+            'iv=',
+            this.iv
         )
-    }
-
-    /**
-     * parse weixin xml
-     *
-     * @param xmlData - xml data, start with '<xml>'
-     * @returns obj - {}
-     */
-    parseWeixinXML(xmlData: string) {
-        if (
-            !xmlData ||
-            typeof xmlData !== 'string' ||
-            !xmlData.includes('<xml>')
-        )
-            return { xml: {} } as WeixinMessageXML
-
-        xmlData = xmlData.replace(/^<xml>|<\/xml>$/g, '')
-        const xml: Record<string, unknown> = {}
-        const matchXML = xmlData.match(/<([a-z0-9]+)>([\s\S]*?)<\/\1>/gi)
-
-        if (matchXML && matchXML.length > 0) {
-            matchXML.forEach(item => {
-                const match = item.match(/<([a-z0-9]+)>([\s\S]*?)<\/\1>/i)
-                const tagName: string = match?.[1] ?? ''
-                const cdata: string = (match?.[2] ?? '').replace(
-                    /^\s*<\!\[CDATA\[\s*|\s*\]\]>\s*$/g,
-                    ''
-                )
-                xml[tagName] = cdata
-            })
-        }
-        return { xml } as WeixinMessageXML
     }
 
     /**
@@ -183,90 +164,109 @@ class WxCrypto {
      * @param nonce - nonce
      * @returns xmData - xmData
      */
-    async decryptXML(
-        algorithm: string,
+    // async decryptXML(
+    //     algorithm: string,
+    //     timestamp: string | number,
+    //     nonce: string | number
+    // ) {
+    //     // if algorithm is xml string, parse it first
+    //     if (algorithm.includes('<xml>')) {
+    //         const xmlData = this.parseWeixinXML(algorithm)
+    //         algorithm = xmlData.xml.encrypt || ''
+    //     }
+    //     // unused
+    //     const signature = sha1(
+    //         this.token,
+    //         String(timestamp),
+    //         String(nonce),
+    //         algorithm
+    //     )
+    //     // console.info('signature: ', signature)
+    //     debug('signature', signature)
+
+    //     const message = aes256Decrypt(algorithm, this.key)
+    //     const data = await decrypt(
+    //         message.substring(20, message.lastIndexOf('>') + 1) as string
+    //     )
+
+    //     const nonceStr = message.substring(0, 16)
+    //     const len = message.substring(16, 20)
+    //     const corpID = message.substring(message.lastIndexOf('>') + 1)
+    //     debug(
+    //         'message: ',
+    //         message,
+    //         'nonceStr: ',
+    //         nonceStr,
+    //         'len: ',
+    //         len,
+    //         'corpID: ',
+    //         corpID
+    //     )
+    //     return data
+    // }
+
+    /**
+     * encrypt
+     * Base64Encode(AES256Encrypt[RandomString(16B) + ContentLength(4B) + Content + appID])
+     *
+     * @param data - xml data String, eg. <xml><AppId><![CDATA[xxxx]]></AppId>...</xml>
+     * @param timestamp - timestamp
+     * @param nonce - nonce
+     * @returns xmData - xmData
+     */
+    async encrypt(data: string) {
+        // 16B RandomString
+        const randomStr = randomBytes(16)
+        const content = Buffer.from(data)
+        const appID = Buffer.from(this.appID)
+        // Get the network byte order of the content length of 4B
+        const contentLength = Buffer.alloc(4)
+        contentLength.writeUInt32BE(content.length, 0)
+
+        const ciphered = aes256Encrypt(
+            [randomStr, contentLength, content, appID],
+            this.key,
+            this.iv
+        )
+
+        return ciphered.toString('base64')
+    }
+
+    /**
+     * decrypt
+     *
+     * @param data - encrypt string, eg. oVMc1Y6qP86YfAa.../QGgk503Q68Q==
+     * @param timestamp - timestamp
+     * @param nonce - nonce
+     * @returns xmData - xmData, eg. { data: <xml><AppId><![CDATA[xxxx]]></AppId>...</xml>, appID: 'xxxx' }
+     */
+    async decrypt(
+        data: string,
         timestamp: string | number,
         nonce: string | number
     ) {
-        // if algorithm is xml string, parse it first
-        if (algorithm.includes('<xml>')) {
-            const xmlData = this.parseWeixinXML(algorithm)
-            algorithm = xmlData.xml.encrypt || ''
-        }
         // unused
         const signature = sha1(
             this.token,
             String(timestamp),
             String(nonce),
-            algorithm
+            data
         )
         // console.info('signature: ', signature)
         debug('signature', signature)
 
-        const message = aes256Decrypt(algorithm, this.aesKey)
-        const data = await decrypt(
-            message.substring(20, message.lastIndexOf('>') + 1) as string
-        )
+        const deciphered = aes256Decrypt(data, this.key, this.iv)
+        // AES256Encrypt => [RandomString(16B) + ContentLength(4B) + Content + CorpID]
+        // Remove 16b random string
+        const content = deciphered.subarray(16)
+        const length = content.subarray(0, 4).readUInt32BE(0)
 
-        const nonceStr = message.substring(0, 16)
-        const len = message.substring(16, 20)
-        const corpID = message.substring(message.lastIndexOf('>') + 1)
-        debug(
-            'message: ',
-            message,
-            'nonceStr: ',
-            nonceStr,
-            'len: ',
-            len,
-            'corpID: ',
-            corpID
-        )
-        return data
+        return {
+            data: content.subarray(4, length + 4).toString(),
+            appID: content.subarray(length + 4).toString()
+        }
     }
 }
 
 // export { WxCrypto, WxCrypto as default }
 export default WxCrypto
-
-// 2022-11-16 14:14 +08:00: 100 {
-// 	signature: '4ee44e543f2689914139e58d2d239dddecf20f6e',
-// 	timestamp: '1668579255',
-// 	nonce: '912143275',
-// 	encrypt_type: 'aes',
-// 	msg_signature: 'bcc192f48436dd28a9a062379da0277bc7bf4076'
-//   }
-//   2022-11-16 14:14 +08:00: 101 {
-// 	xml: {
-// 	  appid: [ 'wx6de76e42b72881fb' ],
-// 	  encrypt: [
-// 		'dHK8NA/TErO5zSAKgyagSEDZ5EyG91ysSBrsEvBjsMLdvV2gnueTeFImofeCrQIeex2aopLLq9CdG5XkZl0ucuIgWKpEqKlyfc4r6+HGWgkZ0AXO62Ft53fYaJTj+ToyQNWWVAlFKktTMvJ7QzkrPC8WS3KgxllmyoaG6EnozXWSc1G07qQFhziNJqUDtPp/7Icnp+wKP8eIKCPlkVRVRaqdirzYaXsqyZkIlBwDOcRcEkL07vrqw3eWDA7tZmDvg/wr9u7+yuuqXHxW5HumfglS5tFFwc9jTtzxcSg5TfQmZ54VqUdxDPpG1cbm3qqHgP7IfMCd7tK7wXsBHUMCehkDxjcS2XsYOptyHQX3P/qwVUEJSln1/AM2sbCJhePxuvAItksmTBMtv2uMbCw5iPScDc3ynxJkCME5SKQrnv1NykQbc6OD/ZxOn3C1iGmThmfhtY4s+Zc6I01pN9zVww=='
-// 	  ]
-// 	}
-//  }
-
-// const { signature, timestamp, nonce, encrypt_type, msg_signature } = {
-//     signature: '4ee44e543f2689914139e58d2d239dddecf20f6e',
-//     timestamp: '1668579255',
-//     nonce: '912143275',
-//     encrypt_type: 'aes',
-//     msg_signature: 'bcc192f48436dd28a9a062379da0277bc7bf4076'
-// }
-// const appID = 'wx6de76e42b72881fb'
-// const encrypt =
-//     'dHK8NA/TErO5zSAKgyagSEDZ5EyG91ysSBrsEvBjsMLdvV2gnueTeFImofeCrQIeex2aopLLq9CdG5XkZl0ucuIgWKpEqKlyfc4r6+HGWgkZ0AXO62Ft53fYaJTj+ToyQNWWVAlFKktTMvJ7QzkrPC8WS3KgxllmyoaG6EnozXWSc1G07qQFhziNJqUDtPp/7Icnp+wKP8eIKCPlkVRVRaqdirzYaXsqyZkIlBwDOcRcEkL07vrqw3eWDA7tZmDvg/wr9u7+yuuqXHxW5HumfglS5tFFwc9jTtzxcSg5TfQmZ54VqUdxDPpG1cbm3qqHgP7IfMCd7tK7wXsBHUMCehkDxjcS2XsYOptyHQX3P/qwVUEJSln1/AM2sbCJhePxuvAItksmTBMtv2uMbCw5iPScDc3ynxJkCME5SKQrnv1NykQbc6OD/ZxOn3C1iGmThmfhtY4s+Zc6I01pN9zVww=='
-
-// const token = 'wojiacloud'
-// const aesKey = 'tjF4SjtKKpw66fwNHFKZKzzfrzzTeaQ8EJmzGjAPsin'
-
-/**
- * 解密
- * @param encrypt
- * @param aesKey
- * @param appID
- */
-// function decryptXML(encrypt, aesKey, appID) {}
-
-// const signature = sha1(token, timestamp, nonce, encrypt)
-// const data = decryptXML(encrypt, aesKey, appID)
-
-// console.log(90, signature, data, 90)
