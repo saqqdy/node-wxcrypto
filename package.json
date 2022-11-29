@@ -46,6 +46,7 @@
         "chalk": "^5.1.2",
         "consola": "^2.15.3",
         "core-js": "^3.26.0",
+        "debug": "^4.3.4",
         "fs-extra": "^10.1.0",
         "js-cool": "^2.5.0",
         "ora": "^6.1.2",
@@ -71,7 +72,6 @@
         "babel-loader": "^9.1.0",
         "coveralls": "^3.1.1",
         "cross-env": "^7.0.3",
-        "debug": "^4.3.4",
         "esbuild": "^0.15.13",
         "eslint": "^8.27.0",
         "jest": "^29.2.2",
@@ -91,7 +91,8 @@
     "peerDependencies": {
         "core-js": ">= 3",
         "js-cool": ">= 2",
-        "xml2js": ">= 0.4"
+        "xml2js": ">= 0.4",
+        "debug": ">= 4"
     },
     "keywords": [
         "wx-decrypt",
