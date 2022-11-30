@@ -1,3 +1,5 @@
+const debug = require('debug')('wxcrypto:convert')
+
 export type Encoding =
     | 'ascii'
     | 'utf8'
@@ -17,6 +19,9 @@ const convert = (
     data: string,
     desEncoding: Encoding = 'base64',
     srcEncoding: Encoding = 'binary'
-): string => Buffer.from(data, srcEncoding).toString(desEncoding)
+): string => {
+    debug('convert: ', Buffer.from(data, srcEncoding).toString(desEncoding))
+    return Buffer.from(data, srcEncoding).toString(desEncoding)
+}
 
 export { convert, convert as default }

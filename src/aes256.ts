@@ -7,6 +7,8 @@ import {
 } from 'crypto'
 import { PKCS7Decode, PKCS7Encode } from './pkcs7'
 
+const debug = require('debug')('wxcrypto:aes256')
+
 /**
  * aes256 encrypt function
  *
@@ -22,8 +24,8 @@ export const aes256Encrypt = (
     algorithm: Buffer[],
     key: Buffer,
     iv: Buffer,
-    inputEncoding = undefined,
-    outputEncoding: Encoding = 'base64',
+    inputEncoding: Encoding | undefined = undefined,
+    outputEncoding: Encoding | undefined = undefined,
     options?: CipherGCMOptions
 ): Buffer => {
     // Create encrypted object, AES adopts CBC mode, data is filled with PKCS7; IV initial vector size is 16 bytes, take the first 16 bytes of AESKey
@@ -33,12 +35,17 @@ export const aes256Encrypt = (
     // Complementary operation on plaintext
     const ciphered = PKCS7Encode(Buffer.concat(algorithm))
 
+    debug(
+        'aes256Encrypt: ',
+        algorithm,
+        key,
+        iv,
+        inputEncoding,
+        outputEncoding,
+        options
+    )
     return Buffer.concat([
-        cipher.update(
-            ciphered,
-            inputEncoding,
-            outputEncoding
-        ) as unknown as Uint8Array,
+        cipher.update(ciphered) as unknown as Uint8Array,
         cipher.final()
     ])
 }
@@ -58,24 +65,24 @@ export const aes256Decrypt = (
     key: Buffer,
     iv: Buffer,
     inputEncoding: Encoding = 'base64',
-    outputEncoding: Encoding = 'utf8',
+    outputEncoding: Encoding | undefined = undefined,
     options?: CipherCCMOptions
 ): Buffer => {
     const decipher = createDecipheriv('aes-256-cbc', key, iv, options)
     decipher.setAutoPadding(false) // 是否取消自动填充 不取消
-    // return `${decipher.update(
-    //     algorithm,
-    //     inputEncoding,
-    //     outputEncoding
-    // )}${decipher.final(outputEncoding)}`
+    debug(
+        'aes256Decrypt: ',
+        algorithm,
+        key,
+        iv,
+        inputEncoding,
+        outputEncoding,
+        options
+    )
     return PKCS7Decode(
         Buffer.concat([
-            decipher.update(
-                algorithm,
-                inputEncoding,
-                outputEncoding
-            ) as unknown as Uint8Array,
-            decipher.final(outputEncoding) as unknown as Uint8Array
+            decipher.update(algorithm, inputEncoding) as unknown as Uint8Array,
+            decipher.final() as unknown as Uint8Array
         ])
     )
 }

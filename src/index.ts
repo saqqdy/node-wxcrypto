@@ -1,5 +1,5 @@
 import { randomBytes } from 'crypto'
-import { xmlDecrypt, xmlEncrypt } from './xmlParser'
+import { buildXML, parseXML } from './xml'
 import { aes256Decrypt, aes256Encrypt } from './aes256'
 import sha1 from './sha1'
 
@@ -84,50 +84,17 @@ class WxCrypto {
     }
 
     /**
-     * encrypt xml
-     *
-     * @param replyMsg
-     * @param timestamp
-     * @param nonce
-     */
-    async encryptXML(
-        encrypt: string,
-        signature: string,
-        timestamp: string | number,
-        nonce: string | number
-    ) {
-        const xml = await xmlEncrypt(encrypt, signature, timestamp, nonce)
-        return xml
-    }
-
-    /**
-     * decrypt XML string & return object
-     *
-     * @param data - xml data， eg. <xml><appid><![CDATA[xxxx]]></appid><encrypt>xxxx</encrypt></xml>
-     * @returns xmData - xmData, eg. { encrypt: 'xxxx', appid: 'xxxx' }
-     */
-    async decryptXML(data: string) {
-        // if data is xml string, parse it first
-        if (!data.includes('<xml>')) {
-            throw new Error('xml data invalid')
-        }
-
-        const xml = await xmlDecrypt(data)
-        debug('decryptXML: ', xml)
-        return xml as WeixinMessageXML['xml']
-    }
-
-    /**
      * encrypt
      * Base64Encode(AES256Encrypt[RandomString(16B) + ContentLength(4B) + Content + appID])
      *
-     * @param data - xml data String, eg. <xml><AppId><![CDATA[xxxx]]></AppId>...<ComponentVerifyTicket>ticket@@@xxxx</ComponentVerifyTicket></xml>
+     * @param data - xml data String, eg. { ComponentVerifyTicket: 'xxxx', ..., AppId: 'xxxx' }
      * @returns encrypt - encrypt string, eg. oVMc1Y6qP86YfAa.../QGgk503Q68Q==
      */
-    async encrypt(data: string) {
+    async encrypt(data: Record<string, unknown>) {
+        const xmlString = await buildXML(data)
         // 16B RandomString
         const randomStr = randomBytes(16)
-        const content = Buffer.from(data)
+        const content = Buffer.from(xmlString)
         const appID = Buffer.from(this.appID)
         // Get the network byte order of the content length of 4B
         const contentLength = Buffer.alloc(4)
@@ -149,19 +116,13 @@ class WxCrypto {
      * @param data - encrypt string, eg. oVMc1Y6qP86YfAa.../QGgk503Q68Q==
      * @param timestamp - timestamp
      * @param nonce - nonce
-     * @returns xmData - xmData, eg. { data: <xml><AppId><![CDATA[xxxx]]></AppId>...<ComponentVerifyTicket>ticket@@@xxxx</ComponentVerifyTicket></xml>, appID: 'xxxx' }
+     * @returns xml - xmData, eg. { ComponentVerifyTicket: 'xxxx', ..., AppId: 'xxxx' }
      */
     async decrypt(
         data: string,
         timestamp: string | number,
         nonce: string | number
     ) {
-        // if data is xml string, parse it first
-        if (data.includes('<xml>')) {
-            const xmlData = await this.decryptXML(data)
-            data = xmlData.encrypt || ''
-        }
-
         // unused
         const signature = sha1(
             this.token,
@@ -178,16 +139,24 @@ class WxCrypto {
         const content = deciphered.subarray(16)
         const length = content.subarray(0, 4).readUInt32BE(0)
 
-        debug('decrypt:', {
-            data: content.subarray(4, length + 4).toString(),
-            appID: content.subarray(length + 4).toString()
-        })
-        return {
-            data: content.subarray(4, length + 4).toString(),
-            appID: content.subarray(length + 4).toString()
-        }
+        const decryptedXML = content.subarray(4, length + 4).toString()
+        const decryptedAppID = content.subarray(length + 4).toString()
+        // parsing xml
+        const xml = parseXML(decryptedXML)
+
+        debug('decrypt:xml', xml)
+        debug('decrypt:appID', decryptedAppID)
+        return xml
     }
 }
 
-// export { WxCrypto, WxCrypto as default }
-export default WxCrypto
+export {
+    aes256Decrypt,
+    aes256Encrypt,
+    sha1,
+    buildXML,
+    parseXML,
+    WxCrypto,
+    WxCrypto as default
+}
+// export default WxCrypto
