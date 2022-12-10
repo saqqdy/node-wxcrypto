@@ -1,7 +1,7 @@
 {
     "name": "node-wxcrypto",
     "description": "微信消息加解密nodejs版本",
-    "version": "1.0.0-alpha.7",
+    "version": "1.0.0-beta.0",
     "packageManager": "pnpm@7.17.0",
     "main": "lib/index.cjs",
     "module": "lib/index.mjs",
