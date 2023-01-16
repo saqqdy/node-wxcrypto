@@ -99,7 +99,7 @@ Please open an issue [here](https://github.com/saqqdy/node-wxcrypto/issues).
 [travis-url]: https://travis-ci.com/saqqdy/node-wxcrypto
 [codecov-image]: https://img.shields.io/codecov/c/github/saqqdy/node-wxcrypto.svg?style=flat-square
 [codecov-url]: https://codecov.io/github/saqqdy/node-wxcrypto?branch=master
-[license-image]: https://img.shields.io/badge/License-MIT-yellow.svg
+[license-image]: https://img.shields.io/badge/License-MIT-blue.svg
 [license-url]: LICENSE
 [sonar-image]: https://sonarcloud.io/api/project_badges/quality_gate?project=saqqdy_node-wxcrypto
 [sonar-url]: https://sonarcloud.io/dashboard?id=saqqdy_node-wxcrypto
