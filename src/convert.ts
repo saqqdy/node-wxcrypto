@@ -6,7 +6,7 @@ export type Encoding = 'ascii' | 'utf8' | 'utf16le' | 'ucs2' | 'latin1' | 'base6
  * Buffer convert
  *
  * @params args - 参数
- * @returns str - 返回加密后的字符串
+ * @returns result - 返回加密后的字符串
  */
 const convert = (
 	data: string,
