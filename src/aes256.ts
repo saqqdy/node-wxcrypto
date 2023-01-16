@@ -28,8 +28,8 @@ export const aes256Encrypt = (
 	outputEncoding: Encoding | undefined = undefined,
 	options?: CipherGCMOptions
 ): Buffer => {
-	// Create encrypted object, AES adopts CBC mode, data is filled with PKCS7; IV initial vector size is 16 bytes, take the first 16 bytes of AESKey
-	const cipher = createCipheriv('aes-256-cbc', key, iv, options)
+	// Create encrypted object, AES adopts GCM mode, data is filled with PKCS7; IV initial vector size is 16 bytes, take the first 16 bytes of AESKey
+	const cipher = createCipheriv('AES-256-GCM', key, iv, options)
 	cipher.setAutoPadding(false)
 
 	// Complementary operation on plaintext
@@ -57,7 +57,7 @@ export const aes256Decrypt = (
 	outputEncoding: Encoding | undefined = undefined,
 	options?: CipherCCMOptions
 ): Buffer => {
-	const decipher = createDecipheriv('aes-256-cbc', key, iv, options)
+	const decipher = createDecipheriv('AES-256-GCM', key, iv, options)
 	decipher.setAutoPadding(false) // 是否取消自动填充 不取消
 	debug('aes256Decrypt: ', algorithm, key, iv, inputEncoding, outputEncoding, options)
 	return PKCS7Decode(
