@@ -1,3 +1,5 @@
+index.md - v1.0.0 / [Exports](modules.md)
+
 <div style="text-align: center;" align="center">
 
 # node-wxcrypto

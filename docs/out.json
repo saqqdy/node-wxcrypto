@@ -1,0 +1,1975 @@
+{
+	"id": 0,
+	"name": "index.md - v1.0.0",
+	"kind": 1,
+	"kindString": "Project",
+	"flags": {},
+	"originalName": "index.md",
+	"children": [
+		{
+			"id": 41,
+			"name": "default",
+			"kind": 8388608,
+			"kindString": "Reference",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/index.ts",
+					"line": 152,
+					"character": 13,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L152"
+				}
+			],
+			"target": 23
+		},
+		{
+			"id": 23,
+			"name": "WxCrypto",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "微信消息加解密nodejs版本"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@example",
+						"content": [
+							{
+								"kind": "code",
+								"text": "```\nconst WxCrypto = require('node-wxcrypto');\nconst wxCrypto = new WxCrypto(token, encodingAESKey, appID);\n\nvar [err, encryptedXML] = wx.encrypt(xml, timestamp, nonce);\n\nvar [err, decryptedXML] = wx.decrypt(signature, timestamp, nonce, encrypted);\n```"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 24,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 62,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L62"
+						}
+					],
+					"signatures": [
+						{
+							"id": 25,
+							"name": "new WxCrypto",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 26,
+									"name": "token",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 27,
+									"name": "encodingAESKey",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 28,
+									"name": "appID",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 23,
+								"name": "WxCrypto"
+							}
+						}
+					]
+				},
+				{
+					"id": 32,
+					"name": "appID",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 61,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L61"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 31,
+					"name": "iv",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 60,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L60"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Buffer",
+						"qualifiedName": "global.Buffer",
+						"package": "@types/node"
+					}
+				},
+				{
+					"id": 30,
+					"name": "key",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 59,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L59"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Buffer",
+						"qualifiedName": "global.Buffer",
+						"package": "@types/node"
+					}
+				},
+				{
+					"id": 29,
+					"name": "token",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 58,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L58"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 36,
+					"name": "decrypt",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 121,
+							"character": 7,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L121"
+						}
+					],
+					"signatures": [
+						{
+							"id": 37,
+							"name": "decrypt",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "decrypt"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "xml - xmData, eg. { ComponentVerifyTicket: 'xxxx', ..., AppId: 'xxxx' }"
+											}
+										]
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 38,
+									"name": "data",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "encrypt string, eg. oVMc1Y6qP86YfAa.../QGgk503Q68Q=="
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 39,
+									"name": "timestamp",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "timestamp"
+											}
+										]
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											},
+											{
+												"type": "intrinsic",
+												"name": "number"
+											}
+										]
+									}
+								},
+								{
+									"id": 40,
+									"name": "nonce",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "nonce"
+											}
+										]
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											},
+											{
+												"type": "intrinsic",
+												"name": "number"
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "any"
+									}
+								],
+								"name": "Promise",
+								"qualifiedName": "Promise",
+								"package": "typescript"
+							}
+						}
+					]
+				},
+				{
+					"id": 33,
+					"name": "encrypt",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 93,
+							"character": 7,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L93"
+						}
+					],
+					"signatures": [
+						{
+							"id": 34,
+							"name": "encrypt",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "encrypt\nBase64Encode(AES256Encrypt[RandomString(16B) + ContentLength(4B) + Content + appID])"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "encrypt - encrypt string, eg. oVMc1Y6qP86YfAa.../QGgk503Q68Q=="
+											}
+										]
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 35,
+									"name": "data",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "xml data String, eg. { ComponentVerifyTicket: 'xxxx', ..., AppId: 'xxxx' }"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											},
+											{
+												"type": "intrinsic",
+												"name": "unknown"
+											}
+										],
+										"name": "Record",
+										"qualifiedName": "Record",
+										"package": "typescript"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								],
+								"name": "Promise",
+								"qualifiedName": "Promise",
+								"package": "typescript"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"children": [
+						24
+					]
+				},
+				{
+					"title": "Properties",
+					"children": [
+						32,
+						31,
+						30,
+						29
+					]
+				},
+				{
+					"title": "Methods",
+					"children": [
+						36,
+						33
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.ts",
+					"line": 57,
+					"character": 6,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L57"
+				}
+			]
+		},
+		{
+			"id": 42,
+			"name": "BuildXMLOptions",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 51,
+					"name": "allowSurrogateChars",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/@types+xml2js@0.4.11/node_modules/@types/xml2js/index.d.ts",
+							"line": 90,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "BuilderOptions.allowSurrogateChars"
+					}
+				},
+				{
+					"id": 46,
+					"name": "attrkey",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/@types+xml2js@0.4.11/node_modules/@types/xml2js/index.d.ts",
+							"line": 83,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "BuilderOptions.attrkey"
+					}
+				},
+				{
+					"id": 43,
+					"name": "cdata",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/xml.ts",
+							"line": 13,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/xml.ts#L13"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"overwrites": {
+						"type": "reference",
+						"name": "BuilderOptions.cdata"
+					}
+				},
+				{
+					"id": 47,
+					"name": "charkey",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/@types+xml2js@0.4.11/node_modules/@types/xml2js/index.d.ts",
+							"line": 84,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "BuilderOptions.charkey"
+					}
+				},
+				{
+					"id": 50,
+					"name": "doctype",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/@types+xml2js@0.4.11/node_modules/@types/xml2js/index.d.ts",
+							"line": 88,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "BuilderOptions.doctype"
+					}
+				},
+				{
+					"id": 44,
+					"name": "headless",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/xml.ts",
+							"line": 14,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/xml.ts#L14"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"overwrites": {
+						"type": "reference",
+						"name": "BuilderOptions.headless"
+					}
+				},
+				{
+					"id": 48,
+					"name": "renderOpts",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/@types+xml2js@0.4.11/node_modules/@types/xml2js/index.d.ts",
+							"line": 86,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "RenderOptions",
+						"qualifiedName": "RenderOptions",
+						"package": "@types/xml2js"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "BuilderOptions.renderOpts"
+					}
+				},
+				{
+					"id": 45,
+					"name": "rootName",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/xml.ts",
+							"line": 15,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/xml.ts#L15"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"overwrites": {
+						"type": "reference",
+						"name": "BuilderOptions.rootName"
+					}
+				},
+				{
+					"id": 49,
+					"name": "xmldec",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/@types+xml2js@0.4.11/node_modules/@types/xml2js/index.d.ts",
+							"line": 87,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "XmlDeclarationAttributes",
+						"qualifiedName": "XmlDeclarationAttributes",
+						"package": "@types/xml2js"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "BuilderOptions.xmldec"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						51,
+						46,
+						43,
+						47,
+						50,
+						44,
+						48,
+						45,
+						49
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/xml.ts",
+					"line": 12,
+					"character": 17,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/xml.ts#L12"
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"name": "BuilderOptions",
+					"qualifiedName": "BuilderOptions",
+					"package": "@types/xml2js"
+				}
+			]
+		},
+		{
+			"id": 15,
+			"name": "WeixinMessageData",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 16,
+					"name": "AppId",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 31,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L31"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 17,
+					"name": "CreateTime",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 32,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L32"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 18,
+					"name": "InfoType",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 33,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L33"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.ts",
+					"line": 30,
+					"character": 17,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L30"
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"typeArguments": [
+						{
+							"type": "intrinsic",
+							"name": "string"
+						},
+						{
+							"type": "intrinsic",
+							"name": "unknown"
+						}
+					],
+					"name": "Record",
+					"qualifiedName": "Record",
+					"package": "typescript"
+				}
+			]
+		},
+		{
+			"id": 4,
+			"name": "WeixinVerifyData",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 5,
+					"name": "xml",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 13,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L13"
+						}
+					],
+					"type": {
+						"type": "intersection",
+						"types": [
+							{
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								],
+								"name": "Record",
+								"qualifiedName": "Record",
+								"package": "typescript"
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 6,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {},
+									"children": [
+										{
+											"id": 7,
+											"name": "AppId",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/index.ts",
+													"line": 14,
+													"character": 2,
+													"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L14"
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 10,
+											"name": "ComponentVerifyTicket",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {
+												"isOptional": true
+											},
+											"sources": [
+												{
+													"fileName": "src/index.ts",
+													"line": 17,
+													"character": 2,
+													"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L17"
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 8,
+											"name": "CreateTime",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/index.ts",
+													"line": 15,
+													"character": 2,
+													"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L15"
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 9,
+											"name": "InfoType",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/index.ts",
+													"line": 16,
+													"character": 2,
+													"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L16"
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												7,
+												10,
+												8,
+												9
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "src/index.ts",
+											"line": 13,
+											"character": 32,
+											"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L13"
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						5
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.ts",
+					"line": 12,
+					"character": 17,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L12"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "withXMLProp",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 2,
+					"name": "xml",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 9,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L9"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 3,
+						"name": "T"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						2
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.ts",
+					"line": 8,
+					"character": 17,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L8"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 3,
+					"name": "T",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {}
+				}
+			]
+		},
+		{
+			"id": 11,
+			"name": "WeixinMessageXML",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/index.ts",
+					"line": 22,
+					"character": 12,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L22"
+				}
+			],
+			"type": {
+				"type": "reference",
+				"id": 1,
+				"typeArguments": [
+					{
+						"type": "intersection",
+						"types": [
+							{
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								],
+								"name": "Record",
+								"qualifiedName": "Record",
+								"package": "typescript"
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 12,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {},
+									"children": [
+										{
+											"id": 14,
+											"name": "appid",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/index.ts",
+													"line": 25,
+													"character": 2,
+													"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L25"
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 13,
+											"name": "encrypt",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/index.ts",
+													"line": 24,
+													"character": 2,
+													"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L24"
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												14,
+												13
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "src/index.ts",
+											"line": 23,
+											"character": 27,
+											"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L23"
+										}
+									]
+								}
+							}
+						]
+					}
+				],
+				"name": "withXMLProp"
+			}
+		},
+		{
+			"id": 19,
+			"name": "WeixinVerifyMessageXMLData",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/index.ts",
+					"line": 37,
+					"character": 12,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L37"
+				}
+			],
+			"type": {
+				"type": "reference",
+				"id": 1,
+				"typeArguments": [
+					{
+						"type": "intersection",
+						"types": [
+							{
+								"type": "reference",
+								"id": 15,
+								"name": "WeixinMessageData"
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 20,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {},
+									"children": [
+										{
+											"id": 22,
+											"name": "ComponentVerifyTicket",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {
+												"isOptional": true
+											},
+											"sources": [
+												{
+													"fileName": "src/index.ts",
+													"line": 40,
+													"character": 2,
+													"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L40"
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 21,
+											"name": "InfoType",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/index.ts",
+													"line": 39,
+													"character": 2,
+													"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L39"
+												}
+											],
+											"type": {
+												"type": "literal",
+												"value": "component_verify_ticket"
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												22,
+												21
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "src/index.ts",
+											"line": 38,
+											"character": 21,
+											"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L38"
+										}
+									]
+								}
+							}
+						]
+					}
+				],
+				"name": "withXMLProp"
+			}
+		},
+		{
+			"id": 52,
+			"name": "aes256Decrypt",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/aes256.ts",
+					"line": 52,
+					"character": 13,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/aes256.ts#L52"
+				}
+			],
+			"signatures": [
+				{
+					"id": 53,
+					"name": "aes256Decrypt",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "aes256 decrypt function"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@params",
+								"content": [
+									{
+										"kind": "text",
+										"text": "algorithm - algorithm data"
+									}
+								]
+							},
+							{
+								"tag": "@params",
+								"content": [
+									{
+										"kind": "text",
+										"text": "encodingAESKey - encodingAESKey"
+									}
+								]
+							},
+							{
+								"tag": "@params",
+								"content": [
+									{
+										"kind": "text",
+										"text": "inputEncoding - The encoding of the data."
+									}
+								]
+							},
+							{
+								"tag": "@params",
+								"content": [
+									{
+										"kind": "text",
+										"text": "outputEncoding - The encoding of the return value."
+									}
+								]
+							},
+							{
+								"tag": "@params",
+								"content": [
+									{
+										"kind": "text",
+										"text": "options - stream.transform options"
+									}
+								]
+							},
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "str - return Buffer"
+									}
+								]
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 54,
+							"name": "algorithm",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 55,
+							"name": "key",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "Buffer",
+								"qualifiedName": "global.Buffer",
+								"package": "@types/node"
+							}
+						},
+						{
+							"id": 56,
+							"name": "iv",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "Buffer",
+								"qualifiedName": "global.Buffer",
+								"package": "@types/node"
+							}
+						},
+						{
+							"id": 57,
+							"name": "inputEncoding",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "Encoding",
+								"qualifiedName": "Encoding",
+								"package": "@types/node"
+							},
+							"defaultValue": "'base64'"
+						},
+						{
+							"id": 58,
+							"name": "outputEncoding",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "reference",
+										"name": "Encoding",
+										"qualifiedName": "Encoding",
+										"package": "@types/node"
+									}
+								]
+							},
+							"defaultValue": "undefined"
+						},
+						{
+							"id": 59,
+							"name": "options",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isOptional": true
+							},
+							"type": {
+								"type": "reference",
+								"name": "CipherCCMOptions",
+								"qualifiedName": "CipherCCMOptions",
+								"package": "@types/node"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Buffer",
+						"qualifiedName": "global.Buffer",
+						"package": "@types/node"
+					}
+				}
+			]
+		},
+		{
+			"id": 60,
+			"name": "aes256Encrypt",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/aes256.ts",
+					"line": 23,
+					"character": 13,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/aes256.ts#L23"
+				}
+			],
+			"signatures": [
+				{
+					"id": 61,
+					"name": "aes256Encrypt",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "aes256 encrypt function"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@params",
+								"content": [
+									{
+										"kind": "text",
+										"text": "algorithm - algorithm buffer data"
+									}
+								]
+							},
+							{
+								"tag": "@params",
+								"content": [
+									{
+										"kind": "text",
+										"text": "key - AESKey"
+									}
+								]
+							},
+							{
+								"tag": "@params",
+								"content": [
+									{
+										"kind": "text",
+										"text": "iv - iv"
+									}
+								]
+							},
+							{
+								"tag": "@params",
+								"content": [
+									{
+										"kind": "text",
+										"text": "inputEncoding - always undefined"
+									}
+								]
+							},
+							{
+								"tag": "@params",
+								"content": [
+									{
+										"kind": "text",
+										"text": "outputEncoding - The encoding of the return value."
+									}
+								]
+							},
+							{
+								"tag": "@params",
+								"content": [
+									{
+										"kind": "text",
+										"text": "options - stream.transform options"
+									}
+								]
+							},
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "str - return string"
+									}
+								]
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 62,
+							"name": "algorithm",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"name": "Buffer",
+									"qualifiedName": "global.Buffer",
+									"package": "@types/node"
+								}
+							}
+						},
+						{
+							"id": 63,
+							"name": "key",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "Buffer",
+								"qualifiedName": "global.Buffer",
+								"package": "@types/node"
+							}
+						},
+						{
+							"id": 64,
+							"name": "iv",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "Buffer",
+								"qualifiedName": "global.Buffer",
+								"package": "@types/node"
+							}
+						},
+						{
+							"id": 65,
+							"name": "inputEncoding",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "reference",
+										"name": "Encoding",
+										"qualifiedName": "Encoding",
+										"package": "@types/node"
+									}
+								]
+							},
+							"defaultValue": "undefined"
+						},
+						{
+							"id": 66,
+							"name": "outputEncoding",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "reference",
+										"name": "Encoding",
+										"qualifiedName": "Encoding",
+										"package": "@types/node"
+									}
+								]
+							},
+							"defaultValue": "undefined"
+						},
+						{
+							"id": 67,
+							"name": "options",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isOptional": true
+							},
+							"type": {
+								"type": "reference",
+								"name": "CipherGCMOptions",
+								"qualifiedName": "CipherGCMOptions",
+								"package": "@types/node"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Buffer",
+						"qualifiedName": "global.Buffer",
+						"package": "@types/node"
+					}
+				}
+			]
+		},
+		{
+			"id": 71,
+			"name": "buildXML",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/xml.ts",
+					"line": 60,
+					"character": 13,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/xml.ts#L60"
+				}
+			],
+			"signatures": [
+				{
+					"id": 72,
+					"name": "buildXML",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "build xml"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "result - xmlString"
+									}
+								]
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 73,
+							"name": "data",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "xml object"
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								],
+								"name": "Record",
+								"qualifiedName": "Record",
+								"package": "typescript"
+							}
+						},
+						{
+							"id": 74,
+							"name": "options",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "xml Builder options"
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"id": 42,
+								"name": "BuildXMLOptions"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						],
+						"name": "Promise",
+						"qualifiedName": "Promise",
+						"package": "typescript"
+					}
+				}
+			]
+		},
+		{
+			"id": 75,
+			"name": "parseXML",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/xml.ts",
+					"line": 25,
+					"character": 13,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/xml.ts#L25"
+				}
+			],
+			"signatures": [
+				{
+					"id": 76,
+					"name": "parseXML",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "parse xml promise"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "result - xml object"
+									}
+								]
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 77,
+							"name": "data",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "xmlString"
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"name": "convertableToString",
+								"qualifiedName": "convertableToString",
+								"package": "@types/xml2js"
+							}
+						},
+						{
+							"id": 78,
+							"name": "options",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "ParserOptions"
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"name": "ParserOptions",
+								"qualifiedName": "ParserOptions",
+								"package": "@types/xml2js"
+							},
+							"defaultValue": "{}"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "any"
+							}
+						],
+						"name": "Promise",
+						"qualifiedName": "Promise",
+						"package": "typescript"
+					}
+				}
+			]
+		},
+		{
+			"id": 68,
+			"name": "sha1",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/sha1.ts",
+					"line": 11,
+					"character": 6,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/sha1.ts#L11"
+				}
+			],
+			"signatures": [
+				{
+					"id": 69,
+					"name": "sha1",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "sha1摘要算法"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "str - 返回加密后的字符串"
+									}
+								]
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 70,
+							"name": "args",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isRest": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "参数"
+									}
+								]
+							},
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "string"
+								}
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "References",
+			"children": [
+				41
+			]
+		},
+		{
+			"title": "Classes",
+			"children": [
+				23
+			]
+		},
+		{
+			"title": "Interfaces",
+			"children": [
+				42,
+				15,
+				4,
+				1
+			]
+		},
+		{
+			"title": "Type Aliases",
+			"children": [
+				11,
+				19
+			]
+		},
+		{
+			"title": "Functions",
+			"children": [
+				52,
+				60,
+				71,
+				75,
+				68
+			]
+		}
+	],
+	"sources": [
+		{
+			"fileName": "src/index.ts",
+			"line": 1,
+			"character": 0,
+			"url": "https://github.com/saqqdy/node-wxcrypto/blob/570bce7/src/index.ts#L1"
+		}
+	]
+}

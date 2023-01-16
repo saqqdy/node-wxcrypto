@@ -1,22 +1,24 @@
 {
-    "cSpell.words": [
-        "Codacy",
-        "consola",
-        "convertable",
-        "esbuild",
-        "instanceof",
-        "lcov",
-        "node-wxcrypto",
-        "picocolors",
-        "pnpm",
-        "Retryable",
-        "saqqdy",
-        "tscjs",
-        "tsnd",
-        "typedoc",
-        "unpub",
-        "unpublish",
-        "weixin",
-        "wxcrypto"
-    ]
+	"cSpell.words": [
+		"Codacy",
+		"consola",
+		"convertable",
+		"corejs",
+		"esbuild",
+		"filesize",
+		"instanceof",
+		"lcov",
+		"node-wxcrypto",
+		"picocolors",
+		"pnpm",
+		"Retryable",
+		"saqqdy",
+		"tscjs",
+		"tsnd",
+		"typedoc",
+		"unpub",
+		"unpublish",
+		"weixin",
+		"wxcrypto"
+	]
 }
