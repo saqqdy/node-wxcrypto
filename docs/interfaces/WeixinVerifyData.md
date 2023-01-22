@@ -1,4 +1,4 @@
-[index.md - v1.1.0](../README.md) / [Exports](../modules.md) / WeixinVerifyData
+[index.md - v1.1.1](../README.md) / [Exports](../modules.md) / WeixinVerifyData
 
 # Interface: WeixinVerifyData
 
@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[src/index.ts:13](https://github.com/saqqdy/node-wxcrypto/blob/5cecde6/src/index.ts#L13)
+[src/index.ts:13](https://github.com/saqqdy/node-wxcrypto/blob/c12bf27/src/index.ts#L13)

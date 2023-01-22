@@ -11,6 +11,7 @@
 		"node-wxcrypto",
 		"picocolors",
 		"pnpm",
+		"reinstaller",
 		"Retryable",
 		"saqqdy",
 		"tscjs",

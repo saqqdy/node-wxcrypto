@@ -1,5 +1,10 @@
 # 更新日志
 
+## 2023.01.22 v1.1.1 更新日志
+
+1. 开始使用 `reinstaller` 管理安装包：[reinstaller](https://github.com/saqqdy/reinstaller)
+2. 升级安装包
+
 ## 2023.01.17 v1.1.0 更新日志
 
 1. 提升加密安全：`AES-256-CBC => AES-256-GCM`
