@@ -1,6 +1,6 @@
-[index.md - v1.2.0](README.md) / Exports
+[index.md - v1.2.1](README.md) / Exports
 
-# index.md - v1.2.0
+# index.md - v1.2.1
 
 ## Table of contents
 
@@ -42,21 +42,21 @@ Renames and re-exports [WxCrypto](classes/WxCrypto.md)
 
 ### WeixinMessageXML
 
-Ƭ **WeixinMessageXML**: [`withXMLProp`](interfaces/withXMLProp.md)<`Record`<`string`, `unknown`\> & { `appid`: `string` ; `encrypt`: `string` }\>
+Ƭ **WeixinMessageXML**: [`withXMLProp`](interfaces/withXMLProp.md)<`Record`<`string`, `unknown`\> & { `appid`: `string` ; `encrypt`: `string`  }\>
 
 #### Defined in
 
-[src/index.ts:22](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/index.ts#L22)
+[src/index.ts:22](https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L22)
 
----
+___
 
 ### WeixinVerifyMessageXMLData
 
-Ƭ **WeixinVerifyMessageXMLData**: [`withXMLProp`](interfaces/withXMLProp.md)<[`WeixinMessageData`](interfaces/WeixinMessageData.md) & { `ComponentVerifyTicket?`: `string` ; `InfoType`: `"component_verify_ticket"` }\>
+Ƭ **WeixinVerifyMessageXMLData**: [`withXMLProp`](interfaces/withXMLProp.md)<[`WeixinMessageData`](interfaces/WeixinMessageData.md) & { `ComponentVerifyTicket?`: `string` ; `InfoType`: ``"component_verify_ticket"``  }\>
 
 #### Defined in
 
-[src/index.ts:37](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/index.ts#L37)
+[src/index.ts:37](https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L37)
 
 ## Functions
 
@@ -88,14 +88,14 @@ options - stream.transform options
 
 #### Parameters
 
-| Name             | Type                      | Default value |
-| :--------------- | :------------------------ | :------------ |
-| `algorithm`      | `string`                  | `undefined`   |
-| `key`            | `Buffer`                  | `undefined`   |
-| `iv`             | `Buffer`                  | `undefined`   |
-| `inputEncoding`  | `Encoding`                | `'base64'`    |
-| `outputEncoding` | `undefined` \| `Encoding` | `undefined`   |
-| `options?`       | `CipherCCMOptions`        | `undefined`   |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `algorithm` | `string` | `undefined` |
+| `key` | `Buffer` | `undefined` |
+| `iv` | `Buffer` | `undefined` |
+| `inputEncoding` | `Encoding` | `'base64'` |
+| `outputEncoding` | `undefined` \| `Encoding` | `undefined` |
+| `options?` | `CipherCCMOptions` | `undefined` |
 
 #### Returns
 
@@ -105,9 +105,9 @@ str - return Buffer
 
 #### Defined in
 
-[src/aes256.ts:52](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/aes256.ts#L52)
+[src/aes256.ts:52](https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/aes256.ts#L52)
 
----
+___
 
 ### aes256Encrypt
 
@@ -141,14 +141,14 @@ options - stream.transform options
 
 #### Parameters
 
-| Name             | Type                      | Default value |
-| :--------------- | :------------------------ | :------------ |
-| `algorithm`      | `Buffer`[]                | `undefined`   |
-| `key`            | `Buffer`                  | `undefined`   |
-| `iv`             | `Buffer`                  | `undefined`   |
-| `inputEncoding`  | `undefined` \| `Encoding` | `undefined`   |
-| `outputEncoding` | `undefined` \| `Encoding` | `undefined`   |
-| `options?`       | `CipherGCMOptions`        | `undefined`   |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `algorithm` | `Buffer`[] | `undefined` |
+| `key` | `Buffer` | `undefined` |
+| `iv` | `Buffer` | `undefined` |
+| `inputEncoding` | `undefined` \| `Encoding` | `undefined` |
+| `outputEncoding` | `undefined` \| `Encoding` | `undefined` |
+| `options?` | `CipherGCMOptions` | `undefined` |
 
 #### Returns
 
@@ -158,9 +158,9 @@ str - return string
 
 #### Defined in
 
-[src/aes256.ts:23](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/aes256.ts#L23)
+[src/aes256.ts:23](https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/aes256.ts#L23)
 
----
+___
 
 ### buildXML
 
@@ -170,9 +170,9 @@ build xml
 
 #### Parameters
 
-| Name       | Type                                               | Description         |
-| :--------- | :------------------------------------------------- | :------------------ |
-| `data`     | `Record`<`string`, `unknown`\>                     | xml object          |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `data` | `Record`<`string`, `unknown`\> | xml object |
 | `options?` | [`BuildXMLOptions`](interfaces/BuildXMLOptions.md) | xml Builder options |
 
 #### Returns
@@ -183,9 +183,9 @@ result - xmlString
 
 #### Defined in
 
-[src/xml.ts:60](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/xml.ts#L60)
+[src/xml.ts:60](https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/xml.ts#L60)
 
----
+___
 
 ### parseXML
 
@@ -195,10 +195,10 @@ parse xml promise
 
 #### Parameters
 
-| Name      | Type                  | Description   |
-| :-------- | :-------------------- | :------------ |
-| `data`    | `convertableToString` | xmlString     |
-| `options` | `ParserOptions`       | ParserOptions |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `data` | `convertableToString` | xmlString |
+| `options` | `ParserOptions` | ParserOptions |
 
 #### Returns
 
@@ -208,21 +208,21 @@ result - xml object
 
 #### Defined in
 
-[src/xml.ts:25](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/xml.ts#L25)
+[src/xml.ts:25](https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/xml.ts#L25)
 
----
+___
 
 ### sha1
 
 ▸ **sha1**(`...args`): `string`
 
-sha1 摘要算法
+sha1摘要算法
 
 #### Parameters
 
-| Name      | Type       | Description |
-| :-------- | :--------- | :---------- |
-| `...args` | `string`[] | 参数        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `...args` | `string`[] | 参数 |
 
 #### Returns
 
@@ -232,4 +232,4 @@ str - 返回加密后的字符串
 
 #### Defined in
 
-[src/sha1.ts:11](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/sha1.ts#L11)
+[src/sha1.ts:11](https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/sha1.ts#L11)

@@ -1,8 +1,8 @@
-[index.md - v1.2.0](../README.md) / [Exports](../modules.md) / WxCrypto
+[index.md - v1.2.1](../README.md) / [Exports](../modules.md) / WxCrypto
 
 # Class: WxCrypto
 
-微信消息加解密 nodejs 版本
+微信消息加解密nodejs版本
 
 **`Example`**
 
@@ -41,15 +41,15 @@ var [err, decryptedXML] = wx.decrypt(signature, timestamp, nonce, encrypted);
 
 #### Parameters
 
-| Name             | Type     |
-| :--------------- | :------- |
-| `token`          | `string` |
+| Name | Type |
+| :------ | :------ |
+| `token` | `string` |
 | `encodingAESKey` | `string` |
-| `appID`          | `string` |
+| `appID` | `string` |
 
 #### Defined in
 
-[src/index.ts:62](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/index.ts#L62)
+[src/index.ts:62](https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L62)
 
 ## Properties
 
@@ -59,9 +59,9 @@ var [err, decryptedXML] = wx.decrypt(signature, timestamp, nonce, encrypted);
 
 #### Defined in
 
-[src/index.ts:61](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/index.ts#L61)
+[src/index.ts:61](https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L61)
 
----
+___
 
 ### iv
 
@@ -69,9 +69,9 @@ var [err, decryptedXML] = wx.decrypt(signature, timestamp, nonce, encrypted);
 
 #### Defined in
 
-[src/index.ts:60](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/index.ts#L60)
+[src/index.ts:60](https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L60)
 
----
+___
 
 ### key
 
@@ -79,9 +79,9 @@ var [err, decryptedXML] = wx.decrypt(signature, timestamp, nonce, encrypted);
 
 #### Defined in
 
-[src/index.ts:59](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/index.ts#L59)
+[src/index.ts:59](https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L59)
 
----
+___
 
 ### token
 
@@ -89,7 +89,7 @@ var [err, decryptedXML] = wx.decrypt(signature, timestamp, nonce, encrypted);
 
 #### Defined in
 
-[src/index.ts:58](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/index.ts#L58)
+[src/index.ts:58](https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L58)
 
 ## Methods
 
@@ -101,11 +101,11 @@ decrypt
 
 #### Parameters
 
-| Name        | Type                 | Description                                          |
-| :---------- | :------------------- | :--------------------------------------------------- |
-| `data`      | `string`             | encrypt string, eg. oVMc1Y6qP86YfAa.../QGgk503Q68Q== |
-| `timestamp` | `string` \| `number` | timestamp                                            |
-| `nonce`     | `string` \| `number` | nonce                                                |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `data` | `string` | encrypt string, eg. oVMc1Y6qP86YfAa.../QGgk503Q68Q== |
+| `timestamp` | `string` \| `number` | timestamp |
+| `nonce` | `string` \| `number` | nonce |
 
 #### Returns
 
@@ -115,9 +115,9 @@ xml - xmData, eg. { ComponentVerifyTicket: 'xxxx', ..., AppId: 'xxxx' }
 
 #### Defined in
 
-[src/index.ts:121](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/index.ts#L121)
+[src/index.ts:121](https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L121)
 
----
+___
 
 ### encrypt
 
@@ -128,8 +128,8 @@ Base64Encode(AES256Encrypt[RandomString(16B) + ContentLength(4B) + Content + app
 
 #### Parameters
 
-| Name   | Type                           | Description                                                                |
-| :----- | :----------------------------- | :------------------------------------------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `data` | `Record`<`string`, `unknown`\> | xml data String, eg. { ComponentVerifyTicket: 'xxxx', ..., AppId: 'xxxx' } |
 
 #### Returns
@@ -140,4 +140,4 @@ encrypt - encrypt string, eg. oVMc1Y6qP86YfAa.../QGgk503Q68Q==
 
 #### Defined in
 
-[src/index.ts:93](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/index.ts#L93)
+[src/index.ts:93](https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L93)

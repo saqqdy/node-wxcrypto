@@ -1,4 +1,4 @@
-[index.md - v1.2.0](../README.md) / [Exports](../modules.md) / BuildXMLOptions
+[index.md - v1.2.1](../README.md) / [Exports](../modules.md) / BuildXMLOptions
 
 # Interface: BuildXMLOptions
 
@@ -36,7 +36,7 @@ BuilderOptions.allowSurrogateChars
 
 node_modules/.pnpm/@types+xml2js@0.4.11/node_modules/@types/xml2js/index.d.ts:90
 
----
+___
 
 ### attrkey
 
@@ -50,7 +50,7 @@ BuilderOptions.attrkey
 
 node_modules/.pnpm/@types+xml2js@0.4.11/node_modules/@types/xml2js/index.d.ts:83
 
----
+___
 
 ### cdata
 
@@ -62,9 +62,9 @@ BuilderOptions.cdata
 
 #### Defined in
 
-[src/xml.ts:13](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/xml.ts#L13)
+[src/xml.ts:13](https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/xml.ts#L13)
 
----
+___
 
 ### charkey
 
@@ -78,7 +78,7 @@ BuilderOptions.charkey
 
 node_modules/.pnpm/@types+xml2js@0.4.11/node_modules/@types/xml2js/index.d.ts:84
 
----
+___
 
 ### doctype
 
@@ -92,7 +92,7 @@ BuilderOptions.doctype
 
 node_modules/.pnpm/@types+xml2js@0.4.11/node_modules/@types/xml2js/index.d.ts:88
 
----
+___
 
 ### headless
 
@@ -104,9 +104,9 @@ BuilderOptions.headless
 
 #### Defined in
 
-[src/xml.ts:14](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/xml.ts#L14)
+[src/xml.ts:14](https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/xml.ts#L14)
 
----
+___
 
 ### renderOpts
 
@@ -120,7 +120,7 @@ BuilderOptions.renderOpts
 
 node_modules/.pnpm/@types+xml2js@0.4.11/node_modules/@types/xml2js/index.d.ts:86
 
----
+___
 
 ### rootName
 
@@ -132,9 +132,9 @@ BuilderOptions.rootName
 
 #### Defined in
 
-[src/xml.ts:15](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/xml.ts#L15)
+[src/xml.ts:15](https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/xml.ts#L15)
 
----
+___
 
 ### xmldec
 

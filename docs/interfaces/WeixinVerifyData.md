@@ -1,4 +1,4 @@
-[index.md - v1.2.0](../README.md) / [Exports](../modules.md) / WeixinVerifyData
+[index.md - v1.2.1](../README.md) / [Exports](../modules.md) / WeixinVerifyData
 
 # Interface: WeixinVerifyData
 
@@ -12,8 +12,8 @@
 
 ### xml
 
-• **xml**: `Record`<`string`, `unknown`\> & { `AppId`: `string` ; `ComponentVerifyTicket?`: `string` ; `CreateTime`: `string` ; `InfoType`: `string` }
+• **xml**: `Record`<`string`, `unknown`\> & { `AppId`: `string` ; `ComponentVerifyTicket?`: `string` ; `CreateTime`: `string` ; `InfoType`: `string`  }
 
 #### Defined in
 
-[src/index.ts:13](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/index.ts#L13)
+[src/index.ts:13](https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L13)

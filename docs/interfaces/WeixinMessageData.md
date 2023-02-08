@@ -1,4 +1,4 @@
-[index.md - v1.2.0](../README.md) / [Exports](../modules.md) / WeixinMessageData
+[index.md - v1.2.1](../README.md) / [Exports](../modules.md) / WeixinMessageData
 
 # Interface: WeixinMessageData
 
@@ -24,9 +24,9 @@
 
 #### Defined in
 
-[src/index.ts:31](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/index.ts#L31)
+[src/index.ts:31](https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L31)
 
----
+___
 
 ### CreateTime
 
@@ -34,9 +34,9 @@
 
 #### Defined in
 
-[src/index.ts:32](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/index.ts#L32)
+[src/index.ts:32](https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L32)
 
----
+___
 
 ### InfoType
 
@@ -44,4 +44,4 @@
 
 #### Defined in
 
-[src/index.ts:33](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/index.ts#L33)
+[src/index.ts:33](https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L33)
