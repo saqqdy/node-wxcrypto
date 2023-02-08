@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[src/index.ts:13](https://github.com/saqqdy/node-wxcrypto/blob/2c1c6f9/src/index.ts#L13)
+[src/index.ts:13](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/index.ts#L13)

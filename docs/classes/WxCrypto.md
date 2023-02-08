@@ -49,7 +49,7 @@ var [err, decryptedXML] = wx.decrypt(signature, timestamp, nonce, encrypted);
 
 #### Defined in
 
-[src/index.ts:62](https://github.com/saqqdy/node-wxcrypto/blob/2c1c6f9/src/index.ts#L62)
+[src/index.ts:62](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/index.ts#L62)
 
 ## Properties
 
@@ -59,7 +59,7 @@ var [err, decryptedXML] = wx.decrypt(signature, timestamp, nonce, encrypted);
 
 #### Defined in
 
-[src/index.ts:61](https://github.com/saqqdy/node-wxcrypto/blob/2c1c6f9/src/index.ts#L61)
+[src/index.ts:61](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/index.ts#L61)
 
 ---
 
@@ -69,7 +69,7 @@ var [err, decryptedXML] = wx.decrypt(signature, timestamp, nonce, encrypted);
 
 #### Defined in
 
-[src/index.ts:60](https://github.com/saqqdy/node-wxcrypto/blob/2c1c6f9/src/index.ts#L60)
+[src/index.ts:60](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/index.ts#L60)
 
 ---
 
@@ -79,7 +79,7 @@ var [err, decryptedXML] = wx.decrypt(signature, timestamp, nonce, encrypted);
 
 #### Defined in
 
-[src/index.ts:59](https://github.com/saqqdy/node-wxcrypto/blob/2c1c6f9/src/index.ts#L59)
+[src/index.ts:59](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/index.ts#L59)
 
 ---
 
@@ -89,7 +89,7 @@ var [err, decryptedXML] = wx.decrypt(signature, timestamp, nonce, encrypted);
 
 #### Defined in
 
-[src/index.ts:58](https://github.com/saqqdy/node-wxcrypto/blob/2c1c6f9/src/index.ts#L58)
+[src/index.ts:58](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/index.ts#L58)
 
 ## Methods
 
@@ -115,7 +115,7 @@ xml - xmData, eg. { ComponentVerifyTicket: 'xxxx', ..., AppId: 'xxxx' }
 
 #### Defined in
 
-[src/index.ts:121](https://github.com/saqqdy/node-wxcrypto/blob/2c1c6f9/src/index.ts#L121)
+[src/index.ts:121](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/index.ts#L121)
 
 ---
 
@@ -140,4 +140,4 @@ encrypt - encrypt string, eg. oVMc1Y6qP86YfAa.../QGgk503Q68Q==
 
 #### Defined in
 
-[src/index.ts:93](https://github.com/saqqdy/node-wxcrypto/blob/2c1c6f9/src/index.ts#L93)
+[src/index.ts:93](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/index.ts#L93)

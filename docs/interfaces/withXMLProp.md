@@ -22,4 +22,4 @@
 
 #### Defined in
 
-[src/index.ts:9](https://github.com/saqqdy/node-wxcrypto/blob/2c1c6f9/src/index.ts#L9)
+[src/index.ts:9](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/index.ts#L9)

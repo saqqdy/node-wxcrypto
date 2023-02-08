@@ -62,7 +62,7 @@ BuilderOptions.cdata
 
 #### Defined in
 
-[src/xml.ts:13](https://github.com/saqqdy/node-wxcrypto/blob/2c1c6f9/src/xml.ts#L13)
+[src/xml.ts:13](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/xml.ts#L13)
 
 ---
 
@@ -104,7 +104,7 @@ BuilderOptions.headless
 
 #### Defined in
 
-[src/xml.ts:14](https://github.com/saqqdy/node-wxcrypto/blob/2c1c6f9/src/xml.ts#L14)
+[src/xml.ts:14](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/xml.ts#L14)
 
 ---
 
@@ -132,7 +132,7 @@ BuilderOptions.rootName
 
 #### Defined in
 
-[src/xml.ts:15](https://github.com/saqqdy/node-wxcrypto/blob/2c1c6f9/src/xml.ts#L15)
+[src/xml.ts:15](https://github.com/saqqdy/node-wxcrypto/blob/567a8c9/src/xml.ts#L15)
 
 ---
 
