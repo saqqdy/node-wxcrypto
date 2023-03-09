@@ -1,6 +1,6 @@
 {
 	"id": 0,
-	"name": "index.md - v1.2.1",
+	"name": "index.md - v1.3.0",
 	"kind": 1,
 	"kindString": "Project",
 	"flags": {},
@@ -17,7 +17,7 @@
 					"fileName": "src/index.ts",
 					"line": 152,
 					"character": 13,
-					"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L152"
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L152"
 				}
 			],
 			"target": 23
@@ -59,7 +59,7 @@
 							"fileName": "src/index.ts",
 							"line": 62,
 							"character": 1,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L62"
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L62"
 						}
 					],
 					"signatures": [
@@ -123,7 +123,7 @@
 							"fileName": "src/index.ts",
 							"line": 61,
 							"character": 1,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L61"
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L61"
 						}
 					],
 					"type": {
@@ -142,7 +142,7 @@
 							"fileName": "src/index.ts",
 							"line": 60,
 							"character": 1,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L60"
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L60"
 						}
 					],
 					"type": {
@@ -163,7 +163,7 @@
 							"fileName": "src/index.ts",
 							"line": 59,
 							"character": 1,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L59"
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L59"
 						}
 					],
 					"type": {
@@ -184,7 +184,7 @@
 							"fileName": "src/index.ts",
 							"line": 58,
 							"character": 1,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L58"
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L58"
 						}
 					],
 					"type": {
@@ -203,7 +203,7 @@
 							"fileName": "src/index.ts",
 							"line": 121,
 							"character": 7,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L121"
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L121"
 						}
 					],
 					"signatures": [
@@ -335,7 +335,7 @@
 							"fileName": "src/index.ts",
 							"line": 93,
 							"character": 7,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L93"
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L93"
 						}
 					],
 					"signatures": [
@@ -442,7 +442,7 @@
 					"fileName": "src/index.ts",
 					"line": 57,
 					"character": 6,
-					"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L57"
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L57"
 				}
 			]
 		},
@@ -514,7 +514,7 @@
 							"fileName": "src/xml.ts",
 							"line": 13,
 							"character": 1,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/xml.ts#L13"
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/xml.ts#L13"
 						}
 					],
 					"type": {
@@ -587,7 +587,7 @@
 							"fileName": "src/xml.ts",
 							"line": 14,
 							"character": 1,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/xml.ts#L14"
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/xml.ts#L14"
 						}
 					],
 					"type": {
@@ -637,7 +637,7 @@
 							"fileName": "src/xml.ts",
 							"line": 15,
 							"character": 1,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/xml.ts#L15"
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/xml.ts#L15"
 						}
 					],
 					"type": {
@@ -698,7 +698,7 @@
 					"fileName": "src/xml.ts",
 					"line": 12,
 					"character": 17,
-					"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/xml.ts#L12"
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/xml.ts#L12"
 				}
 			],
 			"extendedTypes": [
@@ -728,7 +728,7 @@
 							"fileName": "src/index.ts",
 							"line": 31,
 							"character": 1,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L31"
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L31"
 						}
 					],
 					"type": {
@@ -747,7 +747,7 @@
 							"fileName": "src/index.ts",
 							"line": 32,
 							"character": 1,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L32"
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L32"
 						}
 					],
 					"type": {
@@ -766,7 +766,7 @@
 							"fileName": "src/index.ts",
 							"line": 33,
 							"character": 1,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L33"
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L33"
 						}
 					],
 					"type": {
@@ -790,7 +790,7 @@
 					"fileName": "src/index.ts",
 					"line": 30,
 					"character": 17,
-					"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L30"
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L30"
 				}
 			],
 			"extendedTypes": [
@@ -830,7 +830,7 @@
 							"fileName": "src/index.ts",
 							"line": 13,
 							"character": 1,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L13"
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L13"
 						}
 					],
 					"type": {
@@ -872,7 +872,7 @@
 													"fileName": "src/index.ts",
 													"line": 14,
 													"character": 2,
-													"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L14"
+													"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L14"
 												}
 											],
 											"type": {
@@ -893,7 +893,7 @@
 													"fileName": "src/index.ts",
 													"line": 17,
 													"character": 2,
-													"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L17"
+													"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L17"
 												}
 											],
 											"type": {
@@ -912,7 +912,7 @@
 													"fileName": "src/index.ts",
 													"line": 15,
 													"character": 2,
-													"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L15"
+													"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L15"
 												}
 											],
 											"type": {
@@ -931,7 +931,7 @@
 													"fileName": "src/index.ts",
 													"line": 16,
 													"character": 2,
-													"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L16"
+													"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L16"
 												}
 											],
 											"type": {
@@ -956,7 +956,7 @@
 											"fileName": "src/index.ts",
 											"line": 13,
 											"character": 32,
-											"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L13"
+											"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L13"
 										}
 									]
 								}
@@ -978,7 +978,7 @@
 					"fileName": "src/index.ts",
 					"line": 12,
 					"character": 17,
-					"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L12"
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L12"
 				}
 			]
 		},
@@ -1000,7 +1000,7 @@
 							"fileName": "src/index.ts",
 							"line": 9,
 							"character": 1,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L9"
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L9"
 						}
 					],
 					"type": {
@@ -1023,7 +1023,7 @@
 					"fileName": "src/index.ts",
 					"line": 8,
 					"character": 17,
-					"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L8"
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L8"
 				}
 			],
 			"typeParameters": [
@@ -1047,7 +1047,7 @@
 					"fileName": "src/index.ts",
 					"line": 22,
 					"character": 12,
-					"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L22"
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L22"
 				}
 			],
 			"type": {
@@ -1093,7 +1093,7 @@
 													"fileName": "src/index.ts",
 													"line": 25,
 													"character": 2,
-													"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L25"
+													"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L25"
 												}
 											],
 											"type": {
@@ -1112,7 +1112,7 @@
 													"fileName": "src/index.ts",
 													"line": 24,
 													"character": 2,
-													"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L24"
+													"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L24"
 												}
 											],
 											"type": {
@@ -1135,7 +1135,7 @@
 											"fileName": "src/index.ts",
 											"line": 23,
 											"character": 27,
-											"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L23"
+											"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L23"
 										}
 									]
 								}
@@ -1157,7 +1157,7 @@
 					"fileName": "src/index.ts",
 					"line": 37,
 					"character": 12,
-					"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L37"
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L37"
 				}
 			],
 			"type": {
@@ -1194,7 +1194,7 @@
 													"fileName": "src/index.ts",
 													"line": 40,
 													"character": 2,
-													"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L40"
+													"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L40"
 												}
 											],
 											"type": {
@@ -1213,7 +1213,7 @@
 													"fileName": "src/index.ts",
 													"line": 39,
 													"character": 2,
-													"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L39"
+													"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L39"
 												}
 											],
 											"type": {
@@ -1236,7 +1236,7 @@
 											"fileName": "src/index.ts",
 											"line": 38,
 											"character": 21,
-											"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L38"
+											"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L38"
 										}
 									]
 								}
@@ -1258,7 +1258,7 @@
 					"fileName": "src/aes256.ts",
 					"line": 52,
 					"character": 13,
-					"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/aes256.ts#L52"
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/aes256.ts#L52"
 				}
 			],
 			"signatures": [
@@ -1443,7 +1443,7 @@
 					"fileName": "src/aes256.ts",
 					"line": 23,
 					"character": 13,
-					"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/aes256.ts#L23"
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/aes256.ts#L23"
 				}
 			],
 			"signatures": [
@@ -1651,7 +1651,7 @@
 					"fileName": "src/xml.ts",
 					"line": 60,
 					"character": 13,
-					"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/xml.ts#L60"
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/xml.ts#L60"
 				}
 			],
 			"signatures": [
@@ -1761,7 +1761,7 @@
 					"fileName": "src/xml.ts",
 					"line": 25,
 					"character": 13,
-					"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/xml.ts#L25"
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/xml.ts#L25"
 				}
 			],
 			"signatures": [
@@ -1861,7 +1861,7 @@
 					"fileName": "src/sha1.ts",
 					"line": 11,
 					"character": 6,
-					"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/sha1.ts#L11"
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/sha1.ts#L11"
 				}
 			],
 			"signatures": [
@@ -1969,7 +1969,7 @@
 			"fileName": "src/index.ts",
 			"line": 1,
 			"character": 0,
-			"url": "https://github.com/saqqdy/node-wxcrypto/blob/5664070/src/index.ts#L1"
+			"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L1"
 		}
 	]
 }
