@@ -70,7 +70,7 @@ class WxCrypto {
 		this.token = token
 		this.appID = appID
 		this.key = AESKey
-		this.iv = AESKey.slice(0, 16)
+		this.iv = AESKey.subarray(0, 16)
 		debug(
 			'weixin crypto class initialize with token=',
 			token,

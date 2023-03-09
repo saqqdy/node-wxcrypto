@@ -1,5 +1,12 @@
 # 更新日志
 
+## 2023.03.09 v1.3.0 更新日志
+
+1. 更改Buffer分割方法：`slice => subarray`
+2. ramrif 替换为 [rm-all](https://github.com/saqqdy/rm-all)
+3. 修复类型导出
+4. 升级依赖包
+
 ## 2023.02.08 v1.2.1 更新日志
 
 1. 更改加密安全：`AES-256-GCM => AES-256-CBC`
