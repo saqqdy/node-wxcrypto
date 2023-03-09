@@ -97,7 +97,7 @@
 		"reinstaller": "^2.3.0",
 		"rm-all": "^1.0.0",
 		"rollup": "^3.14.0",
-		"rollup-plugin-filesize": "^9.1.2",
+		"rollup-plugin-filesize": "^10.0.0",
 		"rollup-plugin-visualizer": "^5.9.0",
 		"ts-jest": "^29.0.5",
 		"tsnd": "^1.1.0",
