@@ -15,14 +15,16 @@ export interface BuildXMLOptions extends BuilderOptions {
 	rootName: 'xml' | string
 }
 
+export type ParserXMLOptions = ParserOptions
+
 /**
  * parse xml promise
  *
  * @param data - xmlString
- * @param options - ParserOptions
+ * @param options - ParserXMLOptions
  * @returns result - xml object
  */
-export const parseXML = (data: convertableToString, options: ParserOptions = {}) => {
+export const parseXML = (data: convertableToString, options: ParserXMLOptions = {}) => {
 	return parseStringPromise(data, { explicitArray: false, ...options }).then(({ xml = {} }) => {
 		debug('parseXML: ', xml)
 		return xml
@@ -33,13 +35,13 @@ export const parseXML = (data: convertableToString, options: ParserOptions = {})
  * build xml sync
  *
  * @param data - xmlString
- * @param options - callback function or ParserOptions
+ * @param options - callback function or ParserXMLOptions
  * @param callback - exec function on build successful
  * @returns result - xml object
  */
 export const parseXMLSync = (
 	data: convertableToString,
-	options: ParserOptions = {},
+	options: ParserXMLOptions = {},
 	callback: Function
 ) => {
 	parseString(data, { explicitArray: false, ...options }, (err: Error | null, result: string) => {

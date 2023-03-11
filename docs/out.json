@@ -1,13 +1,13 @@
 {
 	"id": 0,
-	"name": "index.md - v1.3.0",
+	"name": "index.md - v2.0.0",
 	"kind": 1,
 	"kindString": "Project",
 	"flags": {},
 	"originalName": "index.md",
 	"children": [
 		{
-			"id": 41,
+			"id": 33,
 			"name": "default",
 			"kind": 8388608,
 			"kindString": "Reference",
@@ -15,15 +15,15 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 152,
+					"line": 176,
 					"character": 13,
-					"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L152"
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L176"
 				}
 			],
-			"target": 23
+			"target": 8
 		},
 		{
-			"id": 23,
+			"id": 8,
 			"name": "WxCrypto",
 			"kind": 128,
 			"kindString": "Class",
@@ -49,7 +49,7 @@
 			},
 			"children": [
 				{
-					"id": 24,
+					"id": 9,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -57,21 +57,21 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 62,
+							"line": 48,
 							"character": 1,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L62"
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L48"
 						}
 					],
 					"signatures": [
 						{
-							"id": 25,
+							"id": 10,
 							"name": "new WxCrypto",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 26,
+									"id": 11,
 									"name": "token",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -82,7 +82,7 @@
 									}
 								},
 								{
-									"id": 27,
+									"id": 12,
 									"name": "encodingAESKey",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -93,7 +93,7 @@
 									}
 								},
 								{
-									"id": 28,
+									"id": 13,
 									"name": "appID",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -102,18 +102,31 @@
 										"type": "intrinsic",
 										"name": "string"
 									}
+								},
+								{
+									"id": 14,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"id": 1,
+										"name": "Options"
+									},
+									"defaultValue": "{}"
 								}
 							],
 							"type": {
 								"type": "reference",
-								"id": 23,
+								"id": 8,
 								"name": "WxCrypto"
 							}
 						}
 					]
 				},
 				{
-					"id": 32,
+					"id": 18,
 					"name": "appID",
 					"kind": 1024,
 					"kindString": "Property",
@@ -121,9 +134,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 61,
+							"line": 46,
 							"character": 1,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L61"
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L46"
 						}
 					],
 					"type": {
@@ -132,7 +145,7 @@
 					}
 				},
 				{
-					"id": 31,
+					"id": 17,
 					"name": "iv",
 					"kind": 1024,
 					"kindString": "Property",
@@ -140,9 +153,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 60,
+							"line": 45,
 							"character": 1,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L60"
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L45"
 						}
 					],
 					"type": {
@@ -153,7 +166,7 @@
 					}
 				},
 				{
-					"id": 30,
+					"id": 16,
 					"name": "key",
 					"kind": 1024,
 					"kindString": "Property",
@@ -161,9 +174,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 59,
+							"line": 44,
 							"character": 1,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L59"
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L44"
 						}
 					],
 					"type": {
@@ -174,7 +187,27 @@
 					}
 				},
 				{
-					"id": 29,
+					"id": 19,
+					"name": "options",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 47,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L47"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 1,
+						"name": "Options"
+					}
+				},
+				{
+					"id": 15,
 					"name": "token",
 					"kind": 1024,
 					"kindString": "Property",
@@ -182,9 +215,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 58,
+							"line": 43,
 							"character": 1,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L58"
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L43"
 						}
 					],
 					"type": {
@@ -193,7 +226,7 @@
 					}
 				},
 				{
-					"id": 36,
+					"id": 27,
 					"name": "decrypt",
 					"kind": 2048,
 					"kindString": "Method",
@@ -201,14 +234,14 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 121,
+							"line": 135,
 							"character": 7,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L121"
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L135"
 						}
 					],
 					"signatures": [
 						{
-							"id": 37,
+							"id": 28,
 							"name": "decrypt",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -234,7 +267,7 @@
 							},
 							"parameters": [
 								{
-									"id": 38,
+									"id": 29,
 									"name": "data",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -253,7 +286,7 @@
 									}
 								},
 								{
-									"id": 39,
+									"id": 30,
 									"name": "timestamp",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -281,7 +314,7 @@
 									}
 								},
 								{
-									"id": 40,
+									"id": 31,
 									"name": "nonce",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -307,6 +340,27 @@
 											}
 										]
 									}
+								},
+								{
+									"id": 32,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "options"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"id": 1,
+										"name": "Options"
+									},
+									"defaultValue": "{}"
 								}
 							],
 							"type": {
@@ -325,7 +379,7 @@
 					]
 				},
 				{
-					"id": 33,
+					"id": 23,
 					"name": "encrypt",
 					"kind": 2048,
 					"kindString": "Method",
@@ -333,14 +387,14 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 93,
+							"line": 103,
 							"character": 7,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L93"
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L103"
 						}
 					],
 					"signatures": [
 						{
-							"id": 34,
+							"id": 24,
 							"name": "encrypt",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -366,7 +420,7 @@
 							},
 							"parameters": [
 								{
-									"id": 35,
+									"id": 25,
 									"name": "data",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -395,6 +449,27 @@
 										"qualifiedName": "Record",
 										"package": "typescript"
 									}
+								},
+								{
+									"id": 26,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "options"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"id": 1,
+										"name": "Options"
+									},
+									"defaultValue": "{}"
 								}
 							],
 							"type": {
@@ -411,50 +486,133 @@
 							}
 						}
 					]
+				},
+				{
+					"id": 20,
+					"name": "mergeXmlOptions",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 79,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L79"
+						}
+					],
+					"signatures": [
+						{
+							"id": 21,
+							"name": "mergeXmlOptions",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "mergeXmlOptions"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "xml - xmData, eg. { ComponentVerifyTicket: 'xxxx', ..., AppId: 'xxxx' }"
+											}
+										]
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 22,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "options"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"id": 1,
+										"name": "Options"
+									},
+									"defaultValue": "{}"
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "reference",
+										"name": "ParserOptions",
+										"qualifiedName": "ParserOptions",
+										"package": "@types/xml2js"
+									}
+								]
+							}
+						}
+					]
 				}
 			],
 			"groups": [
 				{
 					"title": "Constructors",
 					"children": [
-						24
+						9
 					]
 				},
 				{
 					"title": "Properties",
 					"children": [
-						32,
-						31,
-						30,
-						29
+						18,
+						17,
+						16,
+						19,
+						15
 					]
 				},
 				{
 					"title": "Methods",
 					"children": [
-						36,
-						33
+						27,
+						23,
+						20
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 57,
+					"line": 42,
 					"character": 6,
-					"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L57"
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L42"
 				}
 			]
 		},
 		{
-			"id": 42,
+			"id": 34,
 			"name": "BuildXMLOptions",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 51,
+					"id": 43,
 					"name": "allowSurrogateChars",
 					"kind": 1024,
 					"kindString": "Property",
@@ -479,7 +637,7 @@
 					}
 				},
 				{
-					"id": 46,
+					"id": 38,
 					"name": "attrkey",
 					"kind": 1024,
 					"kindString": "Property",
@@ -504,7 +662,7 @@
 					}
 				},
 				{
-					"id": 43,
+					"id": 35,
 					"name": "cdata",
 					"kind": 1024,
 					"kindString": "Property",
@@ -514,7 +672,7 @@
 							"fileName": "src/xml.ts",
 							"line": 13,
 							"character": 1,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/xml.ts#L13"
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/xml.ts#L13"
 						}
 					],
 					"type": {
@@ -527,7 +685,7 @@
 					}
 				},
 				{
-					"id": 47,
+					"id": 39,
 					"name": "charkey",
 					"kind": 1024,
 					"kindString": "Property",
@@ -552,7 +710,7 @@
 					}
 				},
 				{
-					"id": 50,
+					"id": 42,
 					"name": "doctype",
 					"kind": 1024,
 					"kindString": "Property",
@@ -577,7 +735,7 @@
 					}
 				},
 				{
-					"id": 44,
+					"id": 36,
 					"name": "headless",
 					"kind": 1024,
 					"kindString": "Property",
@@ -587,7 +745,7 @@
 							"fileName": "src/xml.ts",
 							"line": 14,
 							"character": 1,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/xml.ts#L14"
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/xml.ts#L14"
 						}
 					],
 					"type": {
@@ -600,7 +758,7 @@
 					}
 				},
 				{
-					"id": 48,
+					"id": 40,
 					"name": "renderOpts",
 					"kind": 1024,
 					"kindString": "Property",
@@ -627,7 +785,7 @@
 					}
 				},
 				{
-					"id": 45,
+					"id": 37,
 					"name": "rootName",
 					"kind": 1024,
 					"kindString": "Property",
@@ -637,7 +795,7 @@
 							"fileName": "src/xml.ts",
 							"line": 15,
 							"character": 1,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/xml.ts#L15"
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/xml.ts#L15"
 						}
 					],
 					"type": {
@@ -650,7 +808,7 @@
 					}
 				},
 				{
-					"id": 49,
+					"id": 41,
 					"name": "xmldec",
 					"kind": 1024,
 					"kindString": "Property",
@@ -681,15 +839,15 @@
 				{
 					"title": "Properties",
 					"children": [
-						51,
-						46,
 						43,
-						47,
-						50,
-						44,
-						48,
-						45,
-						49
+						38,
+						35,
+						39,
+						42,
+						36,
+						40,
+						37,
+						41
 					]
 				}
 			],
@@ -698,7 +856,7 @@
 					"fileName": "src/xml.ts",
 					"line": 12,
 					"character": 17,
-					"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/xml.ts#L12"
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/xml.ts#L12"
 				}
 			],
 			"extendedTypes": [
@@ -711,286 +869,107 @@
 			]
 		},
 		{
-			"id": 15,
-			"name": "WeixinMessageData",
-			"kind": 256,
-			"kindString": "Interface",
-			"flags": {},
-			"children": [
-				{
-					"id": 16,
-					"name": "AppId",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 31,
-							"character": 1,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L31"
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 17,
-					"name": "CreateTime",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 32,
-							"character": 1,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L32"
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 18,
-					"name": "InfoType",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 33,
-							"character": 1,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L33"
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"children": [
-						16,
-						17,
-						18
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "src/index.ts",
-					"line": 30,
-					"character": 17,
-					"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L30"
-				}
-			],
-			"extendedTypes": [
-				{
-					"type": "reference",
-					"typeArguments": [
-						{
-							"type": "intrinsic",
-							"name": "string"
-						},
-						{
-							"type": "intrinsic",
-							"name": "unknown"
-						}
-					],
-					"name": "Record",
-					"qualifiedName": "Record",
-					"package": "typescript"
-				}
-			]
-		},
-		{
-			"id": 4,
-			"name": "WeixinVerifyData",
-			"kind": 256,
-			"kindString": "Interface",
-			"flags": {},
-			"children": [
-				{
-					"id": 5,
-					"name": "xml",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 13,
-							"character": 1,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L13"
-						}
-					],
-					"type": {
-						"type": "intersection",
-						"types": [
-							{
-								"type": "reference",
-								"typeArguments": [
-									{
-										"type": "intrinsic",
-										"name": "string"
-									},
-									{
-										"type": "intrinsic",
-										"name": "unknown"
-									}
-								],
-								"name": "Record",
-								"qualifiedName": "Record",
-								"package": "typescript"
-							},
-							{
-								"type": "reflection",
-								"declaration": {
-									"id": 6,
-									"name": "__type",
-									"kind": 65536,
-									"kindString": "Type literal",
-									"flags": {},
-									"children": [
-										{
-											"id": 7,
-											"name": "AppId",
-											"kind": 1024,
-											"kindString": "Property",
-											"flags": {},
-											"sources": [
-												{
-													"fileName": "src/index.ts",
-													"line": 14,
-													"character": 2,
-													"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L14"
-												}
-											],
-											"type": {
-												"type": "intrinsic",
-												"name": "string"
-											}
-										},
-										{
-											"id": 10,
-											"name": "ComponentVerifyTicket",
-											"kind": 1024,
-											"kindString": "Property",
-											"flags": {
-												"isOptional": true
-											},
-											"sources": [
-												{
-													"fileName": "src/index.ts",
-													"line": 17,
-													"character": 2,
-													"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L17"
-												}
-											],
-											"type": {
-												"type": "intrinsic",
-												"name": "string"
-											}
-										},
-										{
-											"id": 8,
-											"name": "CreateTime",
-											"kind": 1024,
-											"kindString": "Property",
-											"flags": {},
-											"sources": [
-												{
-													"fileName": "src/index.ts",
-													"line": 15,
-													"character": 2,
-													"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L15"
-												}
-											],
-											"type": {
-												"type": "intrinsic",
-												"name": "string"
-											}
-										},
-										{
-											"id": 9,
-											"name": "InfoType",
-											"kind": 1024,
-											"kindString": "Property",
-											"flags": {},
-											"sources": [
-												{
-													"fileName": "src/index.ts",
-													"line": 16,
-													"character": 2,
-													"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L16"
-												}
-											],
-											"type": {
-												"type": "intrinsic",
-												"name": "string"
-											}
-										}
-									],
-									"groups": [
-										{
-											"title": "Properties",
-											"children": [
-												7,
-												10,
-												8,
-												9
-											]
-										}
-									],
-									"sources": [
-										{
-											"fileName": "src/index.ts",
-											"line": 13,
-											"character": 32,
-											"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L13"
-										}
-									]
-								}
-							}
-						]
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"children": [
-						5
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "src/index.ts",
-					"line": 12,
-					"character": 17,
-					"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L12"
-				}
-			]
-		},
-		{
 			"id": 1,
+			"name": "Options",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 3,
+					"name": "buildXmlOptions",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 20,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L20"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 34,
+						"name": "BuildXMLOptions"
+					}
+				},
+				{
+					"id": 2,
+					"name": "normalizeTags",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 18,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L18"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 4,
+					"name": "xmlOptions",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 22,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L22"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "ParserOptions",
+						"qualifiedName": "ParserOptions",
+						"package": "@types/xml2js"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						3,
+						2,
+						4
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.ts",
+					"line": 16,
+					"character": 17,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L16"
+				}
+			]
+		},
+		{
+			"id": 5,
 			"name": "withXMLProp",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 2,
+					"id": 6,
 					"name": "xml",
 					"kind": 1024,
 					"kindString": "Property",
@@ -998,14 +977,14 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 9,
+							"line": 26,
 							"character": 1,
-							"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L9"
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L26"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"id": 3,
+						"id": 7,
 						"name": "T"
 					}
 				}
@@ -1014,21 +993,21 @@
 				{
 					"title": "Properties",
 					"children": [
-						2
+						6
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 8,
+					"line": 25,
 					"character": 17,
-					"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L8"
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L25"
 				}
 			],
 			"typeParameters": [
 				{
-					"id": 3,
+					"id": 7,
 					"name": "T",
 					"kind": 131072,
 					"kindString": "Type parameter",
@@ -1037,218 +1016,28 @@
 			]
 		},
 		{
-			"id": 11,
-			"name": "WeixinMessageXML",
+			"id": 44,
+			"name": "ParserXMLOptions",
 			"kind": 4194304,
 			"kindString": "Type alias",
 			"flags": {},
 			"sources": [
 				{
-					"fileName": "src/index.ts",
-					"line": 22,
+					"fileName": "src/xml.ts",
+					"line": 18,
 					"character": 12,
-					"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L22"
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/xml.ts#L18"
 				}
 			],
 			"type": {
 				"type": "reference",
-				"id": 1,
-				"typeArguments": [
-					{
-						"type": "intersection",
-						"types": [
-							{
-								"type": "reference",
-								"typeArguments": [
-									{
-										"type": "intrinsic",
-										"name": "string"
-									},
-									{
-										"type": "intrinsic",
-										"name": "unknown"
-									}
-								],
-								"name": "Record",
-								"qualifiedName": "Record",
-								"package": "typescript"
-							},
-							{
-								"type": "reflection",
-								"declaration": {
-									"id": 12,
-									"name": "__type",
-									"kind": 65536,
-									"kindString": "Type literal",
-									"flags": {},
-									"children": [
-										{
-											"id": 14,
-											"name": "appid",
-											"kind": 1024,
-											"kindString": "Property",
-											"flags": {},
-											"sources": [
-												{
-													"fileName": "src/index.ts",
-													"line": 25,
-													"character": 2,
-													"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L25"
-												}
-											],
-											"type": {
-												"type": "intrinsic",
-												"name": "string"
-											}
-										},
-										{
-											"id": 13,
-											"name": "encrypt",
-											"kind": 1024,
-											"kindString": "Property",
-											"flags": {},
-											"sources": [
-												{
-													"fileName": "src/index.ts",
-													"line": 24,
-													"character": 2,
-													"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L24"
-												}
-											],
-											"type": {
-												"type": "intrinsic",
-												"name": "string"
-											}
-										}
-									],
-									"groups": [
-										{
-											"title": "Properties",
-											"children": [
-												14,
-												13
-											]
-										}
-									],
-									"sources": [
-										{
-											"fileName": "src/index.ts",
-											"line": 23,
-											"character": 27,
-											"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L23"
-										}
-									]
-								}
-							}
-						]
-					}
-				],
-				"name": "withXMLProp"
+				"name": "ParserOptions",
+				"qualifiedName": "ParserOptions",
+				"package": "@types/xml2js"
 			}
 		},
 		{
-			"id": 19,
-			"name": "WeixinVerifyMessageXMLData",
-			"kind": 4194304,
-			"kindString": "Type alias",
-			"flags": {},
-			"sources": [
-				{
-					"fileName": "src/index.ts",
-					"line": 37,
-					"character": 12,
-					"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L37"
-				}
-			],
-			"type": {
-				"type": "reference",
-				"id": 1,
-				"typeArguments": [
-					{
-						"type": "intersection",
-						"types": [
-							{
-								"type": "reference",
-								"id": 15,
-								"name": "WeixinMessageData"
-							},
-							{
-								"type": "reflection",
-								"declaration": {
-									"id": 20,
-									"name": "__type",
-									"kind": 65536,
-									"kindString": "Type literal",
-									"flags": {},
-									"children": [
-										{
-											"id": 22,
-											"name": "ComponentVerifyTicket",
-											"kind": 1024,
-											"kindString": "Property",
-											"flags": {
-												"isOptional": true
-											},
-											"sources": [
-												{
-													"fileName": "src/index.ts",
-													"line": 40,
-													"character": 2,
-													"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L40"
-												}
-											],
-											"type": {
-												"type": "intrinsic",
-												"name": "string"
-											}
-										},
-										{
-											"id": 21,
-											"name": "InfoType",
-											"kind": 1024,
-											"kindString": "Property",
-											"flags": {},
-											"sources": [
-												{
-													"fileName": "src/index.ts",
-													"line": 39,
-													"character": 2,
-													"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L39"
-												}
-											],
-											"type": {
-												"type": "literal",
-												"value": "component_verify_ticket"
-											}
-										}
-									],
-									"groups": [
-										{
-											"title": "Properties",
-											"children": [
-												22,
-												21
-											]
-										}
-									],
-									"sources": [
-										{
-											"fileName": "src/index.ts",
-											"line": 38,
-											"character": 21,
-											"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L38"
-										}
-									]
-								}
-							}
-						]
-					}
-				],
-				"name": "withXMLProp"
-			}
-		},
-		{
-			"id": 52,
+			"id": 45,
 			"name": "aes256Decrypt",
 			"kind": 64,
 			"kindString": "Function",
@@ -1258,12 +1047,12 @@
 					"fileName": "src/aes256.ts",
 					"line": 52,
 					"character": 13,
-					"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/aes256.ts#L52"
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/aes256.ts#L52"
 				}
 			],
 			"signatures": [
 				{
-					"id": 53,
+					"id": 46,
 					"name": "aes256Decrypt",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -1334,7 +1123,7 @@
 					},
 					"parameters": [
 						{
-							"id": 54,
+							"id": 47,
 							"name": "algorithm",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -1345,7 +1134,7 @@
 							}
 						},
 						{
-							"id": 55,
+							"id": 48,
 							"name": "key",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -1358,7 +1147,7 @@
 							}
 						},
 						{
-							"id": 56,
+							"id": 49,
 							"name": "iv",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -1371,7 +1160,7 @@
 							}
 						},
 						{
-							"id": 57,
+							"id": 50,
 							"name": "inputEncoding",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -1385,7 +1174,7 @@
 							"defaultValue": "'base64'"
 						},
 						{
-							"id": 58,
+							"id": 51,
 							"name": "outputEncoding",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -1408,7 +1197,7 @@
 							"defaultValue": "undefined"
 						},
 						{
-							"id": 59,
+							"id": 52,
 							"name": "options",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -1433,7 +1222,7 @@
 			]
 		},
 		{
-			"id": 60,
+			"id": 53,
 			"name": "aes256Encrypt",
 			"kind": 64,
 			"kindString": "Function",
@@ -1443,12 +1232,12 @@
 					"fileName": "src/aes256.ts",
 					"line": 23,
 					"character": 13,
-					"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/aes256.ts#L23"
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/aes256.ts#L23"
 				}
 			],
 			"signatures": [
 				{
-					"id": 61,
+					"id": 54,
 					"name": "aes256Encrypt",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -1528,7 +1317,7 @@
 					},
 					"parameters": [
 						{
-							"id": 62,
+							"id": 55,
 							"name": "algorithm",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -1544,7 +1333,7 @@
 							}
 						},
 						{
-							"id": 63,
+							"id": 56,
 							"name": "key",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -1557,7 +1346,7 @@
 							}
 						},
 						{
-							"id": 64,
+							"id": 57,
 							"name": "iv",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -1570,7 +1359,7 @@
 							}
 						},
 						{
-							"id": 65,
+							"id": 58,
 							"name": "inputEncoding",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -1593,7 +1382,7 @@
 							"defaultValue": "undefined"
 						},
 						{
-							"id": 66,
+							"id": 59,
 							"name": "outputEncoding",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -1616,7 +1405,7 @@
 							"defaultValue": "undefined"
 						},
 						{
-							"id": 67,
+							"id": 60,
 							"name": "options",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -1641,7 +1430,7 @@
 			]
 		},
 		{
-			"id": 71,
+			"id": 64,
 			"name": "buildXML",
 			"kind": 64,
 			"kindString": "Function",
@@ -1649,14 +1438,14 @@
 			"sources": [
 				{
 					"fileName": "src/xml.ts",
-					"line": 60,
+					"line": 62,
 					"character": 13,
-					"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/xml.ts#L60"
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/xml.ts#L62"
 				}
 			],
 			"signatures": [
 				{
-					"id": 72,
+					"id": 65,
 					"name": "buildXML",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -1682,7 +1471,7 @@
 					},
 					"parameters": [
 						{
-							"id": 73,
+							"id": 66,
 							"name": "data",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -1713,7 +1502,7 @@
 							}
 						},
 						{
-							"id": 74,
+							"id": 67,
 							"name": "options",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -1730,7 +1519,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"id": 42,
+								"id": 34,
 								"name": "BuildXMLOptions"
 							}
 						}
@@ -1751,7 +1540,143 @@
 			]
 		},
 		{
-			"id": 75,
+			"id": 68,
+			"name": "buildXMLSync",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/xml.ts",
+					"line": 85,
+					"character": 13,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/xml.ts#L85"
+				}
+			],
+			"signatures": [
+				{
+					"id": 69,
+					"name": "buildXMLSync",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "build xml sync"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "result - xmlString"
+									}
+								]
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 70,
+							"name": "data",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "xml object"
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								],
+								"name": "Record",
+								"qualifiedName": "Record",
+								"package": "typescript"
+							}
+						},
+						{
+							"id": 71,
+							"name": "options",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "callback function or xml Builder options"
+									}
+								]
+							},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "reference",
+										"name": "Function",
+										"qualifiedName": "Function",
+										"package": "typescript"
+									},
+									{
+										"type": "reference",
+										"id": 34,
+										"name": "BuildXMLOptions"
+									}
+								]
+							}
+						},
+						{
+							"id": 72,
+							"name": "callback",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "exec function on build successful"
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"name": "Function",
+								"qualifiedName": "Function",
+								"package": "typescript"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": 73,
 			"name": "parseXML",
 			"kind": 64,
 			"kindString": "Function",
@@ -1759,14 +1684,14 @@
 			"sources": [
 				{
 					"fileName": "src/xml.ts",
-					"line": 25,
+					"line": 27,
 					"character": 13,
-					"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/xml.ts#L25"
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/xml.ts#L27"
 				}
 			],
 			"signatures": [
 				{
-					"id": 76,
+					"id": 74,
 					"name": "parseXML",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -1792,7 +1717,7 @@
 					},
 					"parameters": [
 						{
-							"id": 77,
+							"id": 75,
 							"name": "data",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -1813,7 +1738,7 @@
 							}
 						},
 						{
-							"id": 78,
+							"id": 76,
 							"name": "options",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -1822,7 +1747,7 @@
 								"summary": [
 									{
 										"kind": "text",
-										"text": "ParserOptions"
+										"text": "ParserXMLOptions"
 									}
 								]
 							},
@@ -1851,7 +1776,120 @@
 			]
 		},
 		{
-			"id": 68,
+			"id": 77,
+			"name": "parseXMLSync",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/xml.ts",
+					"line": 42,
+					"character": 13,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/xml.ts#L42"
+				}
+			],
+			"signatures": [
+				{
+					"id": 78,
+					"name": "parseXMLSync",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "build xml sync"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "result - xml object"
+									}
+								]
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 79,
+							"name": "data",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "xmlString"
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"name": "convertableToString",
+								"qualifiedName": "convertableToString",
+								"package": "@types/xml2js"
+							}
+						},
+						{
+							"id": 80,
+							"name": "options",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "callback function or ParserXMLOptions"
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"name": "ParserOptions",
+								"qualifiedName": "ParserOptions",
+								"package": "@types/xml2js"
+							},
+							"defaultValue": "{}"
+						},
+						{
+							"id": 81,
+							"name": "callback",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "exec function on build successful"
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"name": "Function",
+								"qualifiedName": "Function",
+								"package": "typescript"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "void"
+					}
+				}
+			]
+		},
+		{
+			"id": 61,
 			"name": "sha1",
 			"kind": 64,
 			"kindString": "Function",
@@ -1861,12 +1899,12 @@
 					"fileName": "src/sha1.ts",
 					"line": 11,
 					"character": 6,
-					"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/sha1.ts#L11"
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/sha1.ts#L11"
 				}
 			],
 			"signatures": [
 				{
-					"id": 69,
+					"id": 62,
 					"name": "sha1",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -1892,7 +1930,7 @@
 					},
 					"parameters": [
 						{
-							"id": 70,
+							"id": 63,
 							"name": "args",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -1928,39 +1966,39 @@
 		{
 			"title": "References",
 			"children": [
-				41
+				33
 			]
 		},
 		{
 			"title": "Classes",
 			"children": [
-				23
+				8
 			]
 		},
 		{
 			"title": "Interfaces",
 			"children": [
-				42,
-				15,
-				4,
-				1
+				34,
+				1,
+				5
 			]
 		},
 		{
 			"title": "Type Aliases",
 			"children": [
-				11,
-				19
+				44
 			]
 		},
 		{
 			"title": "Functions",
 			"children": [
-				52,
-				60,
-				71,
-				75,
-				68
+				45,
+				53,
+				64,
+				68,
+				73,
+				77,
+				61
 			]
 		}
 	],
@@ -1969,7 +2007,7 @@
 			"fileName": "src/index.ts",
 			"line": 1,
 			"character": 0,
-			"url": "https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L1"
+			"url": "https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L1"
 		}
 	]
 }

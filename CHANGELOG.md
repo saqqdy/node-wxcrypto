@@ -1,11 +1,12 @@
 # 更新日志
 
-## 2023.03.09 v1.3.0 更新日志
+## 2023.03.11 v2.0.0 更新日志
 
-1. 更改 Buffer 分割方法：`slice => subarray`
-2. ramrif 替换为 [rm-all](https://github.com/saqqdy/rm-all)
-3. 修复类型导出
-4. 升级依赖包
+1. 增加传入 options: `normalizeTags`, `buildXmlOptions`, `xmlOptions`。`normalizeTags` 支持将 xml 属性由驼峰转下划线分隔的小写形式；`buildXmlOptions` 透传用于生成 xml 字符串的配置；`xmlOptions` 透传用于解析 xml 字符串的配置。注意：`normalizeTags` 会全量覆盖 `xmlOptions` 里面的 `tagNameProcessors` 方法，如果想要自定义 `tagNameProcessors`，请不要传入 `normalizeTags`
+2. 更改 Buffer 分割方法：`slice => subarray`
+3. ramrif 替换为 [rm-all](https://github.com/saqqdy/rm-all)
+4. 修复 package 的类型导出
+5. 升级依赖包
 
 ## 2023.02.08 v1.2.1 更新日志
 

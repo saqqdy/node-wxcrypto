@@ -1,6 +1,6 @@
-[index.md - v1.3.0](README.md) / Exports
+[index.md - v2.0.0](README.md) / Exports
 
-# index.md - v1.3.0
+# index.md - v2.0.0
 
 ## Table of contents
 
@@ -15,21 +15,21 @@
 ### Interfaces
 
 - [BuildXMLOptions](interfaces/BuildXMLOptions.md)
-- [WeixinMessageData](interfaces/WeixinMessageData.md)
-- [WeixinVerifyData](interfaces/WeixinVerifyData.md)
+- [Options](interfaces/Options.md)
 - [withXMLProp](interfaces/withXMLProp.md)
 
 ### Type Aliases
 
-- [WeixinMessageXML](modules.md#weixinmessagexml)
-- [WeixinVerifyMessageXMLData](modules.md#weixinverifymessagexmldata)
+- [ParserXMLOptions](modules.md#parserxmloptions)
 
 ### Functions
 
 - [aes256Decrypt](modules.md#aes256decrypt)
 - [aes256Encrypt](modules.md#aes256encrypt)
 - [buildXML](modules.md#buildxml)
+- [buildXMLSync](modules.md#buildxmlsync)
 - [parseXML](modules.md#parsexml)
+- [parseXMLSync](modules.md#parsexmlsync)
 - [sha1](modules.md#sha1)
 
 ## References
@@ -40,23 +40,13 @@ Renames and re-exports [WxCrypto](classes/WxCrypto.md)
 
 ## Type Aliases
 
-### WeixinMessageXML
+### ParserXMLOptions
 
-Ƭ **WeixinMessageXML**: [`withXMLProp`](interfaces/withXMLProp.md)<`Record`<`string`, `unknown`\> & { `appid`: `string` ; `encrypt`: `string` }\>
-
-#### Defined in
-
-[src/index.ts:22](https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L22)
-
----
-
-### WeixinVerifyMessageXMLData
-
-Ƭ **WeixinVerifyMessageXMLData**: [`withXMLProp`](interfaces/withXMLProp.md)<[`WeixinMessageData`](interfaces/WeixinMessageData.md) & { `ComponentVerifyTicket?`: `string` ; `InfoType`: `"component_verify_ticket"` }\>
+Ƭ **ParserXMLOptions**: `ParserOptions`
 
 #### Defined in
 
-[src/index.ts:37](https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L37)
+[src/xml.ts:18](https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/xml.ts#L18)
 
 ## Functions
 
@@ -105,7 +95,7 @@ str - return Buffer
 
 #### Defined in
 
-[src/aes256.ts:52](https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/aes256.ts#L52)
+[src/aes256.ts:52](https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/aes256.ts#L52)
 
 ---
 
@@ -158,7 +148,7 @@ str - return string
 
 #### Defined in
 
-[src/aes256.ts:23](https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/aes256.ts#L23)
+[src/aes256.ts:23](https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/aes256.ts#L23)
 
 ---
 
@@ -183,7 +173,33 @@ result - xmlString
 
 #### Defined in
 
-[src/xml.ts:60](https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/xml.ts#L60)
+[src/xml.ts:62](https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/xml.ts#L62)
+
+---
+
+### buildXMLSync
+
+▸ **buildXMLSync**(`data`, `options?`, `callback?`): `string`
+
+build xml sync
+
+#### Parameters
+
+| Name        | Type                                                             | Description                              |
+| :---------- | :--------------------------------------------------------------- | :--------------------------------------- |
+| `data`      | `Record`<`string`, `unknown`\>                                   | xml object                               |
+| `options?`  | `Function` \| [`BuildXMLOptions`](interfaces/BuildXMLOptions.md) | callback function or xml Builder options |
+| `callback?` | `Function`                                                       | exec function on build successful        |
+
+#### Returns
+
+`string`
+
+result - xmlString
+
+#### Defined in
+
+[src/xml.ts:85](https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/xml.ts#L85)
 
 ---
 
@@ -195,10 +211,10 @@ parse xml promise
 
 #### Parameters
 
-| Name      | Type                  | Description   |
-| :-------- | :-------------------- | :------------ |
-| `data`    | `convertableToString` | xmlString     |
-| `options` | `ParserOptions`       | ParserOptions |
+| Name      | Type                  | Description      |
+| :-------- | :-------------------- | :--------------- |
+| `data`    | `convertableToString` | xmlString        |
+| `options` | `ParserOptions`       | ParserXMLOptions |
 
 #### Returns
 
@@ -208,7 +224,33 @@ result - xml object
 
 #### Defined in
 
-[src/xml.ts:25](https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/xml.ts#L25)
+[src/xml.ts:27](https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/xml.ts#L27)
+
+---
+
+### parseXMLSync
+
+▸ **parseXMLSync**(`data`, `options?`, `callback`): `void`
+
+build xml sync
+
+#### Parameters
+
+| Name       | Type                  | Description                           |
+| :--------- | :-------------------- | :------------------------------------ |
+| `data`     | `convertableToString` | xmlString                             |
+| `options`  | `ParserOptions`       | callback function or ParserXMLOptions |
+| `callback` | `Function`            | exec function on build successful     |
+
+#### Returns
+
+`void`
+
+result - xml object
+
+#### Defined in
+
+[src/xml.ts:42](https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/xml.ts#L42)
 
 ---
 
@@ -232,4 +274,4 @@ str - 返回加密后的字符串
 
 #### Defined in
 
-[src/sha1.ts:11](https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/sha1.ts#L11)
+[src/sha1.ts:11](https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/sha1.ts#L11)

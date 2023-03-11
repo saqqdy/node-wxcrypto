@@ -1,4 +1,4 @@
-index.md - v1.3.0 / [Exports](modules.md)
+index.md - v2.0.0 / [Exports](modules.md)
 
 <div style="text-align: center;" align="center">
 
@@ -26,14 +26,19 @@ $ pnpm i node-wxcrypto
 
 # 使用yarn
 $ yarn add node-wxcrypto
-
-# 使用npm
-$ npm i node-wxcrypto --save
 ```
 
 ## 使用
 
-require 引入
+> 在实例化和加解密方法均支持传入 options: `normalizeTags`, `buildXmlOptions`, `xmlOptions`，加解密方法里面传入的 options 优先级更高。
+
+> `normalizeTags` 支持将 xml 属性由驼峰转下划线分隔的小写形式；`buildXmlOptions` 透传用于生成 xml 字符串的配置；`xmlOptions` 透传用于解析 xml 字符串的配置。
+
+> 注意：`normalizeTags` 会全量覆盖 `xmlOptions` 里面的 `tagNameProcessors` 方法，如果想要自定义 `tagNameProcessors`，请不要传入 `normalizeTags`
+
+### 引入和使用
+
+1. require 引入
 
 ```js
 const { WxCrypto } = require('node-wxcrypto')
@@ -44,9 +49,10 @@ const { WxCrypto } = require('node-wxcrypto')
  * @param {string} token token
  * @param {string} aesKey 43位
  * @param {string} appID appID
+ * @param {object} options Options
  * @return {Object} WxCrypto instance
  */
-const wxCrypto = new WxCrypto(token, aesKey, appID)
+const wxCrypto = new WxCrypto(token, aesKey, appID, options)
 
 /**
  * decrypt data
@@ -54,35 +60,30 @@ const wxCrypto = new WxCrypto(token, aesKey, appID)
  * @param {string} encrypt encrypt data
  * @param {string} timestamp timestamp
  * @param {string} nonce nonce
+ * @param {object} options Options
  * @return {Object} decrypt data
  */
-const data = await wxCrypto.decrypt(encrypt, timestamp, nonce)
+const data = await wxCrypto.decrypt(encrypt, timestamp, nonce, options)
 ```
 
-import 引入
+2. import 引入
 
 ```js
 import { WxCrypto } from 'node-wxcrypto'
+```
 
-/**
- * class WxCrypto
- *
- * @param {string} token token
- * @param {string} aesKey 43位
- * @param {string} appID appID
- * @return {Object} WxCrypto instance
- */
-const wxCrypto = new WxCrypto(token, aesKey, appID)
+### 使用配置
 
-/**
- * decrypt data
- *
- * @param {string} encrypt encrypt data
- * @param {string} timestamp timestamp
- * @param {string} nonce nonce
- * @return {Object} decrypt data
- */
-const data = await wxCrypto.decrypt(encrypt, timestamp, nonce)
+持将 xml 属性由驼峰转下划线分隔的小写形式：`ComponentVerifyTicket => component_verify_ticket`
+
+```js
+// normalizeTags可传入布尔值或者字符串，传入字符串时使用该字符串分隔，例如：normalizeTags = "__"，得到：`ComponentVerifyTicket => component__verify__ticket`
+const wxCrypto = new WxCrypto(token, aesKey, appID, {
+  normalizeTags: true,
+  buildXmlOptions: {}, // 透传用于生成 xml 字符串的配置
+  xmlOptions: {} // 透传用于解析 xml 字符串的配置
+})
+const data = await wxCrypto.decrypt(encrypt, timestamp, nonce, options)
 ```
 
 ## 问题和支持

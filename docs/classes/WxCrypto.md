@@ -1,4 +1,4 @@
-[index.md - v1.3.0](../README.md) / [Exports](../modules.md) / WxCrypto
+[index.md - v2.0.0](../README.md) / [Exports](../modules.md) / WxCrypto
 
 # Class: WxCrypto
 
@@ -26,30 +26,33 @@ var [err, decryptedXML] = wx.decrypt(signature, timestamp, nonce, encrypted);
 - [appID](WxCrypto.md#appid)
 - [iv](WxCrypto.md#iv)
 - [key](WxCrypto.md#key)
+- [options](WxCrypto.md#options)
 - [token](WxCrypto.md#token)
 
 ### Methods
 
 - [decrypt](WxCrypto.md#decrypt)
 - [encrypt](WxCrypto.md#encrypt)
+- [mergeXmlOptions](WxCrypto.md#mergexmloptions)
 
 ## Constructors
 
 ### constructor
 
-• **new WxCrypto**(`token`, `encodingAESKey`, `appID`)
+• **new WxCrypto**(`token`, `encodingAESKey`, `appID`, `options?`)
 
 #### Parameters
 
-| Name             | Type     |
-| :--------------- | :------- |
-| `token`          | `string` |
-| `encodingAESKey` | `string` |
-| `appID`          | `string` |
+| Name             | Type                                  |
+| :--------------- | :------------------------------------ |
+| `token`          | `string`                              |
+| `encodingAESKey` | `string`                              |
+| `appID`          | `string`                              |
+| `options`        | [`Options`](../interfaces/Options.md) |
 
 #### Defined in
 
-[src/index.ts:62](https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L62)
+[src/index.ts:48](https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L48)
 
 ## Properties
 
@@ -59,7 +62,7 @@ var [err, decryptedXML] = wx.decrypt(signature, timestamp, nonce, encrypted);
 
 #### Defined in
 
-[src/index.ts:61](https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L61)
+[src/index.ts:46](https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L46)
 
 ---
 
@@ -69,7 +72,7 @@ var [err, decryptedXML] = wx.decrypt(signature, timestamp, nonce, encrypted);
 
 #### Defined in
 
-[src/index.ts:60](https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L60)
+[src/index.ts:45](https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L45)
 
 ---
 
@@ -79,7 +82,17 @@ var [err, decryptedXML] = wx.decrypt(signature, timestamp, nonce, encrypted);
 
 #### Defined in
 
-[src/index.ts:59](https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L59)
+[src/index.ts:44](https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L44)
+
+---
+
+### options
+
+• **options**: [`Options`](../interfaces/Options.md)
+
+#### Defined in
+
+[src/index.ts:47](https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L47)
 
 ---
 
@@ -89,23 +102,24 @@ var [err, decryptedXML] = wx.decrypt(signature, timestamp, nonce, encrypted);
 
 #### Defined in
 
-[src/index.ts:58](https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L58)
+[src/index.ts:43](https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L43)
 
 ## Methods
 
 ### decrypt
 
-▸ **decrypt**(`data`, `timestamp`, `nonce`): `Promise`<`any`\>
+▸ **decrypt**(`data`, `timestamp`, `nonce`, `options?`): `Promise`<`any`\>
 
 decrypt
 
 #### Parameters
 
-| Name        | Type                 | Description                                          |
-| :---------- | :------------------- | :--------------------------------------------------- |
-| `data`      | `string`             | encrypt string, eg. oVMc1Y6qP86YfAa.../QGgk503Q68Q== |
-| `timestamp` | `string` \| `number` | timestamp                                            |
-| `nonce`     | `string` \| `number` | nonce                                                |
+| Name        | Type                                  | Description                                          |
+| :---------- | :------------------------------------ | :--------------------------------------------------- |
+| `data`      | `string`                              | encrypt string, eg. oVMc1Y6qP86YfAa.../QGgk503Q68Q== |
+| `timestamp` | `string` \| `number`                  | timestamp                                            |
+| `nonce`     | `string` \| `number`                  | nonce                                                |
+| `options`   | [`Options`](../interfaces/Options.md) | options                                              |
 
 #### Returns
 
@@ -115,22 +129,23 @@ xml - xmData, eg. { ComponentVerifyTicket: 'xxxx', ..., AppId: 'xxxx' }
 
 #### Defined in
 
-[src/index.ts:121](https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L121)
+[src/index.ts:135](https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L135)
 
 ---
 
 ### encrypt
 
-▸ **encrypt**(`data`): `Promise`<`string`\>
+▸ **encrypt**(`data`, `options?`): `Promise`<`string`\>
 
 encrypt
 Base64Encode(AES256Encrypt[RandomString(16B) + ContentLength(4B) + Content + appID])
 
 #### Parameters
 
-| Name   | Type                           | Description                                                                |
-| :----- | :----------------------------- | :------------------------------------------------------------------------- |
-| `data` | `Record`<`string`, `unknown`\> | xml data String, eg. { ComponentVerifyTicket: 'xxxx', ..., AppId: 'xxxx' } |
+| Name      | Type                                  | Description                                                                |
+| :-------- | :------------------------------------ | :------------------------------------------------------------------------- |
+| `data`    | `Record`<`string`, `unknown`\>        | xml data String, eg. { ComponentVerifyTicket: 'xxxx', ..., AppId: 'xxxx' } |
+| `options` | [`Options`](../interfaces/Options.md) | options                                                                    |
 
 #### Returns
 
@@ -140,4 +155,28 @@ encrypt - encrypt string, eg. oVMc1Y6qP86YfAa.../QGgk503Q68Q==
 
 #### Defined in
 
-[src/index.ts:93](https://github.com/saqqdy/node-wxcrypto/blob/67a1baf/src/index.ts#L93)
+[src/index.ts:103](https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L103)
+
+---
+
+### mergeXmlOptions
+
+▸ **mergeXmlOptions**(`options?`): `undefined` \| `ParserOptions`
+
+mergeXmlOptions
+
+#### Parameters
+
+| Name      | Type                                  | Description |
+| :-------- | :------------------------------------ | :---------- |
+| `options` | [`Options`](../interfaces/Options.md) | options     |
+
+#### Returns
+
+`undefined` \| `ParserOptions`
+
+xml - xmData, eg. { ComponentVerifyTicket: 'xxxx', ..., AppId: 'xxxx' }
+
+#### Defined in
+
+[src/index.ts:79](https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L79)
