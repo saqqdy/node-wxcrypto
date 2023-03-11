@@ -79,6 +79,7 @@ import {
   sha1
 } from 'node-wxcrypto'
 
+const wxCrypto = new WxCrypto(token, aesKey, appID, options)
 const data = await wxCrypto.decrypt(encrypt, timestamp, nonce, options)
 ```
 
