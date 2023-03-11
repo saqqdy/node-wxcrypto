@@ -46,9 +46,9 @@ const { WxCrypto } = require('node-wxcrypto')
 /**
  * class WxCrypto
  *
- * @param {string} token token
- * @param {string} aesKey 43位
- * @param {string} appID appID
+ * @param {string} token 消息校验Token，开发者在代替公众号或小程序接收到消息时，用此Token来校验消息。
+ * @param {string} aesKey 消息加解密Key，在代替公众号或小程序收发消息过程中使用。必须是长度为43位的字符串，只能是字母和数字。
+ * @param {string} appID 小程序appID
  * @param {object} options Options
  * @return {Object} WxCrypto instance
  */
@@ -69,7 +69,20 @@ const data = await wxCrypto.decrypt(encrypt, timestamp, nonce, options)
 2. import 引入
 
 ```js
-import { WxCrypto } from 'node-wxcrypto'
+import {
+  type BuildXMLOptions,
+  type ParserXMLOptions,
+  WxCrypto,
+  aes256Decrypt,
+  aes256Encrypt,
+  buildXML,
+  buildXMLSync,
+  parseXML,
+  parseXMLSync,
+  sha1
+} from 'node-wxcrypto'
+
+const data = await wxCrypto.decrypt(encrypt, timestamp, nonce, options)
 ```
 
 ### 使用配置

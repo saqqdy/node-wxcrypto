@@ -5,8 +5,8 @@
 ## Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 ## Table of contents
 
@@ -22,4 +22,4 @@
 
 #### Defined in
 
-[src/index.ts:26](https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/index.ts#L26)
+[src/index.ts:26](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/index.ts#L26)

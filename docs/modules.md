@@ -46,7 +46,7 @@ Renames and re-exports [WxCrypto](classes/WxCrypto.md)
 
 #### Defined in
 
-[src/xml.ts:18](https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/xml.ts#L18)
+[src/xml.ts:18](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/xml.ts#L18)
 
 ## Functions
 
@@ -78,14 +78,14 @@ options - stream.transform options
 
 #### Parameters
 
-| Name             | Type                      | Default value |
-| :--------------- | :------------------------ | :------------ |
-| `algorithm`      | `string`                  | `undefined`   |
-| `key`            | `Buffer`                  | `undefined`   |
-| `iv`             | `Buffer`                  | `undefined`   |
-| `inputEncoding`  | `Encoding`                | `'base64'`    |
-| `outputEncoding` | `undefined` \| `Encoding` | `undefined`   |
-| `options?`       | `CipherCCMOptions`        | `undefined`   |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `algorithm` | `string` | `undefined` |
+| `key` | `Buffer` | `undefined` |
+| `iv` | `Buffer` | `undefined` |
+| `inputEncoding` | `Encoding` | `'base64'` |
+| `outputEncoding` | `undefined` \| `Encoding` | `undefined` |
+| `options?` | `CipherCCMOptions` | `undefined` |
 
 #### Returns
 
@@ -95,9 +95,9 @@ str - return Buffer
 
 #### Defined in
 
-[src/aes256.ts:52](https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/aes256.ts#L52)
+[src/aes256.ts:52](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/aes256.ts#L52)
 
----
+___
 
 ### aes256Encrypt
 
@@ -131,14 +131,14 @@ options - stream.transform options
 
 #### Parameters
 
-| Name             | Type                      | Default value |
-| :--------------- | :------------------------ | :------------ |
-| `algorithm`      | `Buffer`[]                | `undefined`   |
-| `key`            | `Buffer`                  | `undefined`   |
-| `iv`             | `Buffer`                  | `undefined`   |
-| `inputEncoding`  | `undefined` \| `Encoding` | `undefined`   |
-| `outputEncoding` | `undefined` \| `Encoding` | `undefined`   |
-| `options?`       | `CipherGCMOptions`        | `undefined`   |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `algorithm` | `Buffer`[] | `undefined` |
+| `key` | `Buffer` | `undefined` |
+| `iv` | `Buffer` | `undefined` |
+| `inputEncoding` | `undefined` \| `Encoding` | `undefined` |
+| `outputEncoding` | `undefined` \| `Encoding` | `undefined` |
+| `options?` | `CipherGCMOptions` | `undefined` |
 
 #### Returns
 
@@ -148,9 +148,9 @@ str - return string
 
 #### Defined in
 
-[src/aes256.ts:23](https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/aes256.ts#L23)
+[src/aes256.ts:23](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/aes256.ts#L23)
 
----
+___
 
 ### buildXML
 
@@ -160,9 +160,9 @@ build xml
 
 #### Parameters
 
-| Name       | Type                                               | Description         |
-| :--------- | :------------------------------------------------- | :------------------ |
-| `data`     | `Record`<`string`, `unknown`\>                     | xml object          |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `data` | `Record`<`string`, `unknown`\> | xml object |
 | `options?` | [`BuildXMLOptions`](interfaces/BuildXMLOptions.md) | xml Builder options |
 
 #### Returns
@@ -173,9 +173,9 @@ result - xmlString
 
 #### Defined in
 
-[src/xml.ts:62](https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/xml.ts#L62)
+[src/xml.ts:62](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/xml.ts#L62)
 
----
+___
 
 ### buildXMLSync
 
@@ -185,11 +185,11 @@ build xml sync
 
 #### Parameters
 
-| Name        | Type                                                             | Description                              |
-| :---------- | :--------------------------------------------------------------- | :--------------------------------------- |
-| `data`      | `Record`<`string`, `unknown`\>                                   | xml object                               |
-| `options?`  | `Function` \| [`BuildXMLOptions`](interfaces/BuildXMLOptions.md) | callback function or xml Builder options |
-| `callback?` | `Function`                                                       | exec function on build successful        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `data` | `Record`<`string`, `unknown`\> | xml object |
+| `options?` | `Function` \| [`BuildXMLOptions`](interfaces/BuildXMLOptions.md) | callback function or xml Builder options |
+| `callback?` | `Function` | exec function on build successful |
 
 #### Returns
 
@@ -199,9 +199,9 @@ result - xmlString
 
 #### Defined in
 
-[src/xml.ts:85](https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/xml.ts#L85)
+[src/xml.ts:85](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/xml.ts#L85)
 
----
+___
 
 ### parseXML
 
@@ -211,10 +211,10 @@ parse xml promise
 
 #### Parameters
 
-| Name      | Type                  | Description      |
-| :-------- | :-------------------- | :--------------- |
-| `data`    | `convertableToString` | xmlString        |
-| `options` | `ParserOptions`       | ParserXMLOptions |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `data` | `convertableToString` | xmlString |
+| `options` | `ParserOptions` | ParserXMLOptions |
 
 #### Returns
 
@@ -224,9 +224,9 @@ result - xml object
 
 #### Defined in
 
-[src/xml.ts:27](https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/xml.ts#L27)
+[src/xml.ts:27](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/xml.ts#L27)
 
----
+___
 
 ### parseXMLSync
 
@@ -236,11 +236,11 @@ build xml sync
 
 #### Parameters
 
-| Name       | Type                  | Description                           |
-| :--------- | :-------------------- | :------------------------------------ |
-| `data`     | `convertableToString` | xmlString                             |
-| `options`  | `ParserOptions`       | callback function or ParserXMLOptions |
-| `callback` | `Function`            | exec function on build successful     |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `data` | `convertableToString` | xmlString |
+| `options` | `ParserOptions` | callback function or ParserXMLOptions |
+| `callback` | `Function` | exec function on build successful |
 
 #### Returns
 
@@ -250,21 +250,21 @@ result - xml object
 
 #### Defined in
 
-[src/xml.ts:42](https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/xml.ts#L42)
+[src/xml.ts:42](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/xml.ts#L42)
 
----
+___
 
 ### sha1
 
 ▸ **sha1**(`...args`): `string`
 
-sha1 摘要算法
+sha1摘要算法
 
 #### Parameters
 
-| Name      | Type       | Description |
-| :-------- | :--------- | :---------- |
-| `...args` | `string`[] | 参数        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `...args` | `string`[] | 参数 |
 
 #### Returns
 
@@ -274,4 +274,4 @@ str - 返回加密后的字符串
 
 #### Defined in
 
-[src/sha1.ts:11](https://github.com/saqqdy/node-wxcrypto/blob/82369d0/src/sha1.ts#L11)
+[src/sha1.ts:11](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/sha1.ts#L11)
