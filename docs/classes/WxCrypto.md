@@ -52,7 +52,7 @@ var [err, decryptedXML] = wx.decrypt(signature, timestamp, nonce, encrypted);
 
 #### Defined in
 
-[src/index.ts:48](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/index.ts#L48)
+[src/index.ts:48](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/index.ts#L48)
 
 ## Properties
 
@@ -62,7 +62,7 @@ var [err, decryptedXML] = wx.decrypt(signature, timestamp, nonce, encrypted);
 
 #### Defined in
 
-[src/index.ts:46](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/index.ts#L46)
+[src/index.ts:46](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/index.ts#L46)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:45](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/index.ts#L45)
+[src/index.ts:45](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/index.ts#L45)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:44](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/index.ts#L44)
+[src/index.ts:44](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/index.ts#L44)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:47](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/index.ts#L47)
+[src/index.ts:47](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/index.ts#L47)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:43](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/index.ts#L43)
+[src/index.ts:43](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/index.ts#L43)
 
 ## Methods
 
@@ -129,7 +129,7 @@ xml - xmData, eg. { ComponentVerifyTicket: 'xxxx', ..., AppId: 'xxxx' }
 
 #### Defined in
 
-[src/index.ts:135](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/index.ts#L135)
+[src/index.ts:135](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/index.ts#L135)
 
 ___
 
@@ -155,7 +155,7 @@ encrypt - encrypt string, eg. oVMc1Y6qP86YfAa.../QGgk503Q68Q==
 
 #### Defined in
 
-[src/index.ts:103](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/index.ts#L103)
+[src/index.ts:103](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/index.ts#L103)
 
 ___
 
@@ -179,4 +179,4 @@ xml - xmData, eg. { ComponentVerifyTicket: 'xxxx', ..., AppId: 'xxxx' }
 
 #### Defined in
 
-[src/index.ts:79](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/index.ts#L79)
+[src/index.ts:79](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/index.ts#L79)

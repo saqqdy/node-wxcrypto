@@ -46,7 +46,7 @@ Renames and re-exports [WxCrypto](classes/WxCrypto.md)
 
 #### Defined in
 
-[src/xml.ts:18](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/xml.ts#L18)
+[src/xml.ts:18](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/xml.ts#L18)
 
 ## Functions
 
@@ -95,7 +95,7 @@ str - return Buffer
 
 #### Defined in
 
-[src/aes256.ts:52](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/aes256.ts#L52)
+[src/aes256.ts:52](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/aes256.ts#L52)
 
 ___
 
@@ -148,7 +148,7 @@ str - return string
 
 #### Defined in
 
-[src/aes256.ts:23](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/aes256.ts#L23)
+[src/aes256.ts:23](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/aes256.ts#L23)
 
 ___
 
@@ -173,7 +173,7 @@ result - xmlString
 
 #### Defined in
 
-[src/xml.ts:62](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/xml.ts#L62)
+[src/xml.ts:62](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/xml.ts#L62)
 
 ___
 
@@ -199,7 +199,7 @@ result - xmlString
 
 #### Defined in
 
-[src/xml.ts:85](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/xml.ts#L85)
+[src/xml.ts:85](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/xml.ts#L85)
 
 ___
 
@@ -224,7 +224,7 @@ result - xml object
 
 #### Defined in
 
-[src/xml.ts:27](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/xml.ts#L27)
+[src/xml.ts:27](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/xml.ts#L27)
 
 ___
 
@@ -250,7 +250,7 @@ result - xml object
 
 #### Defined in
 
-[src/xml.ts:42](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/xml.ts#L42)
+[src/xml.ts:42](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/xml.ts#L42)
 
 ___
 
@@ -274,4 +274,4 @@ str - 返回加密后的字符串
 
 #### Defined in
 
-[src/sha1.ts:11](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/sha1.ts#L11)
+[src/sha1.ts:11](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/sha1.ts#L11)

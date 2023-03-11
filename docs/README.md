@@ -8,7 +8,6 @@ index.md - v2.0.0 / [Exports](modules.md)
 
 [![NPM version][npm-image]][npm-url]
 [![Codacy Badge][codacy-image]][codacy-url]
-[![build status][travis-image]][travis-url]
 [![Test coverage][codecov-image]][codecov-url]
 [![License][license-image]][license-url]
 
@@ -111,8 +110,6 @@ Please open an issue [here](https://github.com/saqqdy/node-wxcrypto/issues).
 [npm-url]: https://npmjs.org/package/node-wxcrypto
 [codacy-image]: https://app.codacy.com/project/badge/Grade/f70d4880e4ad4f40aa970eb9ee9d0696
 [codacy-url]: https://www.codacy.com/gh/saqqdy/node-wxcrypto/dashboard?utm_source=github.com&utm_medium=referral&utm_content=saqqdy/node-wxcrypto&utm_campaign=Badge_Grade
-[travis-image]: https://travis-ci.com/saqqdy/node-wxcrypto.svg?branch=master
-[travis-url]: https://travis-ci.com/saqqdy/node-wxcrypto
 [codecov-image]: https://img.shields.io/codecov/c/github/saqqdy/node-wxcrypto.svg?style=flat-square
 [codecov-url]: https://codecov.io/github/saqqdy/node-wxcrypto?branch=master
 [license-image]: https://img.shields.io/badge/License-MIT-blue.svg

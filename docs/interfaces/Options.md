@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[src/index.ts:20](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/index.ts#L20)
+[src/index.ts:20](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/index.ts#L20)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:18](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/index.ts#L18)
+[src/index.ts:18](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/index.ts#L18)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[src/index.ts:22](https://github.com/saqqdy/node-wxcrypto/blob/22555e1/src/index.ts#L22)
+[src/index.ts:22](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/index.ts#L22)
