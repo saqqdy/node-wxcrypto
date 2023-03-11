@@ -1,4 +1,4 @@
-index.md - v2.0.0 / [Exports](modules.md)
+index.md - v2.0.1 / [Exports](modules.md)
 
 <div style="text-align: center;" align="center">
 
@@ -81,6 +81,7 @@ import {
   sha1
 } from 'node-wxcrypto'
 
+const wxCrypto = new WxCrypto(token, aesKey, appID, options)
 const data = await wxCrypto.decrypt(encrypt, timestamp, nonce, options)
 ```
 

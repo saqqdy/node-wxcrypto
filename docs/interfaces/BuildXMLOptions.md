@@ -1,4 +1,4 @@
-[index.md - v2.0.0](../README.md) / [Exports](../modules.md) / BuildXMLOptions
+[index.md - v2.0.1](../README.md) / [Exports](../modules.md) / BuildXMLOptions
 
 # Interface: BuildXMLOptions
 
@@ -62,7 +62,7 @@ BuilderOptions.cdata
 
 #### Defined in
 
-[src/xml.ts:13](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/xml.ts#L13)
+[src/xml.ts:13](https://github.com/saqqdy/node-wxcrypto/blob/912b90f/src/xml.ts#L13)
 
 ___
 
@@ -104,7 +104,7 @@ BuilderOptions.headless
 
 #### Defined in
 
-[src/xml.ts:14](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/xml.ts#L14)
+[src/xml.ts:14](https://github.com/saqqdy/node-wxcrypto/blob/912b90f/src/xml.ts#L14)
 
 ___
 
@@ -132,7 +132,7 @@ BuilderOptions.rootName
 
 #### Defined in
 
-[src/xml.ts:15](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/xml.ts#L15)
+[src/xml.ts:15](https://github.com/saqqdy/node-wxcrypto/blob/912b90f/src/xml.ts#L15)
 
 ___
 

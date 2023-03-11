@@ -1,5 +1,10 @@
 # 更新日志
 
+## 2023.03.11 v2.0.1 更新日志
+
+1. 修复 options 不生效的问题
+2. 完善类型导出
+
 ## 2023.03.11 v2.0.0 更新日志
 
 1. 增加传入 options: `normalizeTags`, `buildXmlOptions`, `xmlOptions`。`normalizeTags` 支持将 xml 属性由驼峰转下划线分隔的小写形式；`buildXmlOptions` 透传用于生成 xml 字符串的配置；`xmlOptions` 透传用于解析 xml 字符串的配置。注意：`normalizeTags` 会全量覆盖 `xmlOptions` 里面的 `tagNameProcessors` 方法，如果想要自定义 `tagNameProcessors`，请不要传入 `normalizeTags`

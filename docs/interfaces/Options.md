@@ -1,4 +1,4 @@
-[index.md - v2.0.0](../README.md) / [Exports](../modules.md) / Options
+[index.md - v2.0.1](../README.md) / [Exports](../modules.md) / Options
 
 # Interface: Options
 
@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[src/index.ts:20](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/index.ts#L20)
+[src/index.ts:20](https://github.com/saqqdy/node-wxcrypto/blob/912b90f/src/index.ts#L20)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:18](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/index.ts#L18)
+[src/index.ts:18](https://github.com/saqqdy/node-wxcrypto/blob/912b90f/src/index.ts#L18)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[src/index.ts:22](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/index.ts#L22)
+[src/index.ts:22](https://github.com/saqqdy/node-wxcrypto/blob/912b90f/src/index.ts#L22)

@@ -1,4 +1,4 @@
-[index.md - v2.0.0](../README.md) / [Exports](../modules.md) / withXMLProp
+[index.md - v2.0.1](../README.md) / [Exports](../modules.md) / withXMLProp
 
 # Interface: withXMLProp<T\>
 
@@ -22,4 +22,4 @@
 
 #### Defined in
 
-[src/index.ts:26](https://github.com/saqqdy/node-wxcrypto/blob/8f19697/src/index.ts#L26)
+[src/index.ts:26](https://github.com/saqqdy/node-wxcrypto/blob/912b90f/src/index.ts#L26)

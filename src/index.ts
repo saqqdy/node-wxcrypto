@@ -76,7 +76,8 @@ class WxCrypto {
 	 * @param options - options
 	 * @returns xml - xmData, eg. \{ ComponentVerifyTicket: 'xxxx', ..., AppId: 'xxxx' \}
 	 */
-	mergeXmlOptions(options: Options = {}) {
+	mergeXmlOptions(options: Options = {}): ParserXMLOptions | undefined {
+		options = Object.assign(this.options, options)
 		// normalize tags
 		if (options.normalizeTags) {
 			const sep = typeof options.normalizeTags === 'string' ? options.normalizeTags : '_'
@@ -89,7 +90,7 @@ class WxCrypto {
 						.toLocaleLowerCase()
 			]
 		}
-		return options.xmlOptions || this.options.xmlOptions
+		return options.xmlOptions
 	}
 
 	/**
