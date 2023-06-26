@@ -5,6 +5,7 @@
 		"corejs",
 		"esbuild",
 		"filesize",
+		"iife",
 		"instanceof",
 		"lcov",
 		"node-wxcrypto",

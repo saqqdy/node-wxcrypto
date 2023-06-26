@@ -1,6 +1,6 @@
 export { default as WxCrypto, type Options } from './WxCrypto'
 export { aes256Decrypt, aes256Encrypt } from './aes256'
-// export { PKCS7Decode, PKCS7Encode } from './pkcs7'
+export { PKCS7Decode, PKCS7Encode } from './pkcs7'
 export { default as sha1 } from './sha1'
 export {
 	type BuildXMLOptions,

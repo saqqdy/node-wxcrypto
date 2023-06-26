@@ -1,7 +1,6 @@
 import { randomBytes } from 'crypto'
 import { type BuildXMLOptions, type ParserXMLOptions, buildXML, parseXML } from './xml'
 import { aes256Decrypt, aes256Encrypt } from './aes256'
-// import { PKCS7Decode, PKCS7Encode } from './pkcs7'
 import sha1 from './sha1'
 
 const debug = require('debug')('wxcrypto')

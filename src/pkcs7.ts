@@ -1,4 +1,4 @@
-const debug = require('debug')('wxcrypto:aes256')
+const debug = require('debug')('wxcrypto:pkcs7')
 
 /**
  * PKCS7 decode

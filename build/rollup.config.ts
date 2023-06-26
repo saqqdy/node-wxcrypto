@@ -80,7 +80,7 @@ function createEntry(config: Config) {
 	if (isGlobalBuild || config.browser) _config.output.banner = banner
 
 	if (isGlobalBuild) {
-		_config.output.name = _config.output.name || 'WxCrypto'
+		_config.output.name = _config.output.name || 'wxcrypto'
 	}
 
 	if (!isGlobalBuild) {
@@ -108,7 +108,7 @@ function createEntry(config: Config) {
 		isTypeScript &&
 			_config.plugins.push(
 				esbuild({
-					// sourceMap: false,
+					sourceMap: false,
 					target: 'es2015',
 					define: {
 						__VERSION__: JSON.stringify(version)

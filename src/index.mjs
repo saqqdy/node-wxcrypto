@@ -1,8 +1,8 @@
 import main from './index.cjs.js'
 
 const {
-	// PKCS7Decode,
-	// PKCS7Encode,
+	PKCS7Decode,
+	PKCS7Encode,
 	WxCrypto,
 	aes256Decrypt,
 	aes256Encrypt,
@@ -16,8 +16,8 @@ const {
 
 export {
 	main as default,
-	// PKCS7Decode,
-	// PKCS7Encode,
+	PKCS7Decode,
+	PKCS7Encode,
 	WxCrypto,
 	aes256Decrypt,
 	aes256Encrypt,

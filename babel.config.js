@@ -4,7 +4,7 @@ module.exports = {
 			'@babel/env',
 			{
 				targets: {
-					node: '14.15'
+					node: '12.20'
 				},
 				exclude: ['transform-regenerator']
 			}
