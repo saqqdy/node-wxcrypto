@@ -10,6 +10,7 @@
 		"lcov",
 		"node-wxcrypto",
 		"onwarn",
+		"PKCS",
 		"pnpm",
 		"reinstaller",
 		"Retryable",

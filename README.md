@@ -72,16 +72,16 @@ const data = await wxCrypto.decrypt(encrypt, timestamp, nonce, options)
 
 ```js
 import {
-  type BuildXMLOptions,
-  type ParserXMLOptions,
-  WxCrypto,
-  aes256Decrypt,
-  aes256Encrypt,
-  buildXML,
-  buildXMLSync,
-  parseXML,
-  parseXMLSync,
-  sha1
+  // PKCS7Decode,
+  // PKCS7Encode,
+  WxCrypto
+  // aes256Decrypt,
+  // aes256Encrypt,
+  // buildXML,
+  // buildXMLSync,
+  // parseXML,
+  // parseXMLSync,
+  // sha1
 } from 'node-wxcrypto'
 
 const wxCrypto = new WxCrypto(token, aesKey, appID, options)
