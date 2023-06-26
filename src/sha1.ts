@@ -13,4 +13,4 @@ const sha1 = (...args: string[]): string => {
 	return createHash('sha1').update(args.sort().join('')).digest('hex')
 }
 
-export { sha1, sha1 as default }
+export default sha1

@@ -1,7 +1,6 @@
 {
 	"cSpell.words": [
 		"Codacy",
-		"consola",
 		"convertable",
 		"corejs",
 		"esbuild",
@@ -9,7 +8,7 @@
 		"instanceof",
 		"lcov",
 		"node-wxcrypto",
-		"picocolors",
+		"onwarn",
 		"pnpm",
 		"reinstaller",
 		"Retryable",

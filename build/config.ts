@@ -16,23 +16,11 @@ export const banner =
 	' * ' +
 	pkg.description +
 	'\n' +
-	' * (c) 2022-' +
+	' * (c) 2023-' +
 	new Date().getFullYear() +
 	' saqqdy \n' +
 	' * Released under the MIT License.\n' +
 	' */'
-
-export const bannerText =
-	pkg.name +
-	' v' +
-	pkg.version +
-	'\n' +
-	pkg.description +
-	'\n' +
-	'(c) 2022-' +
-	new Date().getFullYear() +
-	' saqqdy \n' +
-	'Released under the MIT License.'
 
 export const externals = {}
 
@@ -56,29 +44,7 @@ export const extensions = [
 
 export const alias = {
 	'@': resolve(__dirname, '..', 'src'),
-	'hooks-demi': resolve(__dirname, '..')
-}
-
-export const jsexclude = /node_modules/
-
-export function generateExternal(
-	{ name, input, isFull = false }: { name: string; input: string; isFull?: boolean },
-	externals: string[] = []
-) {
-	const { dependencies = {}, devDependencies = {}, peerDependencies = {} } = pkg
-	return (id: string) => {
-		const pkgs: string[] = Object.keys(peerDependencies)
-		if (!isFull) {
-			pkgs.push(...Object.keys(dependencies), ...Object.keys(devDependencies))
-		}
-		return [...new Set(pkgs)].some(
-			pkg =>
-				id === pkg ||
-				id.startsWith(`${pkg}/`) ||
-				(id !== input && id.includes(`packages/${name}`)) ||
-				externals.includes(id)
-		)
-	}
+	'node-wxcrypto': resolve(__dirname, '..')
 }
 
 export const reporter = (opt: any, outputOptions: any, info: any) =>
@@ -89,8 +55,3 @@ export const reporter = (opt: any, outputOptions: any, info: any) =>
 	)}: bundle size ${chalk.yellow(info.bundleSize)} -> minified ${chalk.green(
 		(info.minSize && `${info.minSize}`) || ''
 	)}`
-
-export const excludeFiles = (files: string[]) => {
-	const excludes = ['node_modules', 'test', 'mock', 'gulpfile', 'dist']
-	return files.filter(path => !excludes.some(exclude => path.includes(exclude)))
-}

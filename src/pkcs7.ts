@@ -30,5 +30,3 @@ export const PKCS7Encode = (data: Buffer): Buffer => {
 	debug('PKCS7Decode: ', data, size, len, padAmount, result, Buffer.concat([data, result]))
 	return Buffer.concat([data, result])
 }
-
-export default { PKCS7Decode, PKCS7Encode }

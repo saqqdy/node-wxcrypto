@@ -3,15 +3,12 @@ module.exports = {
 		[
 			'@babel/env',
 			{
-				loose: true,
-				modules: 'auto',
-				useBuiltIns: 'usage',
-				corejs: 3,
-				targets: 'node 12.20'
-				// exclude: ['es.promise', 'es.promise.finally']
+				targets: {
+					node: '14.15'
+				},
+				exclude: ['transform-regenerator']
 			}
 		],
 		'@babel/typescript'
-	],
-	plugins: []
+	]
 }

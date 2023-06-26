@@ -7,13 +7,18 @@
 [![NPM version][npm-image]][npm-url]
 [![Codacy Badge][codacy-image]][codacy-url]
 [![Test coverage][codecov-image]][codecov-url]
+[![npm download][download-image]][download-url]
 [![License][license-image]][license-url]
 
 [![Sonar][sonar-image]][sonar-url]
 
 </div>
 
-## **完整文档请查阅： [API 完整文档](./docs/modules.md)**
+<div style="text-align: center; margin-bottom: 20px;" align="center">
+
+### **[Documentation](https://www.saqqdy.com/node-wxcrypto)** • **[Change Log](./CHANGELOG.md)**
+
+</div>
 
 ## 安装
 
@@ -111,6 +116,8 @@ Please open an issue [here](https://github.com/saqqdy/node-wxcrypto/issues).
 [codacy-url]: https://www.codacy.com/gh/saqqdy/node-wxcrypto/dashboard?utm_source=github.com&utm_medium=referral&utm_content=saqqdy/node-wxcrypto&utm_campaign=Badge_Grade
 [codecov-image]: https://img.shields.io/codecov/c/github/saqqdy/node-wxcrypto.svg?style=flat-square
 [codecov-url]: https://codecov.io/github/saqqdy/node-wxcrypto?branch=master
+[download-image]: https://img.shields.io/npm/dm/node-wxcrypto.svg?style=flat-square
+[download-url]: https://npmjs.org/package/node-wxcrypto
 [license-image]: https://img.shields.io/badge/License-MIT-blue.svg
 [license-url]: LICENSE
 [sonar-image]: https://sonarcloud.io/api/project_badges/quality_gate?project=saqqdy_node-wxcrypto

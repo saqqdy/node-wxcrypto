@@ -1,6 +1,9 @@
+/dist
 /lib
 /es
+/docs
 coverage
+/typings
 *.bak
 *.bak.js
 *_bak

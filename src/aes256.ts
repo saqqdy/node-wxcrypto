@@ -67,5 +67,3 @@ export const aes256Decrypt = (
 		])
 	)
 }
-
-export default { aes256Encrypt, aes256Decrypt }

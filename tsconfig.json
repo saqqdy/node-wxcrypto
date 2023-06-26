@@ -1,7 +1,6 @@
 {
 	"compilerOptions": {
-		"allowJs": true,
-		"target": "es5",
+		"target": "ESNext",
 		"moduleResolution": "node",
 		// "lib": ["es5", "es6", "dom", "dom.iterable", "esnext"],
 		"lib": ["ESNext"],

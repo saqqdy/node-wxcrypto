@@ -99,10 +99,3 @@ export const buildXMLSync = (
 	callback && callback(xmlString)
 	return xmlString
 }
-
-export default {
-	parseXML,
-	parseXMLSync,
-	buildXML,
-	buildXMLSync
-}
