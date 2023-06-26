@@ -1,7 +1,7 @@
 {
 	"name": "node-wxcrypto",
 	"description": "微信消息加解密nodejs版本",
-	"version": "2.0.1",
+	"version": "3.0.0",
 	"packageManager": "pnpm@8.6.3",
 	"main": "dist/index.cjs.js",
 	"module": "dist/index.esm-bundler.js",
