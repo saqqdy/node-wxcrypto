@@ -32,8 +32,8 @@ devDependencies:
     specifier: ^7.36.0
     version: 7.36.0(@types/node@20.3.1)
   '@node-kit/extra.fs':
-    specifier: ^2.5.1
-    version: 2.5.1
+    specifier: ^3.0.0
+    version: 3.0.0
   '@rollup/plugin-babel':
     specifier: ^6.0.3
     version: 6.0.3(@babel/core@7.22.5)(rollup@3.25.2)
@@ -2121,6 +2121,11 @@ packages:
 
   /@node-kit/extra.fs@2.5.1:
     resolution: {integrity: sha512-cj0gMQ+yE4jNmCrtz1TEXYMX+zNOJEGxGy1YzG2IBek0ndKszIYRxyLbIz3URh1MSTMGT+f9Zxy3iARB8vVP9g==}
+    dev: true
+
+  /@node-kit/extra.fs@3.0.0:
+    resolution: {integrity: sha512-unzXvU4DJc2QX0tIHtmF2fQtafpgUWPGJUDurTUUWQF++IyBOfGy5j4Me6ck7iSEd2ajmdnydIzBCqWsPHQVGg==}
+    hasBin: true
     dev: true
 
   /@node-kit/extra.path@2.5.1:
