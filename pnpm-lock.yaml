@@ -10,7 +10,7 @@ dependencies:
     version: 4.3.4
   js-cool:
     specifier: ^5.3.0
-    version: 5.3.0
+    version: 5.5.0
   xml2js:
     specifier: ^0.6.2
     version: 0.6.2
@@ -96,10 +96,10 @@ devDependencies:
     version: 1.4.0
   reinstaller:
     specifier: ^3.0.2
-    version: 3.0.2(debug@4.3.4)(js-cool@5.3.0)
+    version: 3.0.2(debug@4.3.4)(js-cool@5.5.0)
   rm-all:
     specifier: ^1.1.1
-    version: 1.1.1(js-cool@5.3.0)
+    version: 1.1.1(js-cool@5.5.0)
   rollup:
     specifier: ^3.27.0
     version: 3.27.0
@@ -5982,8 +5982,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /js-cool@5.3.0:
-    resolution: {integrity: sha512-OuVMIK6/73Z7YqE4y4vAZhMeSD1EpmV5eR/EvPo/wJHqkcW/qWEaFdOPRuymDe8Yd5j4TNOG2hYiTwBwoR/SqQ==}
+  /js-cool@5.5.0:
+    resolution: {integrity: sha512-oTLHeruzQZ2K8NlN2gI++badOF0drNYjVugPxBM4C5v+rgqN0XsfZ40+80Y6CvIWShy9SkxrbJl92BU6Pj/5Gg==}
     engines: {node: '>=12.20'}
     dependencies:
       load-source: 1.2.0
@@ -7313,7 +7313,7 @@ packages:
       jsesc: 0.5.0
     dev: true
 
-  /reinstaller@3.0.2(debug@4.3.4)(js-cool@5.3.0):
+  /reinstaller@3.0.2(debug@4.3.4)(js-cool@5.5.0):
     resolution: {integrity: sha512-VLjzE9tQMghK53x1Ccx96AEdRRe+dKq5zsnSNFLf1d7QsLAaRV0yX3lU1djgIaPYNSjDOXBRXjt8Y/GFTrHt/A==}
     hasBin: true
     peerDependencies:
@@ -7327,7 +7327,7 @@ packages:
       cosmiconfig: 8.2.0
       debug: 4.3.4
       global-modules: 2.0.0
-      js-cool: 5.3.0
+      js-cool: 5.5.0
       monorepo-root: 2.5.1
       ora: 6.3.1
       what-pm: 2.5.1(core-js@3.32.0)
@@ -7434,7 +7434,7 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rm-all@1.1.1(js-cool@5.3.0):
+  /rm-all@1.1.1(js-cool@5.5.0):
     resolution: {integrity: sha512-5n3SiDtp0BxHX485YhfbxR1RLtR9KlRTCj0hHahTufYEhUyE9ydy1nRtP4OG9kXifsYClu43gwkqcOnjpz/HPQ==}
     engines: {node: '>=12.20'}
     hasBin: true
@@ -7443,7 +7443,7 @@ packages:
     dependencies:
       '@node-kit/extra.fs': 3.1.1
       commander: 11.0.0
-      js-cool: 5.3.0
+      js-cool: 5.5.0
     dev: true
 
   /rollup-plugin-esbuild@5.0.0(esbuild@0.18.8)(rollup@3.27.0):
