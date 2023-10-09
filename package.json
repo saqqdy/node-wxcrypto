@@ -77,7 +77,7 @@
 		"prettier-config-common": "^1.4.0",
 		"reinstaller": "^3.0.2",
 		"rm-all": "^1.1.1",
-		"rollup": "^3.27.0",
+		"rollup": "^4.0.2",
 		"rollup-plugin-esbuild": "^5.0.0",
 		"rollup-plugin-filesize": "^10.0.0",
 		"rollup-plugin-visualizer": "^5.9.2",
