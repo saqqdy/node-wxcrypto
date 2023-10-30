@@ -10,7 +10,7 @@ dependencies:
     version: 4.3.4
   js-cool:
     specifier: ^5.3.0
-    version: 5.3.0
+    version: 5.13.0
   xml2js:
     specifier: ^0.6.2
     version: 0.6.2
@@ -96,10 +96,10 @@ devDependencies:
     version: 1.4.0
   reinstaller:
     specifier: ^3.0.2
-    version: 3.0.2(debug@4.3.4)(js-cool@5.3.0)
+    version: 3.0.2(debug@4.3.4)(js-cool@5.13.0)
   rm-all:
     specifier: ^1.1.1
-    version: 1.1.1(js-cool@5.3.0)
+    version: 1.1.1(js-cool@5.13.0)
   rollup:
     specifier: ^3.27.0
     version: 3.27.0
@@ -2181,8 +2181,8 @@ packages:
       eslint-scope: 5.1.1
     dev: true
 
-  /@node-kit/extra.cp@3.1.1:
-    resolution: {integrity: sha512-YyOp/OPHRW/Uv0TyJWXoHI3O/s8pAgX4IIizYvQi4oJjPNt95RvuIbBZ4q2YcSYOtHpLn1eoTJ3q7+wBmV0U+A==}
+  /@node-kit/extra.cp@3.2.0:
+    resolution: {integrity: sha512-8n27oOF0clO0VsqkhSo0PXTOG9YGYS25f8zsf9JKsMaT9IkZjPNCzgcNDQkIOE/e3r1u7c5j6ab6siWOON0keQ==}
     hasBin: true
 
   /@node-kit/extra.fs@2.5.1:
@@ -2356,7 +2356,7 @@ packages:
       is-glob: 4.0.3
       open: 9.1.0
       picocolors: 1.0.0
-      tslib: 2.6.1
+      tslib: 2.6.2
     dev: true
 
   /@pnpm/constants@7.1.1:
@@ -5982,8 +5982,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /js-cool@5.3.0:
-    resolution: {integrity: sha512-OuVMIK6/73Z7YqE4y4vAZhMeSD1EpmV5eR/EvPo/wJHqkcW/qWEaFdOPRuymDe8Yd5j4TNOG2hYiTwBwoR/SqQ==}
+  /js-cool@5.13.0:
+    resolution: {integrity: sha512-fc6AMUFCPGi6yQMsEgiTlMHPeb95LRq8F/ScbHXYfLKjTq2Etw36NP4TwhgyQG4a0cSSMpo4I8gyVw9jYG53bg==}
     engines: {node: '>=12.20'}
     dependencies:
       load-source: 1.2.0
@@ -5991,9 +5991,9 @@ packages:
       mount-image: 1.2.0
       mount-script: 1.2.0
       mount-style: 1.2.0
-      os-lang: 3.1.1
-      tslib: 2.6.1
-      use-downloads: 1.4.0
+      os-lang: 3.2.0
+      tslib: 2.6.2
+      use-downloads: 1.5.0
 
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
@@ -6861,11 +6861,11 @@ packages:
       wcwidth: 1.0.1
     dev: true
 
-  /os-lang@3.1.1:
-    resolution: {integrity: sha512-+1Ij2yQHWVbMwbXVrG7Y6rs3t/IZmOPO9m1vNNy/nX0DbuXm+ZVusLQLy8mf953pXVbAXO4KynuisuH0crHfCA==}
+  /os-lang@3.2.0:
+    resolution: {integrity: sha512-/hMEpk0p6gE4BaK9ZufPktHYsws4Kft8nBwiWEdIJryigq6bZ4PkuKkWypvjFdAZRtHm20pZTSoZgBjKtT/HTw==}
     hasBin: true
     dependencies:
-      '@node-kit/extra.cp': 3.1.1
+      '@node-kit/extra.cp': 3.2.0
       lcid: 4.0.1
 
   /p-limit@2.3.0:
@@ -7313,7 +7313,7 @@ packages:
       jsesc: 0.5.0
     dev: true
 
-  /reinstaller@3.0.2(debug@4.3.4)(js-cool@5.3.0):
+  /reinstaller@3.0.2(debug@4.3.4)(js-cool@5.13.0):
     resolution: {integrity: sha512-VLjzE9tQMghK53x1Ccx96AEdRRe+dKq5zsnSNFLf1d7QsLAaRV0yX3lU1djgIaPYNSjDOXBRXjt8Y/GFTrHt/A==}
     hasBin: true
     peerDependencies:
@@ -7327,7 +7327,7 @@ packages:
       cosmiconfig: 8.2.0
       debug: 4.3.4
       global-modules: 2.0.0
-      js-cool: 5.3.0
+      js-cool: 5.13.0
       monorepo-root: 2.5.1
       ora: 6.3.1
       what-pm: 2.5.1(core-js@3.32.0)
@@ -7434,7 +7434,7 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rm-all@1.1.1(js-cool@5.3.0):
+  /rm-all@1.1.1(js-cool@5.13.0):
     resolution: {integrity: sha512-5n3SiDtp0BxHX485YhfbxR1RLtR9KlRTCj0hHahTufYEhUyE9ydy1nRtP4OG9kXifsYClu43gwkqcOnjpz/HPQ==}
     engines: {node: '>=12.20'}
     hasBin: true
@@ -7443,7 +7443,7 @@ packages:
     dependencies:
       '@node-kit/extra.fs': 3.1.1
       commander: 11.0.0
-      js-cool: 5.3.0
+      js-cool: 5.13.0
     dev: true
 
   /rollup-plugin-esbuild@5.0.0(esbuild@0.18.8)(rollup@3.27.0):
@@ -7935,7 +7935,7 @@ packages:
     engines: {node: ^14.18.0 || >=16.0.0}
     dependencies:
       '@pkgr/utils': 2.4.2
-      tslib: 2.6.1
+      tslib: 2.6.2
     dev: true
 
   /tar@6.1.13:
@@ -8060,8 +8060,8 @@ packages:
       strip-bom: 3.0.0
     dev: true
 
-  /tslib@2.6.1:
-    resolution: {integrity: sha512-t0hLfiEKfMUoqhG+U1oid7Pva4bbDPHYfJNiB7BiIjRkj1pyC++4N3huJfqY6aRH6VTB0rvtzQwjM4K6qpfOig==}
+  /tslib@2.6.2:
+    resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
 
   /tsnd@1.1.0:
     resolution: {integrity: sha512-sc+Xm5uxwfMlYCjLkwP9i7+9uC4izAo8N/opmdzR+RHtE/XTEfUV8r5FI3oh6RdcMybNHD0DTGultnzrJfcirQ==}
@@ -8268,8 +8268,8 @@ packages:
       punycode: 2.1.1
     dev: true
 
-  /use-downloads@1.4.0:
-    resolution: {integrity: sha512-h2t2c7cKx7YCQcM7Am68EW5Wh24fjR6astbTCj3HA4ZYlsjPdybBfSS1ZP7Bw+taFAhMFCL+7zfVJMeTNrWlcQ==}
+  /use-downloads@1.5.0:
+    resolution: {integrity: sha512-6tGTUgEtOnlaUwokV+DVLyScyllUJ2qjXd7KKDfHtJkx+vcYUnEzjguO2C/GNekNZFPDkn2RfRn3cFCR+ViciQ==}
 
   /util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
