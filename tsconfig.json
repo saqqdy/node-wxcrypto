@@ -8,6 +8,7 @@
 		"resolveJsonModule": true,
 		"module": "ESNext",
 		"strict": true,
+		"skipLibCheck": true,
 		"noImplicitOverride": true,
 		"noUnusedLocals": true,
 		"esModuleInterop": true,

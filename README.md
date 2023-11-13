@@ -9,6 +9,7 @@
 ![typescript][typescript-url]
 [![npm download][download-image]][download-url]
 [![License][license-image]][license-url]
+
 <!-- [![Test coverage][codecov-image]][codecov-url] -->
 
 <!-- [![Sonar][sonar-image]][sonar-url] -->
