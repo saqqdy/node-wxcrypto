@@ -7,9 +7,9 @@
 [![NPM version][npm-image]][npm-url]
 [![Codacy Badge][codacy-image]][codacy-url]
 ![typescript][typescript-url]
-<!-- [![Test coverage][codecov-image]][codecov-url] -->
 [![npm download][download-image]][download-url]
 [![License][license-image]][license-url]
+<!-- [![Test coverage][codecov-image]][codecov-url] -->
 
 <!-- [![Sonar][sonar-image]][sonar-url] -->
 
