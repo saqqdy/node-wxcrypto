@@ -1,0 +1,4569 @@
+{
+	"id": 0,
+	"name": "index.md",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 2,
+			"name": "WxCrypto",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "微信消息加解密nodejs版本"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@example",
+						"content": [
+							{
+								"kind": "code",
+								"text": "```\nconst WxCrypto = require('node-wxcrypto');\nconst wxCrypto = new WxCrypto(token, encodingAESKey, appID);\n\nvar [err, encryptedXML] = wx.encrypt(xml, timestamp, nonce);\n\nvar [err, decryptedXML] = wx.decrypt(signature, timestamp, nonce, encrypted);\n```"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 3,
+					"name": "constructor",
+					"variant": "declaration",
+					"kind": 512,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/WxCrypto.ts",
+							"line": 40,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/WxCrypto.ts#L40"
+						}
+					],
+					"signatures": [
+						{
+							"id": 4,
+							"name": "new WxCrypto",
+							"variant": "signature",
+							"kind": 16384,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/WxCrypto.ts",
+									"line": 40,
+									"character": 1,
+									"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/WxCrypto.ts#L40"
+								}
+							],
+							"parameters": [
+								{
+									"id": 5,
+									"name": "token",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 6,
+									"name": "encodingAESKey",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 7,
+									"name": "appID",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 8,
+									"name": "options",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 27,
+										"name": "Options",
+										"package": "node-wxcrypto"
+									},
+									"defaultValue": "{}"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 2,
+								"name": "WxCrypto",
+								"package": "node-wxcrypto"
+							}
+						}
+					]
+				},
+				{
+					"id": 12,
+					"name": "appID",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/WxCrypto.ts",
+							"line": 38,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/WxCrypto.ts#L38"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 11,
+					"name": "iv",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/WxCrypto.ts",
+							"line": 37,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/WxCrypto.ts#L37"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/buffer.d.ts",
+							"qualifiedName": "__global.Buffer"
+						},
+						"name": "Buffer",
+						"package": "@types/node",
+						"qualifiedName": "__global.Buffer"
+					}
+				},
+				{
+					"id": 10,
+					"name": "key",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/WxCrypto.ts",
+							"line": 36,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/WxCrypto.ts#L36"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/buffer.d.ts",
+							"qualifiedName": "__global.Buffer"
+						},
+						"name": "Buffer",
+						"package": "@types/node",
+						"qualifiedName": "__global.Buffer"
+					}
+				},
+				{
+					"id": 13,
+					"name": "options",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/WxCrypto.ts",
+							"line": 39,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/WxCrypto.ts#L39"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": 27,
+						"name": "Options",
+						"package": "node-wxcrypto"
+					}
+				},
+				{
+					"id": 9,
+					"name": "token",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/WxCrypto.ts",
+							"line": 35,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/WxCrypto.ts#L35"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 21,
+					"name": "decrypt",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/WxCrypto.ts",
+							"line": 128,
+							"character": 7,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/WxCrypto.ts#L128"
+						}
+					],
+					"signatures": [
+						{
+							"id": 22,
+							"name": "decrypt",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "decrypt"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "xml - xmData, eg. { ComponentVerifyTicket: 'xxxx', ..., AppId: 'xxxx' }"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/WxCrypto.ts",
+									"line": 128,
+									"character": 7,
+									"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/WxCrypto.ts#L128"
+								}
+							],
+							"parameters": [
+								{
+									"id": 23,
+									"name": "data",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "encrypt string, eg. oVMc1Y6qP86YfAa.../QGgk503Q68Q=="
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 24,
+									"name": "timestamp",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "timestamp"
+											}
+										]
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											},
+											{
+												"type": "intrinsic",
+												"name": "number"
+											}
+										]
+									}
+								},
+								{
+									"id": 25,
+									"name": "nonce",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "nonce"
+											}
+										]
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											},
+											{
+												"type": "intrinsic",
+												"name": "number"
+											}
+										]
+									}
+								},
+								{
+									"id": 26,
+									"name": "options",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "options"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": 27,
+										"name": "Options",
+										"package": "node-wxcrypto"
+									},
+									"defaultValue": "{}"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "any"
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							}
+						}
+					]
+				},
+				{
+					"id": 17,
+					"name": "encrypt",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/WxCrypto.ts",
+							"line": 96,
+							"character": 7,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/WxCrypto.ts#L96"
+						}
+					],
+					"signatures": [
+						{
+							"id": 18,
+							"name": "encrypt",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "encrypt\nBase64Encode(AES256Encrypt[RandomString(16B) + ContentLength(4B) + Content + appID])"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "encrypt - encrypt string, eg. oVMc1Y6qP86YfAa.../QGgk503Q68Q=="
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/WxCrypto.ts",
+									"line": 96,
+									"character": 7,
+									"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/WxCrypto.ts#L96"
+								}
+							],
+							"parameters": [
+								{
+									"id": 19,
+									"name": "data",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "xml data String, eg. { ComponentVerifyTicket: 'xxxx', ..., AppId: 'xxxx' }"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "Record"
+										},
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											},
+											{
+												"type": "intrinsic",
+												"name": "unknown"
+											}
+										],
+										"name": "Record",
+										"package": "typescript"
+									}
+								},
+								{
+									"id": 20,
+									"name": "options",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "options"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": 27,
+										"name": "Options",
+										"package": "node-wxcrypto"
+									},
+									"defaultValue": "{}"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							}
+						}
+					]
+				},
+				{
+					"id": 14,
+					"name": "mergeXmlOptions",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/WxCrypto.ts",
+							"line": 71,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/WxCrypto.ts#L71"
+						}
+					],
+					"signatures": [
+						{
+							"id": 15,
+							"name": "mergeXmlOptions",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "mergeXmlOptions"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "xml - xmData, eg. { ComponentVerifyTicket: 'xxxx', ..., AppId: 'xxxx' }"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/WxCrypto.ts",
+									"line": 71,
+									"character": 1,
+									"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/WxCrypto.ts#L71"
+								}
+							],
+							"parameters": [
+								{
+									"id": 16,
+									"name": "options",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "options"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": 27,
+										"name": "Options",
+										"package": "node-wxcrypto"
+									},
+									"defaultValue": "{}"
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/.pnpm/@types+xml2js@0.4.14/node_modules/@types/xml2js/index.d.ts",
+											"qualifiedName": "ParserOptions"
+										},
+										"name": "ParserOptions",
+										"package": "@types/xml2js"
+									}
+								]
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"children": [
+						3
+					]
+				},
+				{
+					"title": "Properties",
+					"children": [
+						12,
+						11,
+						10,
+						13,
+						9
+					]
+				},
+				{
+					"title": "Methods",
+					"children": [
+						21,
+						17,
+						14
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/WxCrypto.ts",
+					"line": 34,
+					"character": 6,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/WxCrypto.ts#L34"
+				}
+			]
+		},
+		{
+			"id": 56,
+			"name": "BuildXMLOptions",
+			"variant": "declaration",
+			"kind": 256,
+			"flags": {},
+			"children": [
+				{
+					"id": 65,
+					"name": "allowSurrogateChars",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/@types+xml2js@0.4.14/node_modules/@types/xml2js/index.d.ts",
+							"line": 78,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "BuilderOptions.allowSurrogateChars"
+					}
+				},
+				{
+					"id": 60,
+					"name": "attrkey",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/@types+xml2js@0.4.14/node_modules/@types/xml2js/index.d.ts",
+							"line": 71,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "BuilderOptions.attrkey"
+					}
+				},
+				{
+					"id": 57,
+					"name": "cdata",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/xml.ts",
+							"line": 13,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/xml.ts#L13"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"overwrites": {
+						"type": "reference",
+						"target": -1,
+						"name": "BuilderOptions.cdata"
+					}
+				},
+				{
+					"id": 61,
+					"name": "charkey",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/@types+xml2js@0.4.14/node_modules/@types/xml2js/index.d.ts",
+							"line": 72,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "BuilderOptions.charkey"
+					}
+				},
+				{
+					"id": 64,
+					"name": "doctype",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/@types+xml2js@0.4.14/node_modules/@types/xml2js/index.d.ts",
+							"line": 76,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "BuilderOptions.doctype"
+					}
+				},
+				{
+					"id": 58,
+					"name": "headless",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/xml.ts",
+							"line": 14,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/xml.ts#L14"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"overwrites": {
+						"type": "reference",
+						"target": -1,
+						"name": "BuilderOptions.headless"
+					}
+				},
+				{
+					"id": 62,
+					"name": "renderOpts",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/@types+xml2js@0.4.14/node_modules/@types/xml2js/index.d.ts",
+							"line": 74,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/@types+xml2js@0.4.14/node_modules/@types/xml2js/index.d.ts",
+							"qualifiedName": "RenderOptions"
+						},
+						"name": "RenderOptions",
+						"package": "@types/xml2js"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "BuilderOptions.renderOpts"
+					}
+				},
+				{
+					"id": 59,
+					"name": "rootName",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/xml.ts",
+							"line": 15,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/xml.ts#L15"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"overwrites": {
+						"type": "reference",
+						"target": -1,
+						"name": "BuilderOptions.rootName"
+					}
+				},
+				{
+					"id": 63,
+					"name": "xmldec",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/@types+xml2js@0.4.14/node_modules/@types/xml2js/index.d.ts",
+							"line": 75,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/@types+xml2js@0.4.14/node_modules/@types/xml2js/index.d.ts",
+							"qualifiedName": "XmlDeclarationAttributes"
+						},
+						"name": "XmlDeclarationAttributes",
+						"package": "@types/xml2js"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "BuilderOptions.xmldec"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						65,
+						60,
+						57,
+						61,
+						64,
+						58,
+						62,
+						59,
+						63
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/xml.ts",
+					"line": 12,
+					"character": 17,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/xml.ts#L12"
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"target": {
+						"sourceFileName": "node_modules/.pnpm/@types+xml2js@0.4.14/node_modules/@types/xml2js/index.d.ts",
+						"qualifiedName": "BuilderOptions"
+					},
+					"name": "BuilderOptions",
+					"package": "@types/xml2js"
+				}
+			]
+		},
+		{
+			"id": 27,
+			"name": "Options",
+			"variant": "declaration",
+			"kind": 256,
+			"flags": {},
+			"children": [
+				{
+					"id": 29,
+					"name": "buildXmlOptions",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/WxCrypto.ts",
+							"line": 12,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/WxCrypto.ts#L12"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": 56,
+						"name": "BuildXMLOptions",
+						"package": "node-wxcrypto"
+					}
+				},
+				{
+					"id": 28,
+					"name": "normalizeTags",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/WxCrypto.ts",
+							"line": 10,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/WxCrypto.ts#L10"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 30,
+					"name": "xmlOptions",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/WxCrypto.ts",
+							"line": 14,
+							"character": 1,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/WxCrypto.ts#L14"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/@types+xml2js@0.4.14/node_modules/@types/xml2js/index.d.ts",
+							"qualifiedName": "ParserOptions"
+						},
+						"name": "ParserOptions",
+						"package": "@types/xml2js"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						29,
+						28,
+						30
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/WxCrypto.ts",
+					"line": 8,
+					"character": 17,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/WxCrypto.ts#L8"
+				}
+			]
+		},
+		{
+			"id": 66,
+			"name": "ParserXMLOptions",
+			"variant": "declaration",
+			"kind": 2097152,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/xml.ts",
+					"line": 18,
+					"character": 12,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/xml.ts#L18"
+				}
+			],
+			"type": {
+				"type": "reference",
+				"target": {
+					"sourceFileName": "node_modules/.pnpm/@types+xml2js@0.4.14/node_modules/@types/xml2js/index.d.ts",
+					"qualifiedName": "ParserOptions"
+				},
+				"name": "ParserOptions",
+				"package": "@types/xml2js"
+			}
+		},
+		{
+			"id": 85,
+			"name": "default",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/index.default.ts",
+					"line": 7,
+					"character": 0,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/index.default.ts#L7"
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 86,
+					"name": "__type",
+					"variant": "declaration",
+					"kind": 65536,
+					"flags": {},
+					"children": [
+						{
+							"id": 87,
+							"name": "PKCS7Decode",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.default.ts",
+									"line": 8,
+									"character": 1,
+									"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/index.default.ts#L8"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 88,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/pkcs7.ts",
+											"line": 9,
+											"character": 27,
+											"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/pkcs7.ts#L9"
+										}
+									],
+									"signatures": [
+										{
+											"id": 89,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "PKCS7 decode"
+													}
+												],
+												"blockTags": [
+													{
+														"tag": "@params",
+														"content": [
+															{
+																"kind": "text",
+																"text": "data - Decrypted plaintext"
+															}
+														]
+													},
+													{
+														"tag": "@returns",
+														"content": [
+															{
+																"kind": "text",
+																"text": "buffer - deleted Buffer"
+															}
+														]
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/pkcs7.ts",
+													"line": 9,
+													"character": 27,
+													"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/pkcs7.ts#L9"
+												}
+											],
+											"parameters": [
+												{
+													"id": 90,
+													"name": "data",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/buffer.d.ts",
+															"qualifiedName": "__global.Buffer"
+														},
+														"name": "Buffer",
+														"package": "@types/node",
+														"qualifiedName": "__global.Buffer"
+													}
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/buffer.d.ts",
+													"qualifiedName": "__global.Buffer"
+												},
+												"name": "Buffer",
+												"package": "@types/node",
+												"qualifiedName": "__global.Buffer"
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 91,
+							"name": "PKCS7Encode",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.default.ts",
+									"line": 9,
+									"character": 1,
+									"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/index.default.ts#L9"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 92,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/pkcs7.ts",
+											"line": 24,
+											"character": 27,
+											"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/pkcs7.ts#L24"
+										}
+									],
+									"signatures": [
+										{
+											"id": 93,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "PKCS7 encode"
+													}
+												],
+												"blockTags": [
+													{
+														"tag": "@params",
+														"content": [
+															{
+																"kind": "text",
+																"text": "data - Plaintext that needs to be filled in"
+															}
+														]
+													},
+													{
+														"tag": "@returns",
+														"content": [
+															{
+																"kind": "text",
+																"text": "buffer - filled Buffer"
+															}
+														]
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/pkcs7.ts",
+													"line": 24,
+													"character": 27,
+													"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/pkcs7.ts#L24"
+												}
+											],
+											"parameters": [
+												{
+													"id": 94,
+													"name": "data",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/buffer.d.ts",
+															"qualifiedName": "__global.Buffer"
+														},
+														"name": "Buffer",
+														"package": "@types/node",
+														"qualifiedName": "__global.Buffer"
+													}
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/buffer.d.ts",
+													"qualifiedName": "__global.Buffer"
+												},
+												"name": "Buffer",
+												"package": "@types/node",
+												"qualifiedName": "__global.Buffer"
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 95,
+							"name": "WxCrypto",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.default.ts",
+									"line": 10,
+									"character": 1,
+									"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/index.default.ts#L10"
+								}
+							],
+							"type": {
+								"type": "query",
+								"queryType": {
+									"type": "reference",
+									"target": 2,
+									"name": "WxCrypto",
+									"package": "node-wxcrypto"
+								}
+							}
+						},
+						{
+							"id": 96,
+							"name": "aes256Decrypt",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.default.ts",
+									"line": 11,
+									"character": 1,
+									"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/index.default.ts#L11"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 97,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/aes256.ts",
+											"line": 52,
+											"character": 29,
+											"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/aes256.ts#L52"
+										}
+									],
+									"signatures": [
+										{
+											"id": 98,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "aes256 decrypt function"
+													}
+												],
+												"blockTags": [
+													{
+														"tag": "@params",
+														"content": [
+															{
+																"kind": "text",
+																"text": "algorithm - algorithm data"
+															}
+														]
+													},
+													{
+														"tag": "@params",
+														"content": [
+															{
+																"kind": "text",
+																"text": "encodingAESKey - encodingAESKey"
+															}
+														]
+													},
+													{
+														"tag": "@params",
+														"content": [
+															{
+																"kind": "text",
+																"text": "inputEncoding - The encoding of the data."
+															}
+														]
+													},
+													{
+														"tag": "@params",
+														"content": [
+															{
+																"kind": "text",
+																"text": "outputEncoding - The encoding of the return value."
+															}
+														]
+													},
+													{
+														"tag": "@params",
+														"content": [
+															{
+																"kind": "text",
+																"text": "options - stream.transform options"
+															}
+														]
+													},
+													{
+														"tag": "@returns",
+														"content": [
+															{
+																"kind": "text",
+																"text": "str - return Buffer"
+															}
+														]
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/aes256.ts",
+													"line": 52,
+													"character": 29,
+													"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/aes256.ts#L52"
+												}
+											],
+											"parameters": [
+												{
+													"id": 99,
+													"name": "algorithm",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 100,
+													"name": "key",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/buffer.d.ts",
+															"qualifiedName": "__global.Buffer"
+														},
+														"name": "Buffer",
+														"package": "@types/node",
+														"qualifiedName": "__global.Buffer"
+													}
+												},
+												{
+													"id": 101,
+													"name": "iv",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/buffer.d.ts",
+															"qualifiedName": "__global.Buffer"
+														},
+														"name": "Buffer",
+														"package": "@types/node",
+														"qualifiedName": "__global.Buffer"
+													}
+												},
+												{
+													"id": 102,
+													"name": "inputEncoding",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/crypto.d.ts",
+															"qualifiedName": "\"crypto\".Encoding"
+														},
+														"name": "Encoding",
+														"package": "@types/node",
+														"qualifiedName": "\"crypto\".Encoding"
+													},
+													"defaultValue": "'base64'"
+												},
+												{
+													"id": 103,
+													"name": "outputEncoding",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "union",
+														"types": [
+															{
+																"type": "intrinsic",
+																"name": "undefined"
+															},
+															{
+																"type": "reference",
+																"target": {
+																	"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/crypto.d.ts",
+																	"qualifiedName": "\"crypto\".Encoding"
+																},
+																"name": "Encoding",
+																"package": "@types/node",
+																"qualifiedName": "\"crypto\".Encoding"
+															}
+														]
+													},
+													"defaultValue": "undefined"
+												},
+												{
+													"id": 104,
+													"name": "options",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {
+														"isOptional": true
+													},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/crypto.d.ts",
+															"qualifiedName": "\"crypto\".CipherCCMOptions"
+														},
+														"name": "CipherCCMOptions",
+														"package": "@types/node",
+														"qualifiedName": "\"crypto\".CipherCCMOptions"
+													}
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/buffer.d.ts",
+													"qualifiedName": "__global.Buffer"
+												},
+												"name": "Buffer",
+												"package": "@types/node",
+												"qualifiedName": "__global.Buffer"
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 105,
+							"name": "aes256Encrypt",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.default.ts",
+									"line": 12,
+									"character": 1,
+									"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/index.default.ts#L12"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 106,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/aes256.ts",
+											"line": 23,
+											"character": 29,
+											"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/aes256.ts#L23"
+										}
+									],
+									"signatures": [
+										{
+											"id": 107,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "aes256 encrypt function"
+													}
+												],
+												"blockTags": [
+													{
+														"tag": "@params",
+														"content": [
+															{
+																"kind": "text",
+																"text": "algorithm - algorithm buffer data"
+															}
+														]
+													},
+													{
+														"tag": "@params",
+														"content": [
+															{
+																"kind": "text",
+																"text": "key - AESKey"
+															}
+														]
+													},
+													{
+														"tag": "@params",
+														"content": [
+															{
+																"kind": "text",
+																"text": "iv - iv"
+															}
+														]
+													},
+													{
+														"tag": "@params",
+														"content": [
+															{
+																"kind": "text",
+																"text": "inputEncoding - always undefined"
+															}
+														]
+													},
+													{
+														"tag": "@params",
+														"content": [
+															{
+																"kind": "text",
+																"text": "outputEncoding - The encoding of the return value."
+															}
+														]
+													},
+													{
+														"tag": "@params",
+														"content": [
+															{
+																"kind": "text",
+																"text": "options - stream.transform options"
+															}
+														]
+													},
+													{
+														"tag": "@returns",
+														"content": [
+															{
+																"kind": "text",
+																"text": "str - return string"
+															}
+														]
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/aes256.ts",
+													"line": 23,
+													"character": 29,
+													"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/aes256.ts#L23"
+												}
+											],
+											"parameters": [
+												{
+													"id": 108,
+													"name": "algorithm",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "array",
+														"elementType": {
+															"type": "reference",
+															"target": {
+																"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/buffer.d.ts",
+																"qualifiedName": "__global.Buffer"
+															},
+															"name": "Buffer",
+															"package": "@types/node",
+															"qualifiedName": "__global.Buffer"
+														}
+													}
+												},
+												{
+													"id": 109,
+													"name": "key",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/buffer.d.ts",
+															"qualifiedName": "__global.Buffer"
+														},
+														"name": "Buffer",
+														"package": "@types/node",
+														"qualifiedName": "__global.Buffer"
+													}
+												},
+												{
+													"id": 110,
+													"name": "iv",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/buffer.d.ts",
+															"qualifiedName": "__global.Buffer"
+														},
+														"name": "Buffer",
+														"package": "@types/node",
+														"qualifiedName": "__global.Buffer"
+													}
+												},
+												{
+													"id": 111,
+													"name": "inputEncoding",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "union",
+														"types": [
+															{
+																"type": "intrinsic",
+																"name": "undefined"
+															},
+															{
+																"type": "reference",
+																"target": {
+																	"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/crypto.d.ts",
+																	"qualifiedName": "\"crypto\".Encoding"
+																},
+																"name": "Encoding",
+																"package": "@types/node",
+																"qualifiedName": "\"crypto\".Encoding"
+															}
+														]
+													},
+													"defaultValue": "undefined"
+												},
+												{
+													"id": 112,
+													"name": "outputEncoding",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "union",
+														"types": [
+															{
+																"type": "intrinsic",
+																"name": "undefined"
+															},
+															{
+																"type": "reference",
+																"target": {
+																	"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/crypto.d.ts",
+																	"qualifiedName": "\"crypto\".Encoding"
+																},
+																"name": "Encoding",
+																"package": "@types/node",
+																"qualifiedName": "\"crypto\".Encoding"
+															}
+														]
+													},
+													"defaultValue": "undefined"
+												},
+												{
+													"id": 113,
+													"name": "options",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {
+														"isOptional": true
+													},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/crypto.d.ts",
+															"qualifiedName": "\"crypto\".CipherGCMOptions"
+														},
+														"name": "CipherGCMOptions",
+														"package": "@types/node",
+														"qualifiedName": "\"crypto\".CipherGCMOptions"
+													}
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/buffer.d.ts",
+													"qualifiedName": "__global.Buffer"
+												},
+												"name": "Buffer",
+												"package": "@types/node",
+												"qualifiedName": "__global.Buffer"
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 114,
+							"name": "buildXML",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.default.ts",
+									"line": 13,
+									"character": 1,
+									"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/index.default.ts#L13"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 115,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/xml.ts",
+											"line": 62,
+											"character": 24,
+											"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/xml.ts#L62"
+										}
+									],
+									"signatures": [
+										{
+											"id": 116,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "build xml"
+													}
+												],
+												"blockTags": [
+													{
+														"tag": "@returns",
+														"content": [
+															{
+																"kind": "text",
+																"text": "result - xmlString"
+															}
+														]
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/xml.ts",
+													"line": 62,
+													"character": 24,
+													"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/xml.ts#L62"
+												}
+											],
+											"parameters": [
+												{
+													"id": 117,
+													"name": "data",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "xml object"
+															}
+														]
+													},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+															"qualifiedName": "Record"
+														},
+														"typeArguments": [
+															{
+																"type": "intrinsic",
+																"name": "string"
+															},
+															{
+																"type": "intrinsic",
+																"name": "unknown"
+															}
+														],
+														"name": "Record",
+														"package": "typescript"
+													}
+												},
+												{
+													"id": 118,
+													"name": "options",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {
+														"isOptional": true
+													},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "xml Builder options"
+															}
+														]
+													},
+													"type": {
+														"type": "reference",
+														"target": 56,
+														"name": "BuildXMLOptions",
+														"package": "node-wxcrypto"
+													}
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+													"qualifiedName": "Promise"
+												},
+												"typeArguments": [
+													{
+														"type": "intrinsic",
+														"name": "string"
+													}
+												],
+												"name": "Promise",
+												"package": "typescript"
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 119,
+							"name": "buildXMLSync",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.default.ts",
+									"line": 14,
+									"character": 1,
+									"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/index.default.ts#L14"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 120,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/xml.ts",
+											"line": 85,
+											"character": 28,
+											"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/xml.ts#L85"
+										}
+									],
+									"signatures": [
+										{
+											"id": 121,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "build xml sync"
+													}
+												],
+												"blockTags": [
+													{
+														"tag": "@returns",
+														"content": [
+															{
+																"kind": "text",
+																"text": "result - xmlString"
+															}
+														]
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/xml.ts",
+													"line": 85,
+													"character": 28,
+													"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/xml.ts#L85"
+												}
+											],
+											"parameters": [
+												{
+													"id": 122,
+													"name": "data",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "xml object"
+															}
+														]
+													},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+															"qualifiedName": "Record"
+														},
+														"typeArguments": [
+															{
+																"type": "intrinsic",
+																"name": "string"
+															},
+															{
+																"type": "intrinsic",
+																"name": "unknown"
+															}
+														],
+														"name": "Record",
+														"package": "typescript"
+													}
+												},
+												{
+													"id": 123,
+													"name": "options",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {
+														"isOptional": true
+													},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "callback function or xml Builder options"
+															}
+														]
+													},
+													"type": {
+														"type": "union",
+														"types": [
+															{
+																"type": "reference",
+																"target": {
+																	"sourceFileName": "node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+																	"qualifiedName": "Function"
+																},
+																"name": "Function",
+																"package": "typescript"
+															},
+															{
+																"type": "reference",
+																"target": 56,
+																"name": "BuildXMLOptions",
+																"package": "node-wxcrypto"
+															}
+														]
+													}
+												},
+												{
+													"id": 124,
+													"name": "callback",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {
+														"isOptional": true
+													},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "exec function on build successful"
+															}
+														]
+													},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+															"qualifiedName": "Function"
+														},
+														"name": "Function",
+														"package": "typescript"
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 125,
+							"name": "parseXML",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.default.ts",
+									"line": 15,
+									"character": 1,
+									"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/index.default.ts#L15"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 126,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/xml.ts",
+											"line": 27,
+											"character": 24,
+											"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/xml.ts#L27"
+										}
+									],
+									"signatures": [
+										{
+											"id": 127,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "parse xml promise"
+													}
+												],
+												"blockTags": [
+													{
+														"tag": "@returns",
+														"content": [
+															{
+																"kind": "text",
+																"text": "result - xml object"
+															}
+														]
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/xml.ts",
+													"line": 27,
+													"character": 24,
+													"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/xml.ts#L27"
+												}
+											],
+											"parameters": [
+												{
+													"id": 128,
+													"name": "data",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "xmlString"
+															}
+														]
+													},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/.pnpm/@types+xml2js@0.4.14/node_modules/@types/xml2js/index.d.ts",
+															"qualifiedName": "convertableToString"
+														},
+														"name": "convertableToString",
+														"package": "@types/xml2js"
+													}
+												},
+												{
+													"id": 129,
+													"name": "options",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "ParserXMLOptions"
+															}
+														]
+													},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/.pnpm/@types+xml2js@0.4.14/node_modules/@types/xml2js/index.d.ts",
+															"qualifiedName": "ParserOptions"
+														},
+														"name": "ParserOptions",
+														"package": "@types/xml2js"
+													},
+													"defaultValue": "{}"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+													"qualifiedName": "Promise"
+												},
+												"typeArguments": [
+													{
+														"type": "intrinsic",
+														"name": "any"
+													}
+												],
+												"name": "Promise",
+												"package": "typescript"
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 130,
+							"name": "parseXMLSync",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.default.ts",
+									"line": 16,
+									"character": 1,
+									"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/index.default.ts#L16"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 131,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/xml.ts",
+											"line": 42,
+											"character": 28,
+											"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/xml.ts#L42"
+										}
+									],
+									"signatures": [
+										{
+											"id": 132,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "build xml sync"
+													}
+												],
+												"blockTags": [
+													{
+														"tag": "@returns",
+														"content": [
+															{
+																"kind": "text",
+																"text": "result - xml object"
+															}
+														]
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/xml.ts",
+													"line": 42,
+													"character": 28,
+													"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/xml.ts#L42"
+												}
+											],
+											"parameters": [
+												{
+													"id": 133,
+													"name": "data",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "xmlString"
+															}
+														]
+													},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/.pnpm/@types+xml2js@0.4.14/node_modules/@types/xml2js/index.d.ts",
+															"qualifiedName": "convertableToString"
+														},
+														"name": "convertableToString",
+														"package": "@types/xml2js"
+													}
+												},
+												{
+													"id": 134,
+													"name": "options",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "callback function or ParserXMLOptions"
+															}
+														]
+													},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/.pnpm/@types+xml2js@0.4.14/node_modules/@types/xml2js/index.d.ts",
+															"qualifiedName": "ParserOptions"
+														},
+														"name": "ParserOptions",
+														"package": "@types/xml2js"
+													},
+													"defaultValue": "{}"
+												},
+												{
+													"id": 135,
+													"name": "callback",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "exec function on build successful"
+															}
+														]
+													},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+															"qualifiedName": "Function"
+														},
+														"name": "Function",
+														"package": "typescript"
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 136,
+							"name": "sha1",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.default.ts",
+									"line": 17,
+									"character": 1,
+									"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/index.default.ts#L17"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 137,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/sha1.ts",
+											"line": 11,
+											"character": 13,
+											"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/sha1.ts#L11"
+										}
+									],
+									"signatures": [
+										{
+											"id": 138,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "sha1摘要算法"
+													}
+												],
+												"blockTags": [
+													{
+														"tag": "@returns",
+														"content": [
+															{
+																"kind": "text",
+																"text": "str - 返回加密后的字符串"
+															}
+														]
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/sha1.ts",
+													"line": 11,
+													"character": 13,
+													"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/sha1.ts#L11"
+												}
+											],
+											"parameters": [
+												{
+													"id": 139,
+													"name": "args",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {
+														"isRest": true
+													},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "参数"
+															}
+														]
+													},
+													"type": {
+														"type": "array",
+														"elementType": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 140,
+							"name": "version",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.default.ts",
+									"line": 18,
+									"character": 1,
+									"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/index.default.ts#L18"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"defaultValue": "'__VERSION__'"
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								87,
+								91,
+								95,
+								96,
+								105,
+								114,
+								119,
+								125,
+								130,
+								136,
+								140
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/index.default.ts",
+							"line": 7,
+							"character": 15,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/index.default.ts#L7"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": 1,
+			"name": "version",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "src/index.ts",
+					"line": 15,
+					"character": 13,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/index.ts#L15"
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "string"
+			},
+			"defaultValue": "..."
+		},
+		{
+			"id": 47,
+			"name": "PKCS7Decode",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/pkcs7.ts",
+					"line": 9,
+					"character": 13,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/pkcs7.ts#L9"
+				}
+			],
+			"signatures": [
+				{
+					"id": 48,
+					"name": "PKCS7Decode",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "PKCS7 decode"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@params",
+								"content": [
+									{
+										"kind": "text",
+										"text": "data - Decrypted plaintext"
+									}
+								]
+							},
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "buffer - deleted Buffer"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/pkcs7.ts",
+							"line": 9,
+							"character": 27,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/pkcs7.ts#L9"
+						}
+					],
+					"parameters": [
+						{
+							"id": 49,
+							"name": "data",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/buffer.d.ts",
+									"qualifiedName": "__global.Buffer"
+								},
+								"name": "Buffer",
+								"package": "@types/node",
+								"qualifiedName": "__global.Buffer"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/buffer.d.ts",
+							"qualifiedName": "__global.Buffer"
+						},
+						"name": "Buffer",
+						"package": "@types/node",
+						"qualifiedName": "__global.Buffer"
+					}
+				}
+			]
+		},
+		{
+			"id": 50,
+			"name": "PKCS7Encode",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/pkcs7.ts",
+					"line": 24,
+					"character": 13,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/pkcs7.ts#L24"
+				}
+			],
+			"signatures": [
+				{
+					"id": 51,
+					"name": "PKCS7Encode",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "PKCS7 encode"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@params",
+								"content": [
+									{
+										"kind": "text",
+										"text": "data - Plaintext that needs to be filled in"
+									}
+								]
+							},
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "buffer - filled Buffer"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/pkcs7.ts",
+							"line": 24,
+							"character": 27,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/pkcs7.ts#L24"
+						}
+					],
+					"parameters": [
+						{
+							"id": 52,
+							"name": "data",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/buffer.d.ts",
+									"qualifiedName": "__global.Buffer"
+								},
+								"name": "Buffer",
+								"package": "@types/node",
+								"qualifiedName": "__global.Buffer"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/buffer.d.ts",
+							"qualifiedName": "__global.Buffer"
+						},
+						"name": "Buffer",
+						"package": "@types/node",
+						"qualifiedName": "__global.Buffer"
+					}
+				}
+			]
+		},
+		{
+			"id": 31,
+			"name": "aes256Decrypt",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/aes256.ts",
+					"line": 52,
+					"character": 13,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/aes256.ts#L52"
+				}
+			],
+			"signatures": [
+				{
+					"id": 32,
+					"name": "aes256Decrypt",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "aes256 decrypt function"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@params",
+								"content": [
+									{
+										"kind": "text",
+										"text": "algorithm - algorithm data"
+									}
+								]
+							},
+							{
+								"tag": "@params",
+								"content": [
+									{
+										"kind": "text",
+										"text": "encodingAESKey - encodingAESKey"
+									}
+								]
+							},
+							{
+								"tag": "@params",
+								"content": [
+									{
+										"kind": "text",
+										"text": "inputEncoding - The encoding of the data."
+									}
+								]
+							},
+							{
+								"tag": "@params",
+								"content": [
+									{
+										"kind": "text",
+										"text": "outputEncoding - The encoding of the return value."
+									}
+								]
+							},
+							{
+								"tag": "@params",
+								"content": [
+									{
+										"kind": "text",
+										"text": "options - stream.transform options"
+									}
+								]
+							},
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "str - return Buffer"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/aes256.ts",
+							"line": 52,
+							"character": 29,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/aes256.ts#L52"
+						}
+					],
+					"parameters": [
+						{
+							"id": 33,
+							"name": "algorithm",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 34,
+							"name": "key",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/buffer.d.ts",
+									"qualifiedName": "__global.Buffer"
+								},
+								"name": "Buffer",
+								"package": "@types/node",
+								"qualifiedName": "__global.Buffer"
+							}
+						},
+						{
+							"id": 35,
+							"name": "iv",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/buffer.d.ts",
+									"qualifiedName": "__global.Buffer"
+								},
+								"name": "Buffer",
+								"package": "@types/node",
+								"qualifiedName": "__global.Buffer"
+							}
+						},
+						{
+							"id": 36,
+							"name": "inputEncoding",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/crypto.d.ts",
+									"qualifiedName": "\"crypto\".Encoding"
+								},
+								"name": "Encoding",
+								"package": "@types/node",
+								"qualifiedName": "\"crypto\".Encoding"
+							},
+							"defaultValue": "'base64'"
+						},
+						{
+							"id": 37,
+							"name": "outputEncoding",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/crypto.d.ts",
+											"qualifiedName": "\"crypto\".Encoding"
+										},
+										"name": "Encoding",
+										"package": "@types/node",
+										"qualifiedName": "\"crypto\".Encoding"
+									}
+								]
+							},
+							"defaultValue": "undefined"
+						},
+						{
+							"id": 38,
+							"name": "options",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isOptional": true
+							},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/crypto.d.ts",
+									"qualifiedName": "\"crypto\".CipherCCMOptions"
+								},
+								"name": "CipherCCMOptions",
+								"package": "@types/node",
+								"qualifiedName": "\"crypto\".CipherCCMOptions"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/buffer.d.ts",
+							"qualifiedName": "__global.Buffer"
+						},
+						"name": "Buffer",
+						"package": "@types/node",
+						"qualifiedName": "__global.Buffer"
+					}
+				}
+			]
+		},
+		{
+			"id": 39,
+			"name": "aes256Encrypt",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/aes256.ts",
+					"line": 23,
+					"character": 13,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/aes256.ts#L23"
+				}
+			],
+			"signatures": [
+				{
+					"id": 40,
+					"name": "aes256Encrypt",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "aes256 encrypt function"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@params",
+								"content": [
+									{
+										"kind": "text",
+										"text": "algorithm - algorithm buffer data"
+									}
+								]
+							},
+							{
+								"tag": "@params",
+								"content": [
+									{
+										"kind": "text",
+										"text": "key - AESKey"
+									}
+								]
+							},
+							{
+								"tag": "@params",
+								"content": [
+									{
+										"kind": "text",
+										"text": "iv - iv"
+									}
+								]
+							},
+							{
+								"tag": "@params",
+								"content": [
+									{
+										"kind": "text",
+										"text": "inputEncoding - always undefined"
+									}
+								]
+							},
+							{
+								"tag": "@params",
+								"content": [
+									{
+										"kind": "text",
+										"text": "outputEncoding - The encoding of the return value."
+									}
+								]
+							},
+							{
+								"tag": "@params",
+								"content": [
+									{
+										"kind": "text",
+										"text": "options - stream.transform options"
+									}
+								]
+							},
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "str - return string"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/aes256.ts",
+							"line": 23,
+							"character": 29,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/aes256.ts#L23"
+						}
+					],
+					"parameters": [
+						{
+							"id": 41,
+							"name": "algorithm",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"target": {
+										"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/buffer.d.ts",
+										"qualifiedName": "__global.Buffer"
+									},
+									"name": "Buffer",
+									"package": "@types/node",
+									"qualifiedName": "__global.Buffer"
+								}
+							}
+						},
+						{
+							"id": 42,
+							"name": "key",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/buffer.d.ts",
+									"qualifiedName": "__global.Buffer"
+								},
+								"name": "Buffer",
+								"package": "@types/node",
+								"qualifiedName": "__global.Buffer"
+							}
+						},
+						{
+							"id": 43,
+							"name": "iv",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/buffer.d.ts",
+									"qualifiedName": "__global.Buffer"
+								},
+								"name": "Buffer",
+								"package": "@types/node",
+								"qualifiedName": "__global.Buffer"
+							}
+						},
+						{
+							"id": 44,
+							"name": "inputEncoding",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/crypto.d.ts",
+											"qualifiedName": "\"crypto\".Encoding"
+										},
+										"name": "Encoding",
+										"package": "@types/node",
+										"qualifiedName": "\"crypto\".Encoding"
+									}
+								]
+							},
+							"defaultValue": "undefined"
+						},
+						{
+							"id": 45,
+							"name": "outputEncoding",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/crypto.d.ts",
+											"qualifiedName": "\"crypto\".Encoding"
+										},
+										"name": "Encoding",
+										"package": "@types/node",
+										"qualifiedName": "\"crypto\".Encoding"
+									}
+								]
+							},
+							"defaultValue": "undefined"
+						},
+						{
+							"id": 46,
+							"name": "options",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isOptional": true
+							},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/crypto.d.ts",
+									"qualifiedName": "\"crypto\".CipherGCMOptions"
+								},
+								"name": "CipherGCMOptions",
+								"package": "@types/node",
+								"qualifiedName": "\"crypto\".CipherGCMOptions"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/@types+node@20.11.24/node_modules/@types/node/buffer.d.ts",
+							"qualifiedName": "__global.Buffer"
+						},
+						"name": "Buffer",
+						"package": "@types/node",
+						"qualifiedName": "__global.Buffer"
+					}
+				}
+			]
+		},
+		{
+			"id": 67,
+			"name": "buildXML",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/xml.ts",
+					"line": 62,
+					"character": 13,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/xml.ts#L62"
+				}
+			],
+			"signatures": [
+				{
+					"id": 68,
+					"name": "buildXML",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "build xml"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "result - xmlString"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/xml.ts",
+							"line": 62,
+							"character": 24,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/xml.ts#L62"
+						}
+					],
+					"parameters": [
+						{
+							"id": 69,
+							"name": "data",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "xml object"
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Record"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								],
+								"name": "Record",
+								"package": "typescript"
+							}
+						},
+						{
+							"id": 70,
+							"name": "options",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "xml Builder options"
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": 56,
+								"name": "BuildXMLOptions",
+								"package": "node-wxcrypto"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+							"qualifiedName": "Promise"
+						},
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						],
+						"name": "Promise",
+						"package": "typescript"
+					}
+				}
+			]
+		},
+		{
+			"id": 71,
+			"name": "buildXMLSync",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/xml.ts",
+					"line": 85,
+					"character": 13,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/xml.ts#L85"
+				}
+			],
+			"signatures": [
+				{
+					"id": 72,
+					"name": "buildXMLSync",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "build xml sync"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "result - xmlString"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/xml.ts",
+							"line": 85,
+							"character": 28,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/xml.ts#L85"
+						}
+					],
+					"parameters": [
+						{
+							"id": 73,
+							"name": "data",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "xml object"
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Record"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								],
+								"name": "Record",
+								"package": "typescript"
+							}
+						},
+						{
+							"id": 74,
+							"name": "options",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "callback function or xml Builder options"
+									}
+								]
+							},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "Function"
+										},
+										"name": "Function",
+										"package": "typescript"
+									},
+									{
+										"type": "reference",
+										"target": 56,
+										"name": "BuildXMLOptions",
+										"package": "node-wxcrypto"
+									}
+								]
+							}
+						},
+						{
+							"id": 75,
+							"name": "callback",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "exec function on build successful"
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Function"
+								},
+								"name": "Function",
+								"package": "typescript"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": 76,
+			"name": "parseXML",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/xml.ts",
+					"line": 27,
+					"character": 13,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/xml.ts#L27"
+				}
+			],
+			"signatures": [
+				{
+					"id": 77,
+					"name": "parseXML",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "parse xml promise"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "result - xml object"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/xml.ts",
+							"line": 27,
+							"character": 24,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/xml.ts#L27"
+						}
+					],
+					"parameters": [
+						{
+							"id": 78,
+							"name": "data",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "xmlString"
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/@types+xml2js@0.4.14/node_modules/@types/xml2js/index.d.ts",
+									"qualifiedName": "convertableToString"
+								},
+								"name": "convertableToString",
+								"package": "@types/xml2js"
+							}
+						},
+						{
+							"id": 79,
+							"name": "options",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "ParserXMLOptions"
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/@types+xml2js@0.4.14/node_modules/@types/xml2js/index.d.ts",
+									"qualifiedName": "ParserOptions"
+								},
+								"name": "ParserOptions",
+								"package": "@types/xml2js"
+							},
+							"defaultValue": "{}"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+							"qualifiedName": "Promise"
+						},
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "any"
+							}
+						],
+						"name": "Promise",
+						"package": "typescript"
+					}
+				}
+			]
+		},
+		{
+			"id": 80,
+			"name": "parseXMLSync",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/xml.ts",
+					"line": 42,
+					"character": 13,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/xml.ts#L42"
+				}
+			],
+			"signatures": [
+				{
+					"id": 81,
+					"name": "parseXMLSync",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "build xml sync"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "result - xml object"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/xml.ts",
+							"line": 42,
+							"character": 28,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/xml.ts#L42"
+						}
+					],
+					"parameters": [
+						{
+							"id": 82,
+							"name": "data",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "xmlString"
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/@types+xml2js@0.4.14/node_modules/@types/xml2js/index.d.ts",
+									"qualifiedName": "convertableToString"
+								},
+								"name": "convertableToString",
+								"package": "@types/xml2js"
+							}
+						},
+						{
+							"id": 83,
+							"name": "options",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "callback function or ParserXMLOptions"
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/@types+xml2js@0.4.14/node_modules/@types/xml2js/index.d.ts",
+									"qualifiedName": "ParserOptions"
+								},
+								"name": "ParserOptions",
+								"package": "@types/xml2js"
+							},
+							"defaultValue": "{}"
+						},
+						{
+							"id": 84,
+							"name": "callback",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "exec function on build successful"
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Function"
+								},
+								"name": "Function",
+								"package": "typescript"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "void"
+					}
+				}
+			]
+		},
+		{
+			"id": 53,
+			"name": "sha1",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/sha1.ts",
+					"line": 11,
+					"character": 6,
+					"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/sha1.ts#L11"
+				}
+			],
+			"signatures": [
+				{
+					"id": 54,
+					"name": "sha1",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "sha1摘要算法"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "str - 返回加密后的字符串"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/sha1.ts",
+							"line": 11,
+							"character": 13,
+							"url": "https://github.com/saqqdy/node-wxcrypto/blob/6f99d0f/src/sha1.ts#L11"
+						}
+					],
+					"parameters": [
+						{
+							"id": 55,
+							"name": "args",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isRest": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "参数"
+									}
+								]
+							},
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "string"
+								}
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Classes",
+			"children": [
+				2
+			]
+		},
+		{
+			"title": "Interfaces",
+			"children": [
+				56,
+				27
+			]
+		},
+		{
+			"title": "Type Aliases",
+			"children": [
+				66
+			]
+		},
+		{
+			"title": "Variables",
+			"children": [
+				85,
+				1
+			]
+		},
+		{
+			"title": "Functions",
+			"children": [
+				47,
+				50,
+				31,
+				39,
+				67,
+				71,
+				76,
+				80,
+				53
+			]
+		}
+	],
+	"packageName": "node-wxcrypto",
+	"packageVersion": "3.2.0",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "<div style=\"text-align: center;\" align=\"center\">\n\n# node-wxcrypto\n\n微信消息加解密 nodejs 版本\n\n[![NPM version][npm-image]][npm-url]\n[![Codacy Badge][codacy-image]][codacy-url]\n![typescript][typescript-url]\n[![npm download][download-image]][download-url]\n[![License][license-image]][license-url]\n\n<!-- [![Test coverage][codecov-image]][codecov-url] -->\n\n<!-- [![Sonar][sonar-image]][sonar-url] -->\n\n</div>\n\n<div style=\"text-align: center; margin-bottom: 20px;\" align=\"center\">\n\n### **[Documentation](https://www.saqqdy.com/node-wxcrypto)** • **[Change Log](./CHANGELOG.md)**\n\n</div>\n\n## 安装\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```bash\n# 使用pnpm\n$ pnpm i node-wxcrypto\n\n# 使用yarn\n$ yarn add node-wxcrypto\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## 使用\n\n### 引入和使用\n\n1. require 引入\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```js\nconst { WxCrypto } = require('node-wxcrypto')\n\nconst wxCrypto = new WxCrypto(token, aesKey, appID, options)\nconst data = await wxCrypto.decrypt(encrypt, timestamp, nonce, options)\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n2. import 引入\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```js\nimport { WxCrypto } from 'node-wxcrypto'\n\nconst wxCrypto = new WxCrypto(token, aesKey, appID, options)\nconst data = await wxCrypto.decrypt(encrypt, timestamp, nonce, options)\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n### 使用配置\n\n> 在实例化和加解密方法均支持传入 options: "
+		},
+		{
+			"kind": "code",
+			"text": "`normalizeTags`"
+		},
+		{
+			"kind": "text",
+			"text": ", "
+		},
+		{
+			"kind": "code",
+			"text": "`buildXmlOptions`"
+		},
+		{
+			"kind": "text",
+			"text": ", "
+		},
+		{
+			"kind": "code",
+			"text": "`xmlOptions`"
+		},
+		{
+			"kind": "text",
+			"text": "，加解密方法里面传入的 options 优先级更高。\n\n> "
+		},
+		{
+			"kind": "code",
+			"text": "`normalizeTags`"
+		},
+		{
+			"kind": "text",
+			"text": " 支持将 xml 属性由驼峰转下划线分隔的小写形式；"
+		},
+		{
+			"kind": "code",
+			"text": "`buildXmlOptions`"
+		},
+		{
+			"kind": "text",
+			"text": " 透传用于生成 xml 字符串的配置；"
+		},
+		{
+			"kind": "code",
+			"text": "`xmlOptions`"
+		},
+		{
+			"kind": "text",
+			"text": " 透传用于解析 xml 字符串的配置。\n\n> 注意："
+		},
+		{
+			"kind": "code",
+			"text": "`normalizeTags`"
+		},
+		{
+			"kind": "text",
+			"text": " 会全量覆盖 "
+		},
+		{
+			"kind": "code",
+			"text": "`xmlOptions`"
+		},
+		{
+			"kind": "text",
+			"text": " 里面的 "
+		},
+		{
+			"kind": "code",
+			"text": "`tagNameProcessors`"
+		},
+		{
+			"kind": "text",
+			"text": " 方法，如果想要自定义 "
+		},
+		{
+			"kind": "code",
+			"text": "`tagNameProcessors`"
+		},
+		{
+			"kind": "text",
+			"text": "，请不要传入 "
+		},
+		{
+			"kind": "code",
+			"text": "`normalizeTags`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n持将 xml 属性由驼峰转下划线分隔的小写形式："
+		},
+		{
+			"kind": "code",
+			"text": "`ComponentVerifyTicket => component_verify_ticket`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```js\n// normalizeTags可传入布尔值或者字符串，传入字符串时使用该字符串分隔，例如：normalizeTags = \"__\"，得到：`ComponentVerifyTicket => component__verify__ticket`\nconst wxCrypto = new WxCrypto(token, aesKey, appID, {\n  normalizeTags: true,\n  buildXmlOptions: {}, // 透传用于生成 xml 字符串的配置\n  xmlOptions: {} // 透传用于解析 xml 字符串的配置\n})\nconst data = await wxCrypto.decrypt(encrypt, timestamp, nonce, options)\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## API\n\n详见：[API说明文档](./API.md)\n\n## 类型\n\n1. [Interface Options](https://www.saqqdy.com/node-wxcrypto/interfaces/Options.html)\n2. [Interface BuildXMLOptions](https://www.saqqdy.com/node-wxcrypto/interfaces/BuildXMLOptions.html)\n3. [Class WxCrypto](https://www.saqqdy.com/node-wxcrypto/classes/WxCrypto.html)\n4. [Variable default](https://www.saqqdy.com/node-wxcrypto/variables/default.html)\n\n## 问题和支持\n\nPlease open an issue [here](https://github.com/saqqdy/node-wxcrypto/issues).\n\n## License\n\n[MIT](LICENSE)\n\n[npm-image]: https://img.shields.io/npm/v/node-wxcrypto.svg?style=flat-square\n[npm-url]: https://npmjs.org/package/node-wxcrypto\n[codacy-image]: https://app.codacy.com/project/badge/Grade/f70d4880e4ad4f40aa970eb9ee9d0696\n[codacy-url]: https://www.codacy.com/gh/saqqdy/node-wxcrypto/dashboard?utm_source=github.com&utm_medium=referral&utm_content=saqqdy/node-wxcrypto&utm_campaign=Badge_Grade\n[typescript-url]: https://badgen.net/badge/icon/typescript?icon=typescript&label\n[codecov-image]: https://img.shields.io/codecov/c/github/saqqdy/node-wxcrypto.svg?style=flat-square\n[codecov-url]: https://codecov.io/github/saqqdy/node-wxcrypto?branch=master\n[download-image]: https://img.shields.io/npm/dm/node-wxcrypto.svg?style=flat-square\n[download-url]: https://npmjs.org/package/node-wxcrypto\n[license-image]: https://img.shields.io/badge/License-MIT-blue.svg\n[license-url]: LICENSE\n[sonar-image]: https://sonarcloud.io/api/project_badges/quality_gate?project=saqqdy_node-wxcrypto\n[sonar-url]: https://sonarcloud.io/dashboard?id=saqqdy_node-wxcrypto"
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": ""
+		},
+		"1": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "version"
+		},
+		"2": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "WxCrypto"
+		},
+		"3": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "WxCrypto.__constructor"
+		},
+		"4": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "WxCrypto"
+		},
+		"5": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "token"
+		},
+		"6": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "encodingAESKey"
+		},
+		"7": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "appID"
+		},
+		"8": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "options"
+		},
+		"9": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "WxCrypto.token"
+		},
+		"10": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "WxCrypto.key"
+		},
+		"11": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "WxCrypto.iv"
+		},
+		"12": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "WxCrypto.appID"
+		},
+		"13": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "WxCrypto.options"
+		},
+		"14": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "WxCrypto.mergeXmlOptions"
+		},
+		"15": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "WxCrypto.mergeXmlOptions"
+		},
+		"16": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "options"
+		},
+		"17": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "WxCrypto.encrypt"
+		},
+		"18": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "WxCrypto.encrypt"
+		},
+		"19": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "data"
+		},
+		"20": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "options"
+		},
+		"21": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "WxCrypto.decrypt"
+		},
+		"22": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "WxCrypto.decrypt"
+		},
+		"23": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "data"
+		},
+		"24": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "timestamp"
+		},
+		"25": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "nonce"
+		},
+		"26": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "options"
+		},
+		"27": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "Options"
+		},
+		"28": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "Options.normalizeTags"
+		},
+		"29": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "Options.buildXmlOptions"
+		},
+		"30": {
+			"sourceFileName": "src/WxCrypto.ts",
+			"qualifiedName": "Options.xmlOptions"
+		},
+		"31": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "aes256Decrypt"
+		},
+		"32": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "aes256Decrypt"
+		},
+		"33": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "algorithm"
+		},
+		"34": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "key"
+		},
+		"35": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "iv"
+		},
+		"36": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "inputEncoding"
+		},
+		"37": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "outputEncoding"
+		},
+		"38": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "options"
+		},
+		"39": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "aes256Encrypt"
+		},
+		"40": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "aes256Encrypt"
+		},
+		"41": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "algorithm"
+		},
+		"42": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "key"
+		},
+		"43": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "iv"
+		},
+		"44": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "inputEncoding"
+		},
+		"45": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "outputEncoding"
+		},
+		"46": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "options"
+		},
+		"47": {
+			"sourceFileName": "src/pkcs7.ts",
+			"qualifiedName": "PKCS7Decode"
+		},
+		"48": {
+			"sourceFileName": "src/pkcs7.ts",
+			"qualifiedName": "PKCS7Decode"
+		},
+		"49": {
+			"sourceFileName": "src/pkcs7.ts",
+			"qualifiedName": "data"
+		},
+		"50": {
+			"sourceFileName": "src/pkcs7.ts",
+			"qualifiedName": "PKCS7Encode"
+		},
+		"51": {
+			"sourceFileName": "src/pkcs7.ts",
+			"qualifiedName": "PKCS7Encode"
+		},
+		"52": {
+			"sourceFileName": "src/pkcs7.ts",
+			"qualifiedName": "data"
+		},
+		"53": {
+			"sourceFileName": "src/sha1.ts",
+			"qualifiedName": "sha1"
+		},
+		"54": {
+			"sourceFileName": "src/sha1.ts",
+			"qualifiedName": "sha1"
+		},
+		"55": {
+			"sourceFileName": "src/sha1.ts",
+			"qualifiedName": "args"
+		},
+		"56": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "BuildXMLOptions"
+		},
+		"57": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "BuildXMLOptions.cdata"
+		},
+		"58": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "BuildXMLOptions.headless"
+		},
+		"59": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "BuildXMLOptions.rootName"
+		},
+		"60": {
+			"sourceFileName": "node_modules/.pnpm/@types+xml2js@0.4.14/node_modules/@types/xml2js/index.d.ts",
+			"qualifiedName": "BuilderOptions.attrkey"
+		},
+		"61": {
+			"sourceFileName": "node_modules/.pnpm/@types+xml2js@0.4.14/node_modules/@types/xml2js/index.d.ts",
+			"qualifiedName": "BuilderOptions.charkey"
+		},
+		"62": {
+			"sourceFileName": "node_modules/.pnpm/@types+xml2js@0.4.14/node_modules/@types/xml2js/index.d.ts",
+			"qualifiedName": "BuilderOptions.renderOpts"
+		},
+		"63": {
+			"sourceFileName": "node_modules/.pnpm/@types+xml2js@0.4.14/node_modules/@types/xml2js/index.d.ts",
+			"qualifiedName": "BuilderOptions.xmldec"
+		},
+		"64": {
+			"sourceFileName": "node_modules/.pnpm/@types+xml2js@0.4.14/node_modules/@types/xml2js/index.d.ts",
+			"qualifiedName": "BuilderOptions.doctype"
+		},
+		"65": {
+			"sourceFileName": "node_modules/.pnpm/@types+xml2js@0.4.14/node_modules/@types/xml2js/index.d.ts",
+			"qualifiedName": "BuilderOptions.allowSurrogateChars"
+		},
+		"66": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "ParserXMLOptions"
+		},
+		"67": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "buildXML"
+		},
+		"68": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "buildXML"
+		},
+		"69": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "data"
+		},
+		"70": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "options"
+		},
+		"71": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "buildXMLSync"
+		},
+		"72": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "buildXMLSync"
+		},
+		"73": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "data"
+		},
+		"74": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "options"
+		},
+		"75": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "callback"
+		},
+		"76": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "parseXML"
+		},
+		"77": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "parseXML"
+		},
+		"78": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "data"
+		},
+		"79": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "options"
+		},
+		"80": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "parseXMLSync"
+		},
+		"81": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "parseXMLSync"
+		},
+		"82": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "data"
+		},
+		"83": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "options"
+		},
+		"84": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "callback"
+		},
+		"85": {
+			"sourceFileName": "src/index.default.ts",
+			"qualifiedName": "default"
+		},
+		"86": {
+			"sourceFileName": "src/index.default.ts",
+			"qualifiedName": "__object"
+		},
+		"87": {
+			"sourceFileName": "src/index.default.ts",
+			"qualifiedName": "__object.PKCS7Decode"
+		},
+		"88": {
+			"sourceFileName": "src/pkcs7.ts",
+			"qualifiedName": "__function"
+		},
+		"89": {
+			"sourceFileName": "src/pkcs7.ts",
+			"qualifiedName": "__function"
+		},
+		"90": {
+			"sourceFileName": "src/pkcs7.ts",
+			"qualifiedName": "data"
+		},
+		"91": {
+			"sourceFileName": "src/index.default.ts",
+			"qualifiedName": "__object.PKCS7Encode"
+		},
+		"92": {
+			"sourceFileName": "src/pkcs7.ts",
+			"qualifiedName": "__function"
+		},
+		"93": {
+			"sourceFileName": "src/pkcs7.ts",
+			"qualifiedName": "__function"
+		},
+		"94": {
+			"sourceFileName": "src/pkcs7.ts",
+			"qualifiedName": "data"
+		},
+		"95": {
+			"sourceFileName": "src/index.default.ts",
+			"qualifiedName": "__object.WxCrypto"
+		},
+		"96": {
+			"sourceFileName": "src/index.default.ts",
+			"qualifiedName": "__object.aes256Decrypt"
+		},
+		"97": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "__function"
+		},
+		"98": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "__function"
+		},
+		"99": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "algorithm"
+		},
+		"100": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "key"
+		},
+		"101": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "iv"
+		},
+		"102": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "inputEncoding"
+		},
+		"103": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "outputEncoding"
+		},
+		"104": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "options"
+		},
+		"105": {
+			"sourceFileName": "src/index.default.ts",
+			"qualifiedName": "__object.aes256Encrypt"
+		},
+		"106": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "__function"
+		},
+		"107": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "__function"
+		},
+		"108": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "algorithm"
+		},
+		"109": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "key"
+		},
+		"110": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "iv"
+		},
+		"111": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "inputEncoding"
+		},
+		"112": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "outputEncoding"
+		},
+		"113": {
+			"sourceFileName": "src/aes256.ts",
+			"qualifiedName": "options"
+		},
+		"114": {
+			"sourceFileName": "src/index.default.ts",
+			"qualifiedName": "__object.buildXML"
+		},
+		"115": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "__function"
+		},
+		"116": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "__function"
+		},
+		"117": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "data"
+		},
+		"118": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "options"
+		},
+		"119": {
+			"sourceFileName": "src/index.default.ts",
+			"qualifiedName": "__object.buildXMLSync"
+		},
+		"120": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "__function"
+		},
+		"121": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "__function"
+		},
+		"122": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "data"
+		},
+		"123": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "options"
+		},
+		"124": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "callback"
+		},
+		"125": {
+			"sourceFileName": "src/index.default.ts",
+			"qualifiedName": "__object.parseXML"
+		},
+		"126": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "__function"
+		},
+		"127": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "__function"
+		},
+		"128": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "data"
+		},
+		"129": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "options"
+		},
+		"130": {
+			"sourceFileName": "src/index.default.ts",
+			"qualifiedName": "__object.parseXMLSync"
+		},
+		"131": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "__function"
+		},
+		"132": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "__function"
+		},
+		"133": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "data"
+		},
+		"134": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "options"
+		},
+		"135": {
+			"sourceFileName": "src/xml.ts",
+			"qualifiedName": "callback"
+		},
+		"136": {
+			"sourceFileName": "src/index.default.ts",
+			"qualifiedName": "__object.sha1"
+		},
+		"137": {
+			"sourceFileName": "src/sha1.ts",
+			"qualifiedName": "__function"
+		},
+		"138": {
+			"sourceFileName": "src/sha1.ts",
+			"qualifiedName": "__function"
+		},
+		"139": {
+			"sourceFileName": "src/sha1.ts",
+			"qualifiedName": "args"
+		},
+		"140": {
+			"sourceFileName": "src/index.default.ts",
+			"qualifiedName": "__object.version"
+		}
+	}
+}
