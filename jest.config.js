@@ -39,7 +39,7 @@ module.exports = {
 	testMatch: ['<rootDir>/src/**/__tests__/**/*spec.[jt]s?(x)'],
 	testPathIgnorePatterns: process.env.SKIP_E2E
 		? // ignore example tests on netlify builds since they don't contribute
-		  // to coverage and can cause netlify builds to fail
-		  ['/node_modules/', '/examples/__tests__']
+			// to coverage and can cause netlify builds to fail
+			['/node_modules/', '/examples/__tests__']
 		: ['/node_modules/']
 }
